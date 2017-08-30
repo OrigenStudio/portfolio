@@ -3,25 +3,24 @@
 import { createMuiTheme } from 'material-ui/styles';
 import createTypography from 'material-ui/styles/typography';
 import createPalette from 'material-ui/styles/palette';
-import purple from 'material-ui/colors/purple';
-import green from 'material-ui/colors/green';
-import red from 'material-ui/colors/red';
+import teal from 'material-ui/colors/teal';
+
+import f0b860 from './colors/f0b860';
 
 import { fontFamily } from './typography';
 
 const palette = createPalette({
-  primary: purple, // Purple and green play nicely together.
+  primary: f0b860,
   accent: {
-    ...green,
-    A400: '#00e677',
+    ...teal,
   },
-  error: red,
 });
+
+palette.background.appBar = '#4A4A4A';
 
 const typography = createTypography(palette, {
-  fontFamily: fontFamily,
+  fontFamily,
 });
-
 
 const theme = createMuiTheme({
   palette,

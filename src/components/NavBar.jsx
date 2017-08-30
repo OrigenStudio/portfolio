@@ -10,31 +10,62 @@ import Button from 'material-ui/Button';
 import IconButton from 'material-ui/IconButton';
 import MenuIcon from 'material-ui-icons/Menu';
 
+import { logo } from '../images';
+
 const styles = {
   flex: {
     flex: 1,
   },
+  logo: {
+    flex: 1,
+    cursor: 'pointer',
+    height: '45px',
+    minWidth: '160px',
+  },
+  image:{
+    height: '100%',
+    margin: '0',
+    padding: '0',
+  }
 };
 
-function NavBar(props) {
-  const classes = props.classes;
-  return (
-    <AppBar position="static">
-      <Toolbar>
-        <IconButton color="contrast" aria-label="Menu">
-          <MenuIcon />
-        </IconButton>
-        <Typography type="title" color="inherit" className={classes.flex}>
-          Title
-        </Typography>
-        <Button color="contrast">Login</Button>
-      </Toolbar>
-    </AppBar>
-  );
+class NavBar extends React.PureComponent {
+  static propTypes = {
+    classes: PropTypes.object.isRequired,
+  };
+
+  renderLogo = () => {
+    const {classes, title} = this.props;
+    if (logo) {
+      return (
+        <div className={classes.logo}>
+          <img src={logo} alt={title} className={classes.image}/>
+        </div>
+      );
+    }
+    return (
+      <Typography type="title" color="inherit" className={classes.flex}>
+        {title}
+      </Typography>
+    );
+  };
+
+  render() {
+    const {classes} = this.props;
+    return (
+      <AppBar position="fixed" color="default">
+        <Toolbar>
+          <IconButton color="inherit" aria-label="Menu">
+            <MenuIcon />
+          </IconButton>
+          {this.renderLogo()}
+          <Button color="inherit">Services</Button>
+          <Button color="inherit">Contact</Button>
+          <Button color="inherit">Projects</Button>
+        </Toolbar>
+      </AppBar>
+    );
+  }
 }
-
-NavBar.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
 
 export default withStyles(styles)(NavBar);

@@ -8,17 +8,17 @@ import theme from '../config/theme';
 
 import NavBar from '../components/NavBar';
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ children, data }) => (
   <MuiThemeProvider theme={theme}>
     <div>
       <Helmet
-        title="Gatsby Default Starter"
+        title={data.site.siteMetadata.title}
         meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
+          { name: 'description', content: 'Sample' }, // TODO add SEO
+          { name: 'keywords', content: 'sample, something' }, // TODO add SEO
         ]}
       />
-      <NavBar />
+      <NavBar title={data.site.siteMetadata.title} />
       <div
         style={{
           margin: '0 auto',
@@ -35,6 +35,7 @@ const TemplateWrapper = ({ children }) => (
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
+  data: PropTypes.object,
 };
 
 export default TemplateWrapper;
