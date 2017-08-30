@@ -7,6 +7,8 @@ import purple from 'material-ui/colors/purple';
 import green from 'material-ui/colors/green';
 import red from 'material-ui/colors/red';
 
+import { fontFamily } from './typography';
+
 const palette = createPalette({
   primary: purple, // Purple and green play nicely together.
   accent: {
@@ -17,7 +19,7 @@ const palette = createPalette({
 });
 
 const typography = createTypography(palette, {
-  fontFamily: '"Source Sans Pro", Roboto, sans-serif',
+  fontFamily: fontFamily,
 });
 
 
