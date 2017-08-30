@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`
+    title: 'Gatsby Default Starter',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: 'gatsby-plugin-typography',
       options: {
-        pathToConfigModule: `src/utils/typography.js`
-      }
-    }
-  ]
+        pathToConfigModule: 'src/config/typography.js',
+      },
+    },
+  ],
 };
