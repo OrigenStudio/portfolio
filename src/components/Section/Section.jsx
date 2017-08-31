@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import Typography from 'material-ui/Typography';
+import classNames from 'classnames';
 
 import styles from './styles';
 
@@ -10,11 +11,13 @@ class Section extends React.PureComponent {
     classes: PropTypes.shape({}),
     headline: PropTypes.string,
     children: PropTypes.element,
-  }
+    className: PropTypes.string,
+  };
   render() {
-    const { classes, headline, children } = this.props;
+    const { classes, headline, children, className: classNameProp } = this.props;
+    const wrapperClassName = classNames(classes.wrapper, classNameProp);
     return (
-      <div className={classes.wrapper}>
+      <div className={wrapperClassName}>
         <div className={classes.headline}>
           <Typography type="display1">{headline}</Typography>
         </div>
