@@ -44,14 +44,14 @@ class BasicFooter extends React.PureComponent {
             </Typography>
           </div>
         </Grid>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} md={4}>
           <Grid container direction="row" spacing={0}>
             {_.map(links, link => (
               <Button href={link.href} color="inherit">{link.label}</Button>
             ))}
           </Grid>
         </Grid>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} md={4}>
           <Grid container direction="column" align="center" spacing={0}>
             <Typography type="body1" color="inherit">
               {smallMessage}
@@ -61,7 +61,7 @@ class BasicFooter extends React.PureComponent {
             </Typography>
           </Grid>
         </Grid>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} md={4}>
           <Grid container justify="center">
             {this.renderLogo()}
           </Grid>
