@@ -4,14 +4,17 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "classnames": "^2.2.5",
     "gatsby": "^1.8.12",
     "gatsby-link": "^1.6.8",
     "gatsby-plugin-react-helmet": "^1.0.3",
     "gatsby-plugin-typography": "^1.7.7",
+    "lodash": "^4.17.4",
     "material-ui": "^1.0.0-beta.6",
     "material-ui-icons": "^1.0.0-beta.5",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
+    "react-emojione": "^3.1.10",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
@@ -27,6 +30,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^4.5.0",
     "eslint-config-airbnb": "^15.1.0",

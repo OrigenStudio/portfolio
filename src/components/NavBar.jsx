@@ -10,8 +10,6 @@ import Button from 'material-ui/Button';
 import IconButton from 'material-ui/IconButton';
 import MenuIcon from 'material-ui-icons/Menu';
 
-import { logo } from '../images';
-
 const styles = {
   flex: {
     flex: 1,
@@ -22,24 +20,26 @@ const styles = {
     height: '45px',
     minWidth: '160px',
   },
-  image:{
+  image: {
     height: '100%',
     margin: '0',
     padding: '0',
-  }
+  },
 };
 
 class NavBar extends React.PureComponent {
   static propTypes = {
     classes: PropTypes.object.isRequired,
+    title: PropTypes.string,
+    logo: PropTypes.string,
   };
 
   renderLogo = () => {
-    const {classes, title} = this.props;
+    const { classes, title, logo } = this.props;
     if (logo) {
       return (
         <div className={classes.logo}>
-          <img src={logo} alt={title} className={classes.image}/>
+          <img src={logo} alt={title} className={classes.image} />
         </div>
       );
     }
@@ -51,9 +51,9 @@ class NavBar extends React.PureComponent {
   };
 
   render() {
-    const {classes} = this.props;
+    const { classes, navbarPostion } = this.props;
     return (
-      <AppBar position="fixed" color="default">
+      <AppBar position={navbarPostion} color="default">
         <Toolbar>
           <IconButton color="inherit" aria-label="Menu">
             <MenuIcon />
