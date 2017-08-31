@@ -8,6 +8,8 @@ import styles from './styles';
 import NavBar from '../NavBar';
 import Footer from '../Footer';
 
+// TODO create Layout Library
+
 class Layout extends React.PureComponent {
   static propTypes = {
     title: PropTypes.string,
