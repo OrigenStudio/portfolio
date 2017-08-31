@@ -22,11 +22,11 @@ const styles = {
     height: '45px',
     minWidth: '160px',
   },
-  image:{
+  image: {
     height: '100%',
     margin: '0',
     padding: '0',
-  }
+  },
 };
 
 class NavBar extends React.PureComponent {
@@ -35,11 +35,11 @@ class NavBar extends React.PureComponent {
   };
 
   renderLogo = () => {
-    const {classes, title} = this.props;
+    const { classes, title } = this.props;
     if (logo) {
       return (
         <div className={classes.logo}>
-          <img src={logo} alt={title} className={classes.image}/>
+          <img src={logo} alt={title} className={classes.image} />
         </div>
       );
     }
@@ -51,9 +51,9 @@ class NavBar extends React.PureComponent {
   };
 
   render() {
-    const {classes} = this.props;
+    const { classes, navbarPostion } = this.props;
     return (
-      <AppBar position="fixed" color="default">
+      <AppBar position={navbarPostion} color="default">
         <Toolbar>
           <IconButton color="inherit" aria-label="Menu">
             <MenuIcon />
