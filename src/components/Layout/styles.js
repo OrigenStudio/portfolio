@@ -4,7 +4,7 @@ const styles = {
     minHeight: '100vh',
     flexDirection: 'column',
   },
-  main: {},
+  main: { paddingTop: '20px' },
   mainFixedNavbar: {
     marginTop: '64px',
   },

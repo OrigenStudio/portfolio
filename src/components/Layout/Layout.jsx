@@ -14,15 +14,25 @@ class Layout extends React.PureComponent {
     classes: PropTypes.object.isRequired,
     children: PropTypes.element.isRequired,
     navbarPostion: PropTypes.string,
-    stickyFooter: PropTypes.boolean,
+    stickyFooter: PropTypes.bool,
+    footerContent: PropTypes.element,
   };
+
   static defaultProps = {
     title: '',
     navbarPostion: 'default',
-    stickyFooter: true,
+    stickyFooter: false,
   };
   render() {
-    const { title, classes, children, navbarPostion, stickyFooter } = this.props;
+    const {
+      title,
+      logo,
+      classes,
+      children,
+      navbarPostion,
+      stickyFooter,
+      footerContent,
+    } = this.props;
 
     const mainClassnames = classNames(
       classes.main,
@@ -31,9 +41,9 @@ class Layout extends React.PureComponent {
     );
     return (
       <div className={classes.layout}>
-        <NavBar title={title} />
+        <NavBar title={title} logo={logo} />
         <main className={mainClassnames}>{children}</main>
-        <Footer />
+        {footerContent ? <Footer>{footerContent}</Footer> : null}
       </div>
     );
   }
