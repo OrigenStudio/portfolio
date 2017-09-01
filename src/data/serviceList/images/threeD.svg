@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="79px" height="91px" viewBox="0 0 79 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Zetoff -logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Splash-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Option-1" transform="translate(-787.000000, -1094.000000)" stroke="#000000">
+            <g id="Zetoff--logo" transform="translate(789.000000, 1096.000000)">
+                <g id="Group">
+                    <polygon id="Polygon" stroke-width="3" transform="translate(37.441896, 43.447096) scale(1, -1) translate(-37.441896, -43.447096) " points="37.4418963 0.0812879285 74.8837927 21.7641918 74.8837927 65.1299994 37.4418963 86.8129032 4.17443857e-14 65.1299994 1.77635684e-14 21.7641918"></polygon>
+                    <path d="M0.0683060109,15.5679127 L64.0027322,52.5971131" id="Line" stroke-width="3" stroke-linecap="round" transform="translate(32.035519, 34.081546) scale(1, -1) translate(-32.035519, -34.081546) "></path>
+                    <polygon id="Polygon" stroke-width="3" fill="#000000" transform="translate(37.601255, 43.561678) scale(1, -1) translate(-37.601255, -43.561678) " points="37.6012547 31.2831341 48.2025094 37.4224061 48.2025094 49.7009501 37.6012547 55.8402221 27 49.7009501 27 37.4224061"></polygon>
+                    <path d="M0.0683060109,71.6841527 L63.5928962,34.2435167" id="Line" stroke-width="3" stroke-linecap="round" transform="translate(31.830601, 52.950938) scale(1, -1) translate(-31.830601, -52.950938) "></path>
+                    <path d="M27.5,6.61641844 L27.5,80.4358334" id="Line" stroke-width="3" stroke-linecap="round" transform="translate(27.500000, 43.526126) scale(1, -1) translate(-27.500000, -43.526126) "></path>
+                    <path d="M48.5,80.5482134 L48.5,6.35266733" id="Line" stroke-width="3" stroke-linecap="round" transform="translate(48.500000, 43.462732) scale(1, -1) translate(-48.500000, -43.462732) "></path>
+                    <path d="M10.8606557,34.5178071 L74.931694,71.4098623" id="Line" stroke-width="3" stroke-linecap="round" transform="translate(42.892672, 52.950938) scale(1, -1) translate(-42.892672, -52.950938) "></path>
+                    <path d="M10.8606557,52.6344724 L74.795082,15.4681268" id="Line" stroke-width="3" stroke-linecap="round" transform="translate(42.799846, 34.100226) scale(1, -1) translate(-42.799846, -34.100226) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
