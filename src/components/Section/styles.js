@@ -3,7 +3,8 @@ const styles = {
     padding: '40px 30px',
   },
   headline: {
-    margin: '20px 0px',
+    marginBottom: '40px',
+    marginTop: '20px',
   },
 };
 
