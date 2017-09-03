@@ -14,6 +14,10 @@ const typography = new Typography({
       name: 'Source Sans Pro',
       styles: ['200', '400', '400i', '700'],
     },
+    {
+      name: 'Material Icons',
+      styles: ['400'],
+    },
   ],
   scaleRatio: 2.5,
   headerFontFamily: fontFamily,
