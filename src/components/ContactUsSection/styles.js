@@ -6,6 +6,7 @@ const styles = theme => ({
     fontSize: '30px',
     textTransform: 'none',
     // color: theme.palette.grey[50],
+    padding: '20px',
   },
   text: {
     marginLeft: '5px',
