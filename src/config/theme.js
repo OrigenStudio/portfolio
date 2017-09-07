@@ -16,7 +16,7 @@ const palette = createPalette({
   },
 });
 
-palette.background.appBar = '#4A4A4A';
+palette.background.appBar = '#393939';
 
 const typography = createTypography(palette, {
   fontFamily,

@@ -1,3 +1,4 @@
-import logo from './logo.png';
+import logo from './logo.svg';
+import statementBackground from './statement_background.png';
 
-export { logo };
+export { logo, statementBackground };
