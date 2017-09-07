@@ -10,12 +10,12 @@ import TechnologiesSection from '../../components/TechnologiesSection';
 
 import styles from './styles';
 
-const IndexPage = ({ classes }) => (
+const IndexPage = ({ classes, data }) => (
   <div>
     <Statement />
     <Services />
     <ContactUsSection />
-    <ProjectsSection />
+    <ProjectsSection projects={data.allMarkdownRemark.edges} />
     <TechnologiesSection />
   </div>
 );
