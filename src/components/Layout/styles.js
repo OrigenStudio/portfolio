@@ -11,6 +11,11 @@ const styles = {
   mainStickyFooter: {
     flex: 1,
   },
+  '@media (max-width: 960px)': {
+    mainFixedNavbar: {
+      marginTop: '56px',
+    },
+  },
 };
 
 export default styles;
