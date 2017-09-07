@@ -33,9 +33,10 @@ const styles = theme => ({
   },
   screenshot: {
     display: 'block',
-    objectFit: 'contain',
+    objectFit: 'scale-down',
     width: '100%',
     height: 'auto',
+    maxHeight: '500px',
   },
   screenshotWrapper: {
   },
