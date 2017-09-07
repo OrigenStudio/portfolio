@@ -1,6 +1,9 @@
+import primaryGradient from '../../config/colors/primaryGradient';
+
 const styles = {
   wrapper: {
     padding: '40px',
+    backgroundImage: primaryGradient,
   },
   card: {
     height: '100%',
