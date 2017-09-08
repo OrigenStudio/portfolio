@@ -51,9 +51,7 @@ const TemplateWrapper = ({ children, data }) => (
         }
         stickyFooter
       >
-        <div>
-          {children()}
-        </div>
+        {children()}
       </Layout>
     </div>
   </MuiThemeProvider>
