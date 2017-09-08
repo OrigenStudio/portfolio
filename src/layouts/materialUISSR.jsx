@@ -38,4 +38,5 @@ export default ({ bodyComponent, replaceBodyHTMLString, setHeadComponents }) => 
       dangerouslySetInnerHTML={{ __html: css }}
     />,
   ]);
+  console.log('Rendering in the server');
 };
