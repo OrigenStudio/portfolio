@@ -8,8 +8,7 @@ import Icon from 'material-ui/Icon';
 import Button from 'material-ui/Button';
 
 import Section from '../Section';
-
-import sharpToImgProps from '../../utils/sharpToImgProps';
+import SharpImage from '../SharpImage';
 
 import styles from './styles';
 
@@ -25,13 +24,11 @@ class ProjectsSection extends React.PureComponent {
       <Grid item xs={12} md={5}>
         <Grid container justify={justifyProp} className={classes.projectInfoWrapper}>
           <Grid container justify="center" className={classes.projectInfo}>
-            <div className={classes.logoWrapper}>
-              <img
-                {...sharpToImgProps(project.logo)}
-                alt={`logo-${project.project}`}
-                className={classes.logo}
-              />
-            </div>
+            <SharpImage
+              image={project.logo}
+              alt={`logo-${project.project}`}
+              wrapperClassName={classes.logoWrapper}
+            />
             <Typography type="body1" className={classes.description}>
               {project.description}
             </Typography>
@@ -51,13 +48,11 @@ class ProjectsSection extends React.PureComponent {
     return (
       <Grid item xs={12} sm>
         <Grid container justify="center" className={classes.screenshotWrapper}>
-          {/* <div className={classes.screenshotWrapper}> */}
-            <img
-              {...sharpToImgProps(project.screenshot)}
-              alt={`screenshot-${project.project}`}
-              className={classes.screenshot}
-            />
-          {/* </div> */}
+          <SharpImage
+            image={project.screenshot}
+            alt={`screenshot-${project.project}`}
+            imgClassName={classes.screenshot}
+          />
         </Grid>
       </Grid>
     );

@@ -30,12 +30,16 @@ const styles = theme => ({
   logoWrapper: {
     width: '80%',
     maxWidth: '300px',
+    minHeight: '65px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
   },
   screenshot: {
     display: 'block',
-    objectFit: 'contain',
+    objectFit: 'scale-down',
     width: '100%',
     height: 'auto',
+    maxHeight: '500px',
   },
   screenshotWrapper: {
   },

@@ -4,14 +4,17 @@ const styles = {
     minHeight: '100vh',
     flexDirection: 'column',
   },
-  main: { paddingTop: '0px' },
+  main: {
+    paddingTop: '0px',
+    display: 'flex',
+  },
   mainFixedNavbar: {
     marginTop: '64px',
   },
   mainStickyFooter: {
     flex: 1,
   },
-  '@media (max-width: 960px)': {
+  '@media (max-width: 599px)': {
     mainFixedNavbar: {
       marginTop: '56px',
     },
