@@ -7,8 +7,6 @@ import { navigateTo } from 'gatsby-link';
 
 import ProjectCard from '../../components/ProjectCard';
 
-import sharpToImgProps from '../../utils/sharpToImgProps';
-
 import styles from './styles';
 
 class Projects extends React.PureComponent {

@@ -5,7 +5,7 @@ import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
 import { withStyles } from 'material-ui/styles';
 
-import sharpToImgProps from '../../utils/sharpToImgProps';
+import SharpImage from './../SharpImage';
 
 import styles from './styles';
 
@@ -26,13 +26,11 @@ class ProjectCard extends React.PureComponent {
     return (
       <Card className={classes.card}>
         <CardContent className={classes.cardContent}>
-          <div className={classes.logoWrapper}>
-            <img
-              {...sharpToImgProps(project.frontmatter.logo)}
-              alt={`logo-${project.frontmatter.project}`}
-              className={classes.logo}
-            />
-          </div>
+          <SharpImage
+            image={project.frontmatter.logo}
+            alt={`logo-${project.frontmatter.project}`}
+            wrapperClassName={classes.logoWrapper}
+          />
           <Typography type="body1">{project.frontmatter.description}</Typography>
         </CardContent>
         <CardActions>

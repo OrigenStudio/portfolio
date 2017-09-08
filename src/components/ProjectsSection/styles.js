@@ -30,6 +30,9 @@ const styles = theme => ({
   logoWrapper: {
     width: '80%',
     maxWidth: '300px',
+    minHeight: '65px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
   },
   screenshot: {
     display: 'block',
