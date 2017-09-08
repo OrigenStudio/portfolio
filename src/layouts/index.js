@@ -1,4 +1,5 @@
 import MainLayout from './MainLayout';
+import materialUISSR from './materialUISSR';
 
 export default MainLayout;
 
@@ -11,3 +12,5 @@ export const query = graphql`
     }
   }
 `;
+
+exports.replaceRenderer = materialUISSR;
