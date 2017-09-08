@@ -9,6 +9,8 @@ import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
 import IconButton from 'material-ui/IconButton';
 import MenuIcon from 'material-ui-icons/Menu';
+import { navigateTo } from 'gatsby-link';
+
 
 const styles = {
   flex: {
@@ -61,7 +63,7 @@ class NavBar extends React.PureComponent {
           {this.renderLogo()}
           <Button color="inherit">Services</Button>
           <Button color="inherit">Contact</Button>
-          <Button color="inherit">Projects</Button>
+          <Button color="inherit" onClick={()=>navigateTo('/projects')}>Projects</Button>
         </Toolbar>
       </AppBar>
     );
