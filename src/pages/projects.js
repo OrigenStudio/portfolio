@@ -35,6 +35,9 @@ export const query = graphql`
             }
             description
           }
+          fields{
+            slug
+          }
           html
         }
       }
