@@ -17,7 +17,7 @@ class SharpImage extends React.PureComponent {
   };
 
   render() {
-    const { classes, image, alt = 'image', wrapperClassName,  imgClassName } = this.props;
+    const { classes, image, alt = 'image', wrapperClassName, imgClassName } = this.props;
     return (
       <div className={classNames(classes.wrapper, wrapperClassName)}>
         <img
