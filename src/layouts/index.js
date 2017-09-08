@@ -1,8 +1,10 @@
 import MainLayout from './MainLayout';
 import materialUISSR from './materialUISSR';
+import materialUIClientRender from './materialUIClientRender';
 
 export default MainLayout;
 
+// eslint-disable-next-line no-undef
 export const query = graphql`
   query LayoutQuery {
     site {
@@ -14,3 +16,4 @@ export const query = graphql`
 `;
 
 exports.replaceRenderer = materialUISSR;
+exports.onInitialClientRender = materialUIClientRender;
