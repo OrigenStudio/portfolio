@@ -1,19 +1,35 @@
 import React from 'react';
 import Grid from 'material-ui/Grid';
+import Paper from 'material-ui/Paper';
+import { withStyles } from 'material-ui/styles';
+
+import SharpImage from '../../components/SharpImage';
+
+import styles from './styles';
 
 class ProjectPage extends React.PureComponent {
   render() {
-    const { data } = this.props;
+    const { data, classes } = this.props;
     const project = data.markdownRemark;
     return (
-      <Grid container>
-        <Grid item xs>
-          {project.frontmatter.project}
-           <div dangerouslySetInnerHTML={{ __html: project.html }} />
-        </Grid>
-      </Grid>
+      <div className={classes.wrapper}>
+        <Paper className={classes.paper}>
+          <Grid container direction="column">
+            <Grid item xs>
+              <SharpImage
+                image={project.frontmatter.logo}
+                alt={`logo-${project.frontmatter.project}}`}
+                wrapperClassName={classes.logoWrapper}
+              />
+            </Grid>
+            <Grid item xs>
+              <div dangerouslySetInnerHTML={{ __html: project.html }} />
+            </Grid>
+          </Grid>
+        </Paper>
+      </div>
     );
   }
 }
 
-export default ProjectPage;
+export default withStyles(styles)(ProjectPage);
