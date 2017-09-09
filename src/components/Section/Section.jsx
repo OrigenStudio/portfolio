@@ -10,7 +10,7 @@ class Section extends React.PureComponent {
   static propTypes = {
     classes: PropTypes.shape({}),
     headline: PropTypes.string,
-    children: PropTypes.element,
+    children: PropTypes.oneOfType([PropTypes.element, PropTypes.arrayOf(PropTypes.element)]),
     className: PropTypes.string,
   };
   render() {
@@ -23,6 +23,7 @@ class Section extends React.PureComponent {
         </div>
         <div>{children}</div>
       </div>
+
     );
   }
 }
