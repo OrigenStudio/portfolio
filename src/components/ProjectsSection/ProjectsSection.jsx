@@ -63,7 +63,7 @@ class ProjectsSection extends React.PureComponent {
     return _.map(projects, (project, index) => {
       if (index % 2 !== 0) {
         return (
-          <Grid item xs={12} className={classes.project}>
+          <Grid item xs={12} className={classes.project} key={`project-${project.node.frontmatter.project}`}>
             <Grid container align="center" className={classes.oddProject}>
               {this.renderInfo(project.node.frontmatter, 'flex-start')}
               {this.renderScreenshot(project.node.frontmatter)}
@@ -72,7 +72,7 @@ class ProjectsSection extends React.PureComponent {
         );
       }
       return (
-        <Grid item xs={12} className={classes.project}>
+        <Grid item xs={12} className={classes.project} key={`project-${project.node.frontmatter.project}`}>
           <Grid container align="center" className={classes.evenProject}>
             {this.renderInfo(project.node.frontmatter, 'flex-end')}
             {this.renderScreenshot(project.node.frontmatter)}
