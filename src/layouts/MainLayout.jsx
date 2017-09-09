@@ -9,6 +9,7 @@ import theme from '../config/theme';
 
 import Layout from '../components/Layout';
 import BasicFooter from '../components/FooterTemplates/BasicFooter';
+import BasicNavBar from '../components/NavBarTemplates/BasicNavBar';
 import { logo } from '../images';
 
 // TODO move somewhere else
@@ -40,6 +41,11 @@ const TemplateWrapper = ({ children, data }) => (
         title={data.site.siteMetadata.title}
         logo={logo}
         navbarPostion="fixed"
+        navBarContent={<BasicNavBar
+          title={data.site.siteMetadata.title}
+          logo={logo}
+          links={links}
+        />}
         footerContent={
           <BasicFooter
             title={data.site.siteMetadata.title}

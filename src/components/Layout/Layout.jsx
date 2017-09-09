@@ -34,6 +34,7 @@ class Layout extends React.PureComponent {
       navbarPostion,
       stickyFooter,
       footerContent,
+      navBarContent,
     } = this.props;
 
     const mainClassnames = classNames(
@@ -43,7 +44,7 @@ class Layout extends React.PureComponent {
     );
     return (
       <div className={classes.layout}>
-        <NavBar title={title} logo={logo} />
+        <NavBar title={title} logo={logo}>{navBarContent}</NavBar>
         <main className={mainClassnames}>{children}</main>
         {footerContent ? <Footer>{footerContent}</Footer> : null}
       </div>
