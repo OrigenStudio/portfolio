@@ -47,7 +47,7 @@ class BasicFooter extends React.PureComponent {
         <Grid item xs={12} md={4}>
           <Grid container direction="row" spacing={0}>
             {_.map(links, link => (
-              <Button href={link.href} color="inherit">{link.label}</Button>
+              <Button href={link.href} color="inherit" key={link.label}>{link.label}</Button>
             ))}
           </Grid>
         </Grid>
