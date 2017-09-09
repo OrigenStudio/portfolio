@@ -1,26 +1,25 @@
 // @flow weak
 
 import { createMuiTheme } from 'material-ui/styles';
-import createTypography from 'material-ui/styles/typography';
-import createPalette from 'material-ui/styles/palette';
 import teal from 'material-ui/colors/teal';
 
 import f0b860 from './colors/f0b860';
 
 import { fontFamily } from './typography';
 
-const palette = createPalette({
+const palette = {
   primary: f0b860,
-  accent: {
+  secondary: {
     ...teal,
   },
-});
+  background: {
+    appBar: '#393939',
+  },
+};
 
-palette.background.appBar = '#393939';
-
-const typography = createTypography(palette, {
+const typography = {
   fontFamily,
-});
+};
 
 const theme = createMuiTheme({
   palette,
