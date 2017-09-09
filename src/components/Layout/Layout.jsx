@@ -13,11 +13,12 @@ import Footer from '../Footer';
 class Layout extends React.PureComponent {
   static propTypes = {
     title: PropTypes.string,
-    classes: PropTypes.object.isRequired,
+    classes: PropTypes.shape({}),
     children: PropTypes.element.isRequired,
     navbarPostion: PropTypes.string,
     stickyFooter: PropTypes.bool,
     footerContent: PropTypes.element,
+    navBarContent: PropTypes.element,
   };
 
   static defaultProps = {
@@ -28,7 +29,7 @@ class Layout extends React.PureComponent {
   render() {
     const {
       title,
-      logo,
+      logo, // TODO what kind of logo can we expect?.....
       classes,
       children,
       navbarPostion,
