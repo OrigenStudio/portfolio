@@ -63,7 +63,12 @@ class ProjectsSection extends React.PureComponent {
     return _.map(projects, (project, index) => {
       if (index % 2 !== 0) {
         return (
-          <Grid item xs={12} className={classes.project} key={`project-${project.node.frontmatter.project}`}>
+          <Grid
+            item
+            xs={12}
+            className={classes.project}
+            key={`project-${project.node.frontmatter.project}`}
+          >
             <Grid container align="center" className={classes.oddProject}>
               {this.renderInfo(project.node.frontmatter, 'flex-start')}
               {this.renderScreenshot(project.node.frontmatter)}
@@ -72,7 +77,12 @@ class ProjectsSection extends React.PureComponent {
         );
       }
       return (
-        <Grid item xs={12} className={classes.project} key={`project-${project.node.frontmatter.project}`}>
+        <Grid
+          item
+          xs={12}
+          className={classes.project}
+          key={`project-${project.node.frontmatter.project}`}
+        >
           <Grid container align="center" className={classes.evenProject}>
             {this.renderInfo(project.node.frontmatter, 'flex-end')}
             {this.renderScreenshot(project.node.frontmatter)}
@@ -82,23 +92,25 @@ class ProjectsSection extends React.PureComponent {
     });
   };
   render() {
-    const { classes, projects } = this.props;
+    const { classes } = this.props;
     return (
       <Section headline="We are proud of..." className={classes.wrapper}>
-        <Grid container>{this.renderProjects()}</Grid>
-        <Grid container>
-          <Grid item xs={12} md={6}>
-            <Typography type="headline">We have been working a lot...</Typography>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Grid container align="center" justify="center">
-              <Button raised color="primary" className={classes.button}>
-                <Icon className={classes.icon}>web</Icon>
-                <span className={classes.text}>Check our portfolio</span>
-              </Button>
+        <div>
+          <Grid container>{this.renderProjects()}</Grid>
+          <Grid container>
+            <Grid item xs={12} md={6}>
+              <Typography type="headline">We have been working a lot...</Typography>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Grid container align="center" justify="center">
+                <Button raised color="primary" className={classes.button}>
+                  <Icon className={classes.icon}>web</Icon>
+                  <span className={classes.text}>Check our portfolio</span>
+                </Button>
+              </Grid>
             </Grid>
           </Grid>
-        </Grid>
+        </div>
       </Section>
     );
   }
