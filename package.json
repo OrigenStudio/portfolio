@@ -14,13 +14,17 @@
     "gatsby-source-filesystem": "^1.4.12",
     "gatsby-transformer-remark": "^1.7.7",
     "gatsby-transformer-sharp": "^1.6.5",
+    "jss": "^8.1.0",
+    "jss-preset-default": "^3.0.0",
     "lodash": "^4.17.4",
     "material-ui": "^1.0.0-beta.8",
     "material-ui-icons": "^1.0.0-beta.5",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "react-emojione": "^3.1.10",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-jss": "^7.1.0"
   },
   "keywords": [
     "gatsby"
