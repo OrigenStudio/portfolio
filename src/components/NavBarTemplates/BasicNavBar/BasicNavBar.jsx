@@ -6,7 +6,10 @@ import Button from 'material-ui/Button';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import MenuIcon from 'material-ui-icons/Menu';
+import Hidden from 'material-ui/Hidden';
 import { withStyles } from 'material-ui/styles';
+import withWidth from 'material-ui/utils/withWidth';
+import compose from 'recompose/compose';
 
 import styles from './styles';
 
@@ -38,18 +41,24 @@ class BasicNavBar extends React.PureComponent {
     const { links } = this.props;
     return (
       <Toolbar>
-        <IconButton color="inherit" aria-label="Menu">
-          <MenuIcon />
-        </IconButton>
+        <Hidden smUp>
+          <IconButton color="inherit" aria-label="Menu">
+            <MenuIcon />
+          </IconButton>
+        </Hidden>
         {this.renderLogo()}
-        {_.map(links, link => (
-          <Button href={link.href} color="inherit" key={link.label}>
-            {link.label}
-          </Button>
-        ))}
+        <Hidden smDown>
+          <div>
+            {_.map(links, link => (
+              <Button href={link.href} color="inherit" key={link.label}>
+                {link.label}
+              </Button>
+            ))}
+          </div>
+        </Hidden>
       </Toolbar>
     );
   }
 }
 
-export default withStyles(styles)(BasicNavBar);
+export default compose(withStyles(styles), withWidth())(BasicNavBar);
