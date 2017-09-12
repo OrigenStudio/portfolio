@@ -10,6 +10,7 @@ import theme from '../config/theme';
 import Layout from '../components/Layout';
 import BasicFooter from '../components/FooterTemplates/BasicFooter';
 import BasicNavBar from '../components/NavBarTemplates/BasicNavBar';
+import BasicDrawer from '../components/DrawerTemplates/BasicDrawer';
 import { logo } from '../images';
 
 // TODO move somewhere else
@@ -50,6 +51,7 @@ const TemplateWrapper = ({ children, data }) => (
         navBarContent={
           <BasicNavBar title={data.site.siteMetadata.title} logo={logo} links={links} />
         }
+        drawerContent={<BasicDrawer links={links} />}
         footerContent={
           <BasicFooter
             title={data.site.siteMetadata.title}
