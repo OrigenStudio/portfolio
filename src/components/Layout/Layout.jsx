@@ -24,6 +24,9 @@ class Layout extends React.PureComponent {
     drawerOpen: PropTypes.bool.isRequired,
     onDrawerOpenChange: PropTypes.func,
     drawerContent: PropTypes.element,
+    navBarProps: PropTypes.shape({}),
+    drawerProps: PropTypes.shape({}),
+    footerProps: PropTypes.shape({}),
   };
 
   static defaultProps = {
@@ -57,6 +60,9 @@ class Layout extends React.PureComponent {
       navBarContent,
       drawerContent,
       drawerOpen,
+      navBarProps,
+      drawerProps,
+      footerProps,
     } = this.props;
 
     const mainClassnames = classNames(
@@ -67,14 +73,16 @@ class Layout extends React.PureComponent {
 
     return (
       <div className={classes.layout}>
-        <NavBar title={title} logo={logo} onIconClick={this.toggleDrawer}>
+        <NavBar {...navBarProps} title={title} logo={logo} onIconClick={this.toggleDrawer}>
           {navBarContent}
         </NavBar>
-        <Drawer open={drawerOpen} onRequestClose={this.handleDrawerClose}>
-          {drawerContent}
-        </Drawer>
+        {drawerContent ? (
+          <Drawer {...drawerProps} open={drawerOpen} onRequestClose={this.handleDrawerClose}>
+            {drawerContent}
+          </Drawer>
+        ) : null}
         <main className={mainClassnames}>{children}</main>
-        {footerContent ? <Footer>{footerContent}</Footer> : null}
+        {footerContent ? <Footer {...footerProps}>{footerContent}</Footer> : null}
       </div>
     );
   }
