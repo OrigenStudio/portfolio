@@ -23,6 +23,7 @@ class Layout extends React.PureComponent {
     navBarContent: PropTypes.element,
     drawerOpen: PropTypes.bool.isRequired,
     onDrawerOpenChange: PropTypes.func,
+    drawerContent: PropTypes.element,
   };
 
   static defaultProps = {
@@ -48,12 +49,13 @@ class Layout extends React.PureComponent {
     const {
       title,
       logo, // TODO what kind of logo can we expect?.....
-      classes = {},
+      classes,
       children,
       navbarPostion,
       stickyFooter,
       footerContent,
       navBarContent,
+      drawerContent,
       drawerOpen,
     } = this.props;
 
@@ -65,11 +67,11 @@ class Layout extends React.PureComponent {
 
     return (
       <div className={classes.layout}>
-        <NavBar title={title} logo={logo} onIconClick={this.toogleDrawer}>
+        <NavBar title={title} logo={logo} onIconClick={this.toggleDrawer}>
           {navBarContent}
         </NavBar>
         <Drawer open={drawerOpen} onRequestClose={this.handleDrawerClose}>
-          <div>dolor</div>
+          {drawerContent}
         </Drawer>
         <main className={mainClassnames}>{children}</main>
         {footerContent ? <Footer>{footerContent}</Footer> : null}
@@ -78,4 +80,4 @@ class Layout extends React.PureComponent {
   }
 }
 
-export default controllable(Layout, ['drawerOpen', 'color']);
+export default controllable(withStyles(styles)(Layout), ['drawerOpen']);
