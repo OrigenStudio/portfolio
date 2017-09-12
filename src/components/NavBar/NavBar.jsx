@@ -15,10 +15,10 @@ class NavBar extends React.PureComponent {
   };
 
   render() {
-    const { children, navbarPostion, classes } = this.props;
+    const { children, navbarPostion, classes, ...other } = this.props;
     return (
       <AppBar position={navbarPostion} color="default">
-        {children}
+        {React.cloneElement(children, ...other)}
       </AppBar>
     );
   }

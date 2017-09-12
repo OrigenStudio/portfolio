@@ -37,17 +37,21 @@ class BasicNavBar extends React.PureComponent {
     );
   };
 
+  handleIconClick = () => {
+    this.props.onIconClick();
+  }
+
   render() {
-    const { links } = this.props;
+    const { links, onIconClick } = this.props;
     return (
       <Toolbar>
         <Hidden smUp>
-          <IconButton color="inherit" aria-label="Menu">
+          <IconButton color="inherit" aria-label="Menu" onClick={this.handleIconClick}>
             <MenuIcon />
           </IconButton>
         </Hidden>
         {this.renderLogo()}
-        <Hidden smDown>
+        <Hidden xsDown>
           <div>
             {_.map(links, link => (
               <Button href={link.href} color="inherit" key={link.label}>
