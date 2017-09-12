@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { MuiThemeProvider } from 'material-ui/styles';
-import Link from 'gatsby-link';
+import { navigateTo } from 'gatsby-link';
 import Helmet from 'react-helmet';
 import { emojify } from 'react-emojione';
 
@@ -20,10 +20,16 @@ const smallMessage = `Built with
 const bigMessage = "Let's work together!";
 
 // TODO get from data
+//
 const links = [
   { label: 'Services', href: '#' },
   { label: 'Contact', href: '#' },
-  { label: 'Projects', href: '#' },
+  {
+    label: 'Projects',
+    onClick: () => {
+      navigateTo('/projects');
+    },
+  },
 ];
 
 // TODO convert to class
@@ -41,11 +47,9 @@ const TemplateWrapper = ({ children, data }) => (
         title={data.site.siteMetadata.title}
         logo={logo}
         navbarPostion="fixed"
-        navBarContent={<BasicNavBar
-          title={data.site.siteMetadata.title}
-          logo={logo}
-          links={links}
-        />}
+        navBarContent={
+          <BasicNavBar title={data.site.siteMetadata.title} logo={logo} links={links} />
+        }
         footerContent={
           <BasicFooter
             title={data.site.siteMetadata.title}
