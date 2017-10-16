@@ -12,9 +12,6 @@ const palette = {
   secondary: {
     ...teal,
   },
-  background: {
-    appBar: '#393939',
-  },
 };
 
 const typography = {

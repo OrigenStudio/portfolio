@@ -4,13 +4,10 @@ import { MuiThemeProvider } from 'material-ui/styles';
 import { navigateTo } from 'gatsby-link';
 import Helmet from 'react-helmet';
 import { emojify } from 'react-emojione';
+import Layout, { BasicFooter, BasicAppBar, BasicDrawer } from 'material-ui-layout';
 
 import theme from '../config/theme';
 
-import Layout from '../components/Layout';
-import BasicFooter from '../components/FooterTemplates/BasicFooter';
-import BasicNavBar from '../components/NavBarTemplates/BasicNavBar';
-import BasicDrawer from '../components/DrawerTemplates/BasicDrawer';
 import { logo } from '../images';
 
 // TODO move somewhere else
@@ -45,11 +42,9 @@ const TemplateWrapper = ({ children, data }) => (
         ]}
       />
       <Layout
-        title={data.site.siteMetadata.title}
-        logo={logo}
         navbarPostion="fixed"
         navBarContent={
-          <BasicNavBar title={data.site.siteMetadata.title} logo={logo} links={links} />
+          <BasicAppBar title={data.site.siteMetadata.title} logo={logo} links={links} />
         }
         drawerContent={<BasicDrawer links={links} />}
         footerContent={
