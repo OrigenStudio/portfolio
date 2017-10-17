@@ -24,7 +24,7 @@ class Projects extends React.PureComponent {
     const projects = data.allMarkdownRemark.edges;
     return (
       <div className={classes.wrapper}>
-        <Grid container align="stretch" justify="center">
+        <Grid container alignItems="stretch" justify="center">
           {_.map(projects, project => (
             <Grid item xs={12} sm={6} md={4}>
               <ProjectCard project={project.node} onClick={this.goTo} />
