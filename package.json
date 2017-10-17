@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "author": "polguixe",
   "dependencies": {
+    "brcast": "^3.0.1",
     "classnames": "^2.2.5",
     "gatsby": "^1.8.12",
     "gatsby-link": "^1.6.8",
