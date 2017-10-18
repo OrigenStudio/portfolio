@@ -65,7 +65,7 @@ class TemplateWrapper extends React.PureComponent {
             appBarProps={{
               color: 'default',
             }}
-            drawerContent={<BasicDrawer links={links} />}
+            leftDrawerContent={<BasicDrawer links={links} />}
             footerContent={
               <BasicFooter
                 title={data.site.siteMetadata.title}
