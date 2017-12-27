@@ -13,7 +13,7 @@ const palette = {
     ...teal,
   },
   background: {
-    appBar: '#393939',
+    appBar: '#3A3A3A',
   },
 };
 

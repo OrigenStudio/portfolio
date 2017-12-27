@@ -27,7 +27,7 @@ class ContactUsSection extends React.PureComponent {
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Grid container align="center" justify="center">
+            <Grid container alignItems="center" justify="center">
               <Button raised color="primary" className={classes.button}>
                 <Icon className={classes.icon}>forum</Icon>
                 <span className={classes.text}>Contact us!</span>

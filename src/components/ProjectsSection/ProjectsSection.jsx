@@ -69,7 +69,7 @@ class ProjectsSection extends React.PureComponent {
             className={classes.project}
             key={`project-${project.node.frontmatter.project}`}
           >
-            <Grid container align="center" className={classes.oddProject}>
+            <Grid container alignItems="center" className={classes.oddProject}>
               {this.renderInfo(project.node.frontmatter, 'flex-start')}
               {this.renderScreenshot(project.node.frontmatter)}
             </Grid>
@@ -83,7 +83,7 @@ class ProjectsSection extends React.PureComponent {
           className={classes.project}
           key={`project-${project.node.frontmatter.project}`}
         >
-          <Grid container align="center" className={classes.evenProject}>
+          <Grid container alignItems="center" className={classes.evenProject}>
             {this.renderInfo(project.node.frontmatter, 'flex-end')}
             {this.renderScreenshot(project.node.frontmatter)}
           </Grid>
@@ -102,7 +102,7 @@ class ProjectsSection extends React.PureComponent {
               <Typography type="headline">We have been working a lot...</Typography>
             </Grid>
             <Grid item xs={12} md={6}>
-              <Grid container align="center" justify="center">
+              <Grid container alignItems="center" justify="center">
                 <Button raised color="primary" className={classes.button}>
                   <Icon className={classes.icon}>web</Icon>
                   <span className={classes.text}>Check our portfolio</span>

@@ -10,7 +10,7 @@ class Statement extends React.PureComponent {
   render() {
     const { classes } = this.props;
     return (
-      <Grid container align="center" justify="flex-end" className={classes.wrapper}>
+      <Grid container alignItems="center" justify="flex-end" className={classes.wrapper}>
         <Grid item xs={12} md={8}>
           <div className={classes.titleWrapper}>
             <Typography type="display4" color="inherit" className={classes.title}>

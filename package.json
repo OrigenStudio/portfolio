@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "portfolio",
+  "description": "portfolio site",
+  "version": "0.0.1",
+  "author": "polguixe",
   "dependencies": {
+    "brcast": "^3.0.1",
     "classnames": "^2.2.5",
     "gatsby": "^1.8.12",
     "gatsby-link": "^1.6.8",
@@ -15,12 +16,15 @@
     "gatsby-transformer-remark": "^1.7.7",
     "gatsby-transformer-sharp": "^1.6.5",
     "lodash": "^4.17.4",
-    "material-ui": "^1.0.0-beta.8",
+    "material-ui": "^1.0.0-beta.17",
     "material-ui-icons": "^1.0.0-beta.5",
+    "material-ui-layout": "^0.0.10",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
+    "react-controllables": "^0.6.0",
     "react-emojione": "^3.1.10",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "recompose": "^0.25.0"
   },
   "keywords": [
     "gatsby"
@@ -43,5 +47,7 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.3.0",
     "prettier": "^1.5.2"
-  }
+  },
+  "repository": "https://github.com/Zetoff/portfolio.git",
+  "private": false
 }
