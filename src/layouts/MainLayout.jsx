@@ -23,17 +23,7 @@ const bigMessage = "Let's work together!";
 
 // TODO get from data
 //
-const links = [
-  { label: 'Services', href: '#' },
-  { label: 'Contact', href: '#' },
-  {
-    label: 'Projects',
-    onClick: () => {
-      navigateTo('/projects');
-    },
-  },
-];
-
+const links = [{ label: "Let's work together" }];
 
 class TemplateWrapper extends React.PureComponent {
   static propTypes = {
