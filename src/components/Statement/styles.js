@@ -2,12 +2,8 @@ import { statementBackground } from './../../images';
 
 const styles = theme => ({
   wrapper: {
-    background: `linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9) ), url(${statementBackground})`,
-    backgroundPosition: 'center top',
     backgroundSize: 'cover',
-    minHeight: '500px',
-    height: '65vh',
-    maxHeight: '800px',
+    height: 'calc(100vh - 54px)',
     padding: '50px 30px',
     width: '100%',
     margin: '0',
@@ -15,7 +11,10 @@ const styles = theme => ({
   titleWrapper: {
     backgroundColor: theme.palette.primary[500],
     padding: '20px',
-    textAlign: 'right',
+    textAlign: 'center',
+  },
+  title: {
+    textAlign: 'center',
   },
   subtitle: {
     color: theme.palette.getContrastText(theme.palette.background.appBar),

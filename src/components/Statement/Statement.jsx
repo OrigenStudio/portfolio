@@ -10,22 +10,11 @@ class Statement extends React.PureComponent {
   render() {
     const { classes } = this.props;
     return (
-      <Grid container alignItems="center" justify="flex-end" className={classes.wrapper}>
+      <Grid container alignItems="center" justify="center" className={classes.wrapper}>
         <Grid item xs={12} md={8}>
-          <div className={classes.titleWrapper}>
-            <Typography type="display4" color="inherit" className={classes.title}>
-              Your mission, <br/>
-              our goal
-            </Typography>
-          </div>
-          <div className={classes.subtitle}>
-            <Typography type="subheading" color="inherit">
-              We do provide a series of product and software development services.
-              We work with you in order to understand your problems
-              and requirements, so that we can provide the best possible
-               solutions on time and on budget.
-            </Typography>
-          </div>
+          <Typography type="display3" color="inherit" className={classes.title}>
+            The technical partners for your digital projects
+          </Typography>
         </Grid>
       </Grid>
     );
