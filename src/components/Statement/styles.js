@@ -9,26 +9,27 @@ const styles = theme => ({
     margin: '0',
   },
   titleWrapper: {
-    backgroundColor: theme.palette.primary[500],
     padding: '20px',
-    textAlign: 'center',
   },
-  title: {
-    textAlign: 'center',
-  },
-  subtitle: {
-    color: theme.palette.getContrastText(theme.palette.background.appBar),
-    textAlign: 'right',
+  headline: {
+    marginBottom: '20px',
   },
   '@media (max-width: 960px)': {
-    titlewrapper: {
-      textAlign: 'center',
+    title: {
+      fontSize: '2.4em',
+    },
+  },
+  '@media (min-width: 961px)': {
+    headline: {
+      whiteSpace: 'nowrap',
+    },
+  },
+  '@media (min-width: 1601px)': {
+    headline: {
+      fontSize: '2.5em',
     },
     title: {
-      fontSize: '50px',
-    },
-    subtitle: {
-      textAlign: 'center',
+      fontSize: '4em',
     },
   },
 });
