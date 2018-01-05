@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Origen',
+    title: 'Origen Studio',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
