@@ -1,6 +1,7 @@
 const styles = theme => ({
   wrapper: {
-    backgroundColor: theme.palette.grey[300],
+    backgroundColor: theme.palette.background.appBar,
+    color: theme.palette.getContrastText(theme.palette.background.appBar)
   },
   button: {
     fontSize: '30px',
