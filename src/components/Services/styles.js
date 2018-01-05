@@ -1,8 +1,6 @@
-import primaryGradient from '../../config/colors/primaryGradient';
-
-export default {
+export default theme => ({
   wrapper: {
-    backgroundImage: primaryGradient,
+    backgroundColor: theme.palette.grey[300],
   },
   item: {
     textAlign: 'center',
@@ -11,4 +9,4 @@ export default {
   image: {
     height: '80px',
   },
-};
+});
