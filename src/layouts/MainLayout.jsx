@@ -23,7 +23,16 @@ const bigMessage = "Let's work together!";
 
 // TODO get from data
 //
-const links = [{ label: "Let's work together" }];
+const links = [
+  {
+    label: "Let's work together",
+    href: '/#contact',
+    onClick: () => {
+      console.log('Hello, world! One step closer!');
+      window.location.href = 'mailto:hello@origen.studio?Subject=Lets work together';
+    },
+  },
+];
 
 class TemplateWrapper extends React.PureComponent {
   static propTypes = {
