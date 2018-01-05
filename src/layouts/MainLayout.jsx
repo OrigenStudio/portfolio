@@ -78,7 +78,6 @@ class TemplateWrapper extends React.PureComponent {
                 title={data.site.siteMetadata.title}
                 logo={logo}
                 smallMessage={smallMessage}
-                bigMessage={bigMessage}
                 links={links}
               />
             }
