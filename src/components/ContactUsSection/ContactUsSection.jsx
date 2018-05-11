@@ -16,26 +16,38 @@ class ContactUsSection extends React.PureComponent {
     classes: PropTypes.shape({}),
   };
 
+  handleClick = () => {
+    console.log('Hello, world! One step closer!');
+    window.location.href = 'mailto:hello@origen.studio?Subject=Lets work together';
+  };
+
   render() {
     const { classes } = this.props;
     return (
-      <Section headline="We don't bite..." className={classes.wrapper}>
-        <Grid container>
-          <Grid item xs={12} md={8}>
-            <Typography type="headline">
-              We are open and fun to work with. You won’t regret it.
-            </Typography>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <Grid container alignItems="center" justify="center">
-              <Button raised color="primary" className={classes.button}>
-                <Icon className={classes.icon}>forum</Icon>
-                <span className={classes.text}>Contact us!</span>
-              </Button>
+      <div id="contact">
+        <Section headline="We don't bite..." className={classes.wrapper}>
+          <Grid container>
+            <Grid item xs={12} md={8}>
+              <Typography type="headline" color="inherit">
+                We are open and fun to work with. You won’t regret it.
+              </Typography>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Grid container alignItems="center" justify="center">
+                <Button
+                  raised
+                  color="primary"
+                  className={classes.button}
+                  onClick={this.handleClick}
+                >
+                  <Icon className={classes.icon}>forum</Icon>
+                  <span className={classes.text}>Contact us!</span>
+                </Button>
+              </Grid>
             </Grid>
           </Grid>
-        </Grid>
-      </Section>
+        </Section>
+      </div>
     );
   }
 }

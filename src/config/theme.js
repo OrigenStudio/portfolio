@@ -3,12 +3,12 @@
 import { createMuiTheme } from 'material-ui/styles';
 import teal from 'material-ui/colors/teal';
 
-import f0b860 from './colors/f0b860';
+import alizarin from './colors/alizarin';
 
 import { fontFamily } from './typography';
 
 const palette = {
-  primary: f0b860,
+  primary: alizarin,
   secondary: {
     ...teal,
   },

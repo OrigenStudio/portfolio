@@ -15,7 +15,6 @@ const IndexPage = ({ classes, data }) => (
     <Statement />
     <Services />
     <ContactUsSection />
-    <ProjectsSection projects={data.allMarkdownRemark.edges} />
     <TechnologiesSection />
   </div>
 );

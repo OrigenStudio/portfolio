@@ -2,34 +2,34 @@ import { statementBackground } from './../../images';
 
 const styles = theme => ({
   wrapper: {
-    background: `linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9) ), url(${statementBackground})`,
-    backgroundPosition: 'center top',
     backgroundSize: 'cover',
-    minHeight: '500px',
-    height: '65vh',
-    maxHeight: '800px',
+    height: 'calc(100vh - 54px)',
     padding: '50px 30px',
     width: '100%',
     margin: '0',
   },
   titleWrapper: {
-    backgroundColor: theme.palette.primary[500],
     padding: '20px',
-    textAlign: 'right',
   },
-  subtitle: {
-    color: theme.palette.getContrastText(theme.palette.background.appBar),
-    textAlign: 'right',
+  headline: {
+    marginBottom: '20px',
   },
   '@media (max-width: 960px)': {
-    titlewrapper: {
-      textAlign: 'center',
+    title: {
+      fontSize: '2.4em',
+    },
+  },
+  '@media (min-width: 961px)': {
+    headline: {
+      whiteSpace: 'nowrap',
+    },
+  },
+  '@media (min-width: 1601px)': {
+    headline: {
+      fontSize: '2.5em',
     },
     title: {
-      fontSize: '50px',
-    },
-    subtitle: {
-      textAlign: 'center',
+      fontSize: '4em',
     },
   },
 });

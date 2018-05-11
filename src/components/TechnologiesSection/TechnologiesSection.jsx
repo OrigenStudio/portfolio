@@ -17,7 +17,7 @@ class TechnologiesSection extends React.PureComponent {
   render() {
     const { classes } = this.props;
     return (
-      <Section headline="We can help you with …" className={classes.wrapper}>
+      <Section headline="We have experience in …" className={classes.wrapper}>
         <Grid container spacing={24}>
           {_.map(technologiesList, (tech, index) => (
             <Grid item xs={12} sm={6} md={4} className={classes.item} key={`technology-${index}`}>

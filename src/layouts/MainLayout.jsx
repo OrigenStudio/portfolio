@@ -24,16 +24,15 @@ const bigMessage = "Let's work together!";
 // TODO get from data
 //
 const links = [
-  { label: 'Services', href: '#' },
-  { label: 'Contact', href: '#' },
   {
-    label: 'Projects',
+    label: "Let's work together",
+    href: '/#contact',
     onClick: () => {
-      navigateTo('/projects');
+      console.log('Hello, world! One step closer!');
+      window.location.href = 'mailto:hello@origen.studio?Subject=Lets work together';
     },
   },
 ];
-
 
 class TemplateWrapper extends React.PureComponent {
   static propTypes = {
@@ -49,8 +48,16 @@ class TemplateWrapper extends React.PureComponent {
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
-              { name: 'description', content: 'Sample' }, // TODO add SEO
-              { name: 'keywords', content: 'sample, something' }, // TODO add SEO
+              {
+                name: 'description',
+                content:
+                  'Origen Studio is your software development agency. We help developing your projects from inception to production',
+              }, // TODO improve SEO
+              {
+                name: 'keywords',
+                content:
+                  'software, development, software development, react, react-native, native, graphql, nodejs, apollo',
+              }, // TODO improve SEO
             ]}
           />
           <Layout
@@ -71,7 +78,6 @@ class TemplateWrapper extends React.PureComponent {
                 title={data.site.siteMetadata.title}
                 logo={logo}
                 smallMessage={smallMessage}
-                bigMessage={bigMessage}
                 links={links}
               />
             }
