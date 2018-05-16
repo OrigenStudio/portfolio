@@ -1,11 +1,11 @@
-const styles = {
+const styles = theme => ({
   wrapper: {
-    padding: '40px 30px',
+    padding: `${theme.spacing.unit * 12}px ${theme.spacing.unit * 10}px`,
   },
   headline: {
-    marginBottom: '40px',
-    marginTop: '20px',
+    marginBottom: theme.spacing.unit,
+    marginTop: theme.spacing.unit,
   },
-};
+});
 
 export default styles;
