@@ -28,7 +28,7 @@ class ContactUsSection extends React.PureComponent {
         <Section headline="We don't bite..." className={classes.wrapper}>
           <Grid container>
             <Grid item xs={12} md={8}>
-              <Typography type="headline" color="inherit">
+              <Typography variant="headline" color="inherit">
                 We are open and fun to work with. You won’t regret it.
               </Typography>
             </Grid>

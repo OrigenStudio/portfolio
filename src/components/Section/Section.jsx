@@ -19,11 +19,10 @@ class Section extends React.PureComponent {
     return (
       <div className={wrapperClassName}>
         <div className={classes.headline}>
-          <Typography type="display1" color="inherit">{headline}</Typography>
+          <Typography variant="title" color="inherit">{headline}</Typography>
         </div>
         <div>{children}</div>
       </div>
-
     );
   }
 }
