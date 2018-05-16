@@ -2,7 +2,7 @@
 
 import { createMuiTheme } from 'material-ui/styles';
 
-import { fontFamily } from './typography';
+import { fontFamily , titlesFontFamily} from './typography';
 
 const palette = {
   primary: {
@@ -34,7 +34,33 @@ const palette = {
 };
 
 const typography = {
-  fontFamily,
+  display4:{
+    fontFamily: titlesFontFamily,
+  },
+  display3:{
+    fontFamily: titlesFontFamily,
+  },
+  display2:{
+    fontFamily: titlesFontFamily,
+  },
+  display1:{
+    fontFamily: titlesFontFamily,
+  },
+  headline:{
+    fontFamily,
+  },
+  title:{
+    fontFamily,
+  },
+  subheading:{
+    fontFamily,
+  },
+  body1:{
+    fontFamily,
+  },
+  body2:{
+    fontFamily,
+  },
 };
 
 const theme = createMuiTheme({
