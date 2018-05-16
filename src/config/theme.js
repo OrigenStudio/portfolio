@@ -22,11 +22,11 @@ const palette = {
   },
   gradients: {
     primary: {
-      background: '#340e4f',
-      background: '-moz - linear - gradient(left, #340e4f 0 %, #f91275 100 %)',
-      background:
-        '-webkit - linear - gradient(left, #340e4f 0 %, #f91275 100 %)',
-      background: 'linear - gradient(to right, #340e4f 0 %, #f91275 100 %)',
+      backgroundImage: '#340e4f',
+      backgroundImage: '-moz - linear - gradient(left, #340e4f 0%, #f91275 100%)',
+      backgroundImage:
+        '-webkit - linear - gradient(left, #340e4f 0%, #f91275 100%)',
+      backgroundImage: 'linear-gradient(to right, #340e4f 0%, #f91275 100%)',
       filter:
         "progid:DXImageTransform.Microsoft.gradient(startColorstr='#340e4f', endColorstr = '#f91275', GradientType = 1)",
     },
