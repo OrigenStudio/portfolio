@@ -7,6 +7,7 @@ import { fontFamily , titlesFontFamily} from './typography';
 const palette = {
   primary: {
     main: '#2FA7CD',
+    contrastText: '#FFFFFF',
   },
   secondary: {
     main: '#E72476',
