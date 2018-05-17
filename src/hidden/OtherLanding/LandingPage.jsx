@@ -8,14 +8,19 @@ import ContactUsSection from '../../components/ContactUsSection';
 import ProjectsSection from '../../components/ProjectsSection';
 import TechnologiesSection from '../../components/TechnologiesSection';
 import ThreeDSection from '../../components/ThreeDSection';
+import IntroSection from '../../components/IntroSection';
+import QualitySection from '../../components/QualitySection';
 
 import styles from './styles';
+import { Typography } from 'material-ui';
 
 const IndexPage = ({ classes, data }) => (
   <div>
-    <ThreeDSection />
+    {/* <ThreeDSection /> */}
+    <IntroSection />
     <Statement />
     <Services />
+    <QualitySection />
     <ContactUsSection />
     <TechnologiesSection />
   </div>
