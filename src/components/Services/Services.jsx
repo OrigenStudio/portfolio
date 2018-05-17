@@ -4,38 +4,54 @@ import Link from 'gatsby-link';
 import { withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
+import Paper from 'material-ui/Paper';
 
-import Section from '../../components/Section';
+import Padding from '../../components/Padding';
 
 import styles from './styles';
 
 // Data
-// TODO move this somewhere elese??
+// TODO move this somewhere else??
 import serviceList from '../../data/serviceList';
 
 class Services extends React.PureComponent {
   render() {
     const { classes } = this.props;
-    return (
-      <Section headline="We can help you with …" className={classes.wrapper}>
-        <Grid container spacing={24}>
-          {_.map(serviceList, (service, index) => (
-            <Grid item xs={12} sm={6} md={4} className={classes.item} key={`service${index}`}>
-              <Grid container justify="center">
-                <Grid item xs={12}>
-                  <img className={classes.image} src={service.image} alt="" />
-                </Grid>
-                <Grid item xs={12}>
-                  <Typography type="title" gutterBottom>
+    return <div className={classes.wrapper}>
+        <Padding>
+          <Typography variant="display2" className={classes.title}>
+            Our services
+          </Typography>
+          <Grid container spacing={16}>
+            {_.map(serviceList, (service, index) => (
+              <Grid
+                item
+                xs={6}
+                md={4}
+                key={`service${index}`}
+                className={classes.item}
+              >
+                <div
+                  className={classes.itemImage}
+                  style={{
+                    backgroundImage: `url('${service.image}')`,
+                  }}
+                >
+                <div className={classes.itemText}>
+                  <Typography
+                    variant="display1"
+                    component="h2"
+                    color="inherit"
+                  >
                     {service.title}
                   </Typography>
-                </Grid>
+                  </div>
+                </div>
               </Grid>
-            </Grid>
-          ))}
-        </Grid>
-      </Section>
-    );
+            ))}
+          </Grid>
+        </Padding>
+      </div>;
   }
 }
 
