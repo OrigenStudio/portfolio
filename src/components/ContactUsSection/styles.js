@@ -4,8 +4,8 @@ const styles = theme => ({
     color: theme.palette.getContrastText(theme.palette.background.appBar)
   },
   button: {
-    textTransform: 'none',
-    padding: '0px',
+    color: theme.palette.primary.main,
+    cursor: 'pointer',
     '&:hover': {
       background: 'none',
       color: theme.palette.secondary.main,

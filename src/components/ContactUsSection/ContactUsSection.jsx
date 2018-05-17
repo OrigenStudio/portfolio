@@ -22,24 +22,12 @@ class ContactUsSection extends React.PureComponent {
     return (
       <div id="contact">
         <Section headline="Let’s make it happen" className={classes.wrapper}>
-          <span>
-            <Typography variant="display2" color="inherit">
-              We are open and fun to work with
-            </Typography>
-            <Button
-              color="primary"
-              className={classes.button}
-              onClick={this.handleClick}
-            >
-              <Typography
-                variant="display2"
-                color="inherit"
-                className={classes.contactLink}
-              >
-                hello@origen.studio
-              </Typography>
-            </Button>
-          </span>
+          <Typography variant="display2" color="inherit">
+            We are open and fun to work with{' '}
+            <a className={classes.button} onClick={this.handleClick}>
+              hello@origen.studio
+            </a>
+          </Typography>
         </Section>
       </div>
     );
