@@ -40,30 +40,39 @@ const palette = {
 const typography = {
   display4:{
     fontFamily: titlesFontFamily,
+    fontWeight: 700,
   },
   display3:{
     fontFamily: titlesFontFamily,
+    fontWeight: 700,
   },
   display2:{
     fontFamily: titlesFontFamily,
+    fontWeight: 700,
   },
   display1:{
     fontFamily: titlesFontFamily,
+    fontWeight: 700,
   },
   headline:{
     fontFamily,
+    fontWeight: 300,
   },
   title:{
     fontFamily,
+    fontWeight: 300,
   },
   subheading:{
     fontFamily,
+    fontWeight: 300,
   },
   body1:{
     fontFamily,
+    fontWeight: 300,
   },
   body2:{
     fontFamily,
+    fontWeight: 300,
   },
 };
 
