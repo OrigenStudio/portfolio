@@ -16,16 +16,11 @@ class ContactUsSection extends React.PureComponent {
     classes: PropTypes.shape({}),
   };
 
-  handleClick = () => {
-    console.log('Hello, world! One step closer!');
-    window.location.href = 'mailto:hello@origen.studio?Subject=Lets work together';
-  };
-
   render() {
     const { classes } = this.props;
     return (
-      <div id="contact">
-        <Section headline="Product experts in the digital age" className={classes.wrapper} classes={classes}>
+      <div id="intro">
+        <Section headline="Product experts in the digital age" className={classes.wrapper}>
           <Grid container>
             <Grid item xs={12}>
               <Typography variant="display2" color="inherit">We help you define, build and execute your projects</Typography>
