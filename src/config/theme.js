@@ -15,6 +15,9 @@ const palette = {
   background: {
     appBar: '#3A3A3A',
   },
+  common: {
+    black: '#0C1821',
+  },
   other: {
     darkBlue: '#333784',
     lightGrey: '#F0F0F0',
