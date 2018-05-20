@@ -6,32 +6,33 @@ const services = [
     title: 'MVP and product definition',
   },
   {
-    image: images.uxui,
-    title: 'UX/UI Design',
-  },
-  {
-    image: images.fullStack,
-    title: 'Full stack web development',
-  },
-  {
-    image: images.native,
-    title: 'Native development for desktop and mobile',
-  },
-  // {
-  //   image: images.deployment,
-  //   title: 'Deployment and hosting',
-  // },
-  {
     image: images.design,
     title: 'Design',
   },
+  {
+    image: images.uxui,
+    title: 'UX/UI design',
+  },
+  {
+    image: images.development,
+    title: 'Full stack web',
+  },
+  {
+    image: images.native,
+    title: 'Native development',
+  },
+  {
+    image: images.deployment,
+    title: 'Deployment & hosting',
+  },
+
   // {
   //   image: images.support,
   //   title: 'Maintenance and support',
   // },
   {
     image: images.analytics,
-    title: 'Data analysis and Machine Learning implementations',
+    title: 'Data analysis & machine learning',
   },
   {
     image: images.marketing,
@@ -39,7 +40,7 @@ const services = [
   },
   {
     image: images.threeD,
-    title: '3D models implementation and interactive applications',
+    title: '3D implementations',
   },
 ];
 
