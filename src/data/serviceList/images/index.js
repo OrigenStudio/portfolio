@@ -1,23 +1,26 @@
-import threeD from './threeD.svg';
-import analytics from './analytics.svg';
-import deployment from './deployment.svg';
-import fullStack from './fullStack.svg';
-import marketing from './marketing.svg';
-import mvp from './mvp.svg';
-import native from './native.svg';
-import support from './support.svg';
-import uxui from './uxui.svg';
+import threeD from './3dmodels.jpg';
+import analytics from './analytics.jpg';
+// import deployment from './deployment.jpg';
+import fullStack from './web.jpg';
+import marketing from './marketing.jpg';
+import mvp from './mvp.jpg';
+import native from './native.jpg';
+// missing 
+// import support from './support.svg';
+import uxui from './uxui.jpg';
+import design from './design.jpg';
 
 const images = {
   threeD,
   analytics,
-  deployment,
+  // deployment,
   fullStack,
   marketing,
   mvp,
   native,
-  support,
+  // support,
   uxui,
+  design,
 };
 
 export default images;
