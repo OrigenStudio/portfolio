@@ -1,3 +1,4 @@
+import {Widgets} from 'material-ui-icons';
 const hoverStyle = theme => ({
   background: 'transparent',
   color: theme.palette.common.white,
@@ -39,4 +40,16 @@ export default theme => ({
       ...hoverStyle(theme),
     },
   },
+  expertsLargeScreen:{
+    height: '300px',
+    marginTop: theme.spacing.unit * 5,
+    [theme.breakpoints.down('sm')]:{
+      display:'none',
+    }
+  },
+  expertsSmallScreen:{
+    [theme.breakpoints.up('md')]:{
+      display:'none',
+    }
+  }
 });
