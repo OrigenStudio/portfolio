@@ -21,6 +21,7 @@ export default theme => ({
     height: '100%',
     width: '100%',
     backgroundColor: theme.palette.primary.main,
+    backgroundPosition: 'center center',
   },
   itemText: {
     textAlign: 'center',
