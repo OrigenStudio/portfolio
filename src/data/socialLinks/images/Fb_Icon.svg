@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Fb_Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Fb_Icon">
+            <g>
+                <ellipse id="FB" fill="#3B5898" cx="22.5" cy="22.5" rx="22.5" ry="22.5"></ellipse>
+                <g id="Orion_facebook" transform="translate(15.000000, 9.000000)" fill-rule="nonzero" fill="#FFFFFF">
+                    <g id="Facebook">
+                        <path d="M10.4125,5.3375 L14,5.3375 L14,0 L9.75625,0 C4.6375,0.21875 3.5875,3.10625 3.5,6.125 L3.5,8.79375 L0,8.79375 L0,14 L3.5,14 L3.5,28 L8.75,28 L8.75,14 L13.08125,14 L13.9125,8.79375 L8.75,8.79375 L8.75,7.175 C8.72163499,6.70958599 8.88197331,6.25237092 9.19480515,5.90660942 C9.50763698,5.56084792 9.94657783,5.3557018 10.4125,5.3375 L10.4125,5.3375 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
