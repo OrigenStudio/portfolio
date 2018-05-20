@@ -26,16 +26,7 @@ const palette = {
     veryDarkGrey: '#0C1821',
   },
   gradients: {
-    primary: {
-      backgroundImage: '#340e4f',
-      backgroundImage:
-        '-moz - linear - gradient(left, #340e4f 0%, #f91275 100%)',
-      backgroundImage:
-        '-webkit - linear - gradient(left, #340e4f 0%, #f91275 100%)',
-      backgroundImage: 'linear-gradient(to right, #340e4f 0%, #f91275 100%)',
-      filter:
-        "progid:DXImageTransform.Microsoft.gradient(startColorstr='#340e4f', endColorstr = '#f91275', GradientType = 1)",
-    },
+    primary:  'linear-gradient(to right, #340e4f 0%, #f91275 100%)',
   },
 };
 
