@@ -22,7 +22,13 @@ class MinimalFooter extends React.PureComponent {
   render() {
     const { classes, title, message, socialLinks } = this.props;
     return (
-      <Grid container alignItems="center" justify="space-around" spacing={16} className={classes.wrapper}>
+      <Grid
+        container
+        alignItems="center"
+        justify="space-around"
+        spacing={16}
+        className={classes.wrapper}
+      >
         <Grid item xs={12} sm={6} className={classes.text}>
           <Typography variant="body1" color="inherit">
             {message}
@@ -31,10 +37,10 @@ class MinimalFooter extends React.PureComponent {
             {title} © {new Date().getFullYear()}
           </Typography>
         </Grid>
-            <Grid item xs={12} sm={6} className={classes.socialButtons}>
+        <Grid item xs={12} sm={6} className={classes.socialButtons}>
           {_.map(socialLinks, link => (
-                    <ButtonBase href={link.url} className={classes.socialButtonWrapper}>
-              <img src={link.image} className={classes.image}/>
+            <ButtonBase href={link.url} className={classes.socialButtonWrapper}>
+              <img src={link.image} className={classes.image} />
             </ButtonBase>
           ))}
         </Grid>

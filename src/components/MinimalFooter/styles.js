@@ -1,19 +1,41 @@
 export default theme => ({
-    wrapper:{
-        padding: `0 ${theme.spacing.unit * 10}px`,
+  wrapper: {
+    padding: `0 ${theme.spacing.unit * 10}px`,
+  },
+  socialButtons: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+  },
+  socialButtonWrapper: {
+    width: '45px',
+    height: '45px',
+    padding: 0,
+    borderRadius: '50%',
+    margin: theme.spacing.unit,
+  },
+  image: {
+    margin: 0,
+  },
+  [theme.breakpoints.down('md')]: {
+    wrapper: {
+      padding: `0 ${theme.spacing.unit * 5}px`,
     },
-    socialButtons:{
-        display: 'flex',
-        justifyContent: 'flex-end',
+  },
+  [theme.breakpoints.down('sm')]: {
+    wrapper: {
+      padding: `0 ${theme.spacing.unit * 2}px`,
     },
-    socialButtonWrapper:{
-        width:'45px',
-        height: '45px',
-        padding: 0,
-        borderRadius: '50%',
-        margin: theme.spacing.unit,
+  },
+  [theme.breakpoints.down('xs')]: {
+    wrapper: {
+      padding: `0 ${theme.spacing.unit * 0}px`,
+      flexDirection: 'column-reverse',
     },
-    image:{
-        margin:0,
-    }
-})
+    socialButtons: {
+      justifyContent: 'center',
+    },
+    text: {
+      textAlign: 'center',
+    },
+  },
+});
