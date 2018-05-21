@@ -1,9 +1,8 @@
-import primaryGradient from '../../config/colors/primaryGradient';
 
-const styles = {
+const styles = theme => ({
   wrapper: {
     padding: '40px',
-    backgroundImage: primaryGradient,
+    ...theme.palette.gradients.primary,
     minHeight: '50vh', // ensures a min height if the browser doesn't support flex
     flex: 1,
   },
@@ -30,6 +29,6 @@ const styles = {
       marginLeft: 'auto',
     },
   },
-};
+});
 
 export default styles;

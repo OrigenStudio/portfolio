@@ -4,56 +4,43 @@ const services = [
   {
     image: images.mvp,
     title: 'MVP and product definition',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    image: images.design,
+    title: 'Design',
   },
   {
     image: images.uxui,
-    title: 'UX/UI Design',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    title: 'UX/UI design',
   },
   {
-    image: images.fullStack,
-    title: 'Full stack web development',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    image: images.development,
+    title: 'Full stack web',
   },
   {
     image: images.native,
-    title: 'Native development for desktop and mobile',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    title: 'Native development',
   },
   {
     image: images.deployment,
-    title: 'Deployment and hosting',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    title: 'Deployment & hosting',
   },
-  {
-    image: images.support,
-    title: 'Maintenance and support',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
+
+  // {
+  //   image: images.support,
+  //   title: 'Maintenance and support',
+  // },
   {
     image: images.analytics,
-    title: 'Data analysis and Machine Learning implementations',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    title: 'Data analysis & machine learning',
   },
   {
     image: images.marketing,
     title: 'Digital marketing',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     image: images.threeD,
-    title: '3D models implementation and interactive applications',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    title: '3D implementations',
   },
 ];
 

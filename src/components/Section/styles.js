@@ -1,11 +1,8 @@
-const styles = {
-  wrapper: {
-    padding: '40px 30px',
-  },
+const styles = theme => ({
   headline: {
-    marginBottom: '40px',
-    marginTop: '20px',
+    marginBottom: theme.spacing.unit,
+    marginTop: theme.spacing.unit,
   },
-};
+});
 
 export default styles;
