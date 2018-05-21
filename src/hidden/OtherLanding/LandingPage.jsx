@@ -2,7 +2,6 @@ import React from 'react';
 import Link from 'gatsby-link';
 import { withStyles } from 'material-ui/styles';
 
-import Statement from '../../components/Statement';
 import Services from '../../components/Services';
 import ContactUsSection from '../../components/ContactUsSection';
 import ProjectsSection from '../../components/ProjectsSection';
@@ -18,7 +17,6 @@ const IndexPage = ({ classes, data }) => (
   <div>
     {/* <ThreeDSection /> */}
     <IntroSection />
-    <Statement />
     <Services />
     <QualitySection />
     <ContactUsSection />
