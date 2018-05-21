@@ -2,7 +2,7 @@ import React from 'react';
 import Typography from 'material-ui/Typography';
 import { withStyles } from 'material-ui/styles';
 
-import ThreeDSection from '../ThreeDSectionTest1';
+import ThreeDSection from '../ThreeDSectionTest2';
 
 import styles from './styles';
 
