@@ -19,7 +19,6 @@ export default theme => ({
     },
     text:{
         color: theme.palette.common.white,
-        textShadow:' 2px 3px 6px rgba(247,25,142,0.50)'
-        
+        textShadow:' 2px 3px 6px rgba(247,25,142,0.50)',
     }
 })

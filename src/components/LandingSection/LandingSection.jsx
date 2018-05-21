@@ -13,7 +13,7 @@ class LandingSection extends React.PureComponent {
       <div className={classes.wrapper}>
         <ThreeDSection />
         <div className={classes.textArea}>
-          <Typography variant="display4" color="inherit" className={classes.text} >Hello</Typography>
+          <Typography variant="display4" color="inherit" className={classes.text} >HELLO</Typography>
         </div>
       </div>
     );
