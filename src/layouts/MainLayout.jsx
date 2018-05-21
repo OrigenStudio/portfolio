@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { MuiThemeProvider } from 'material-ui/styles';
+import CssBaseline from 'material-ui/CssBaseline';
 import { navigateTo } from 'gatsby-link';
 import Helmet from 'react-helmet';
 import { emojify } from 'react-emojione';
@@ -11,15 +12,15 @@ import Layout, {
 } from 'material-ui-layout';
 
 import theme from '../config/theme';
+import MinimalFooter from '../components/MinimalFooter';
 
+import socialLinks from '../data/socialLinks';
 import { logo } from '../images';
 
 // TODO move somewhere else
-const smallMessage = `Built with
+const message = `Built with
   ${emojify(':heart_eyes:', { output: 'unicode' })}
     in house`;
-
-const bigMessage = "Let's work together!";
 
 // TODO get from data
 //
@@ -29,7 +30,8 @@ const links = [
     href: '/#contact',
     onClick: () => {
       console.log('Hello, world! One step closer!');
-      window.location.href = 'mailto:hello@origen.studio?Subject=Lets work together';
+      window.location.href =
+        'mailto:hello@origen.studio?Subject=Lets work together';
     },
   },
 ];
@@ -52,13 +54,14 @@ class TemplateWrapper extends React.PureComponent {
                 name: 'description',
                 content:
                   'Origen Studio is your software development agency. We help developing your projects from inception to production',
-              }, // TODO improve SEO
+              },
               {
                 name: 'keywords',
                 content:
                   'software, development, software development, react, react-native, native, graphql, nodejs, apollo',
-              }, // TODO improve SEO
-            ]}
+              },
+            ] // TODO improve SEO // TODO improve SEO
+            }
           />
           <Layout
             appBarPosition="fixed"
@@ -69,16 +72,13 @@ class TemplateWrapper extends React.PureComponent {
                 links={links}
               />
             }
-            appBarProps={{
-              color: 'default',
-            }}
+            appBarProps={{ color: 'default' }}
             leftDrawerContent={<BasicDrawer links={links} />}
             footerContent={
-              <BasicFooter
+              <MinimalFooter
                 title={data.site.siteMetadata.title}
-                logo={logo}
-                smallMessage={smallMessage}
-                links={links}
+                message={message}
+                socialLinks={socialLinks}
               />
             }
             mainGrow={false}

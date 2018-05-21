@@ -56,5 +56,11 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-drift',
+      options: {
+        appId: '24wpazn5b9fg',
+      },
+    },
   ],
 };

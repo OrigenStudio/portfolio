@@ -4,17 +4,13 @@ const styles = theme => ({
     color: theme.palette.getContrastText(theme.palette.background.appBar)
   },
   button: {
-    fontSize: '30px',
-    textTransform: 'none',
-    // color: theme.palette.grey[50],
-    padding: '20px',
-  },
-  text: {
-    marginLeft: '5px',
-  },
-  icon: {
-    fontSize: '35px',
-  },
+    color: theme.palette.primary.main,
+    cursor: 'pointer',
+    '&:hover': {
+      background: 'none',
+      color: theme.palette.secondary.main,
+    },
+  }, 
 });
 
 export default styles;
