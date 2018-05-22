@@ -7,7 +7,7 @@ cache:
 deploy:
   provider: surge
   skip-cleanup: true
-  local_dir: public
+  project: ./public/
   keep-history: true
   domain: origen-staging.surge.sh
   on:
@@ -18,4 +18,5 @@ before_script:
 script:
   - "npm run test"
 after_success:
-  - "npm run deploy"
+  - "npm run build"
+
