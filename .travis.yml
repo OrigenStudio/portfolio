@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: surge
+  skip-cleanup: true
+  local_dir: public
+  keep-history: true
+  domain: origen-staging.surge.sh
+  on:
+    branch: develop
+before_script:
+  - "npm i -g gatsby"
+  - "npm i"
+script:
+  - "npm run test"
+after_success:
+  - "npm run deploy"
