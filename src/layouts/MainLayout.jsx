@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MuiThemeProvider } from 'material-ui/styles';
-import CssBaseline from 'material-ui/CssBaseline';
+import { MuiThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import { navigateTo } from 'gatsby-link';
 import Helmet from 'react-helmet';
 import { emojify } from 'react-emojione';
@@ -72,7 +72,7 @@ class TemplateWrapper extends React.PureComponent {
                 links={links}
               />
             }
-            appBarProps={{ color: 'default' }}
+            appBarProps={{ color: 'transparent' }}
             leftDrawerContent={<BasicDrawer links={links} />}
             footerContent={
               <MinimalFooter

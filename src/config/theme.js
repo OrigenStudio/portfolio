@@ -1,6 +1,6 @@
 // @flow weak
 import each from 'lodash/each';
-import { createMuiTheme } from 'material-ui/styles';
+import { createMuiTheme } from '@material-ui/core/styles';
 
 import { fontFamily, titlesFontFamily } from './typography';
 import { isObject } from 'util';
