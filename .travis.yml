@@ -30,6 +30,8 @@ script:
   - "npm run test"
 after_success:
   - "npm run build"
-notifications:
-  slack: origen-studio:pZY8AyN5fUuPPLw7lR6UN72v
+ notifications:
+  slack:
+    rooms:
+      - origen-studio:pZY8AyN5fUuPPLw7lR6UN72v#web-origen-studio
 
