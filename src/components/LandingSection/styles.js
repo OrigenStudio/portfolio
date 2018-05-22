@@ -5,8 +5,8 @@ export default theme => ({
         padding: 0,
         width: '100%',
         margin: 0,
-        background: 'rgb(71, 124, 150)',
-        background: 'radial-gradient(circle, rgba(47,167,205,1) 0%, rgba(51,55,132,1) 50%, rgba(13,24,34,1) 100%)',
+        background: 'rgb(11, 16, 21)',
+        background: 'radial-gradient(circle, rgba(45,167,205,1) 2%, rgba(13,49,73,1) 30%, rgba(11,16,21,1) 100%)',
     },
     textArea:{
         width: '100%',
@@ -19,6 +19,6 @@ export default theme => ({
     },
     text:{
         color: theme.palette.common.white,
-        textShadow:' 2px 3px 6px rgba(247,25,142,0.50)',
+        // textShadow:' 2px 2px 6px rgba(255,0,128,0.50)',
     }
 })
