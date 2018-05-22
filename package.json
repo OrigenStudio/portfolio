@@ -39,8 +39,9 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy-test": "gatsby build && surge ./public/ origen-test.surge.sh"
+    "test": "echo \"Error: no test specified\"",
+    "deploy-staging": "gatsby build && surge --project public --domain origen-staging.surge.sh",
+    "deploy": "gatsby build && surge --project public"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -51,7 +52,8 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.3.0",
-    "prettier": "^1.5.2"
+    "prettier": "^1.5.2",
+    "surge": "^0.20.1"
   },
   "repository": "https://github.com/Zetoff/portfolio.git",
   "private": false
