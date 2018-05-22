@@ -16,14 +16,6 @@ deploy:
   domain: origen-staging.surge.sh
   on:
     branch: develop
-deploy:
-  provider: surge
-  skip-cleanup: true
-  project: ./public/
-  keep-history: true
-  domain: origen.studio
-  on:
-    branch: master
 before_script:
   - "npm i -g gatsby"
   - "npm i"
