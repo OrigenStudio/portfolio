@@ -58,6 +58,9 @@ export default scene => {
     particle2.rotation.y += 0.0000;
     planet.rotation.x -= 0.0030;
     planet.rotation.y -= 0.0040;
+    planetMesh.scale.x = (Math.sin(2 * time) + Math.cos(time)) + 25;
+    planetMesh.scale.y = (Math.abs(Math.sin(2 * time))) + 25;
+    planetMesh.scale.z = (Math.abs(Math.sin(Math.cos(2 * time)) + Math.cos(time))) + 25;
     wireframe.rotation.x -= 0.0010;
     wireframe.rotation.y += 0.0020;
   }
