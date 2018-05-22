@@ -4,6 +4,8 @@
   "version": "0.0.1",
   "author": "polguixe",
   "dependencies": {
+    "@@material-ui/core/core": "^1.0.0",
+    "@@material-ui/core/icons": "^1.0.0",
     "brcast": "^3.0.1",
     "classnames": "^2.2.5",
     "gatsby": "^1.8.12",
@@ -18,8 +20,6 @@
     "gatsby-transformer-remark": "^1.7.7",
     "gatsby-transformer-sharp": "^1.6.5",
     "lodash": "^4.17.4",
-    "material-ui": "1.0.0-beta.37",
-    "material-ui-icons": "^1.0.0-beta.5",
     "material-ui-layout": "^0.0.14",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
