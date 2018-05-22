@@ -1,7 +1,3 @@
-branches:
-  only:
-    - master
-    - develop
 language: node_js
 node_js:
   - "8"
@@ -30,8 +26,11 @@ script:
   - "npm run test"
 after_success:
   - "npm run build"
- notifications:
+notifications:
   slack:
     rooms:
       - origen-studio:pZY8AyN5fUuPPLw7lR6UN72v#web-origen-studio
-
+branches:
+  only:
+    - master
+    - develop
