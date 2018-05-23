@@ -11,7 +11,7 @@ class YourExperts extends React.PureComponent {
       <div className={classes.wrapper}>
         <div className={classes.textWrapper}>
           <Typography
-            variant="display1"
+            variant="display2"
             color="inherit"
             className={classes.title}
           >
