@@ -3,44 +3,54 @@ import images from './images';
 const services = [
   {
     image: images.mvp,
-    title: 'MVP and product definition',
+    firstLine: 'MVP and product definition',
+    secondLine: 'lorem',
   },
   {
     image: images.design,
-    title: 'Design',
+    firstLine: 'Design',
+    secondLine: 'lorem',
   },
   {
     image: images.uxui,
-    title: 'UX/UI design',
+    firstLine: 'UX/UI design',
+    secondLine: 'lorem',
   },
   {
     image: images.development,
-    title: 'Full stack web',
+    firstLine: 'Full stack web',
+    secondLine: 'lorem',
   },
   {
     image: images.native,
-    title: 'Native development',
+    firstLine: 'Native development',
+    secondLine: 'lorem',
   },
   {
     image: images.deployment,
-    title: 'Deployment & hosting',
+    firstLine: 'Deployment & hosting',
+    secondLine: 'lorem',
   },
 
   // {
   //   image: images.support,
-  //   title: 'Maintenance and support',
+  //   firstLine: 'Maintenance and support',
+  secondLine: 'lorem',
   // },
   {
     image: images.analytics,
-    title: 'Data analysis & machine learning',
+    firstLine: 'Data analysis & machine learning',
+    secondLine: 'lorem',
   },
   {
     image: images.marketing,
-    title: 'Digital marketing',
+    firstLine: 'Digital marketing',
+    secondLine: 'lorem',
   },
   {
     image: images.threeD,
-    title: '3D implementations',
+    firstLine: '3D implementations',
+    secondLine: 'lorem',
   },
 ];
 

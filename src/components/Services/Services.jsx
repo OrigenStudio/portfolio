@@ -13,8 +13,7 @@ import styles from './styles';
 class Services extends React.PureComponent {
   render() {
     const { classes } = this.props;
-    return (
-      <div className={classes.wrapper}>
+    return <div className={classes.wrapper}>
         <Padding>
           <Typography variant="display2" className={classes.title}>
             Our services
@@ -40,19 +39,15 @@ class Services extends React.PureComponent {
                       component="h2"
                       color="inherit"
                     >
-                      {service.title}
+                      {service.firstLine}
+                      <br />
+                      {service.secondLine ? service.secondLine : null}
                     </Typography>
                   </div>
                 </div>
               </Grid>
             ))}
-            <Grid
-              item
-              xs={6}
-              md={4}
-              key={'experts'}
-              className={[classes.item, classes.expertsSmallScreen]}
-            >
+            <Grid item xs={6} md={4} key={'experts'} className={[classes.item, classes.expertsSmallScreen]}>
               <YourExperts />
             </Grid>
           </Grid>
@@ -60,8 +55,7 @@ class Services extends React.PureComponent {
             <YourExperts />
           </div>
         </Padding>
-      </div>
-    );
+      </div>;
   }
 }
 
