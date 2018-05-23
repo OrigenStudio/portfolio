@@ -46,6 +46,7 @@ const typography = {
   display1: {
     fontFamily: titlesFontFamily,
     fontWeight: 700,
+    fontSize: 1.6,
   },
   headline: {
     fontFamily,
