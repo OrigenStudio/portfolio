@@ -48,7 +48,7 @@ class Services extends React.PureComponent {
               </Grid>
             ))}
             <Grid item xs={6} md={4} key={'experts'} className={[classes.item, classes.expertsSmallScreen]}>
-              <YourExperts />
+              <YourExperts typographyVariant="display1"/>
             </Grid>
           </Grid>
           <div className={classes.expertsLargeScreen}>

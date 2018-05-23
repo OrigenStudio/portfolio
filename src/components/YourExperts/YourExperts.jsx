@@ -6,12 +6,12 @@ import styles from './styles';
 
 class YourExperts extends React.PureComponent {
   render() {
-    const { classes } = this.props;
+    const { classes, typographyVariant } = this.props;
     return (
       <div className={classes.wrapper}>
         <div className={classes.textWrapper}>
           <Typography
-            variant="display2"
+            variant={typographyVariant || "display2"}
             color="inherit"
             className={classes.title}
           >
