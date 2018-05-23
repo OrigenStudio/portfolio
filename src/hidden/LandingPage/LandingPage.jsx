@@ -1,22 +1,20 @@
+import { withStyles } from '@material-ui/core/styles';
 import React from 'react';
-import Link from 'gatsby-link';
-import { withStyles } from 'material-ui/styles';
-
-import Services from '../../components/Services';
 import ContactUsSection from '../../components/ContactUsSection';
-import ProjectsSection from '../../components/ProjectsSection';
+import LandingSection from '../../components/LandingSection';
+import IntroSection from '../../components/IntroSection';
+import QualitySection from '../../components/QualitySection';
+import Services from '../../components/Services';
 import TechnologiesSection from '../../components/TechnologiesSection';
-import TypographyTest from '../../components/TypographyTest/TypographyTest';
-;
-
 import styles from './styles';
 
 const IndexPage = ({ classes, data }) => (
   <div>
-    <TypographyTest />
+    <LandingSection />
+    <IntroSection />
     <Services />
+    <QualitySection />
     <ContactUsSection />
-    <TechnologiesSection />
   </div>
 );
 
