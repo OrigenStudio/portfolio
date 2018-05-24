@@ -64,15 +64,6 @@ class TemplateWrapper extends React.PureComponent {
             }
           />
           <Layout
-            appBarPosition="fixed"
-            appBarContent={
-              <BasicAppBar
-                title={data.site.siteMetadata.title}
-                logo={logo}
-                links={links}
-              />
-            }
-            appBarProps={{ color: 'transparent' }}
             leftDrawerContent={<BasicDrawer links={links} />}
             footerContent={
               <MinimalFooter
