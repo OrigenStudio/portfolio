@@ -3,6 +3,7 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import { BasicAppBar } from 'material-ui-layout';
 import OnScroll from 'react-on-scroll';
+import classnames from 'classnames';
 
 import ContactUsSection from '../../components/ContactUsSection';
 import LandingSection from '../../components/LandingSection';
@@ -16,26 +17,38 @@ import { logo } from '../../images';
 import styles from './styles';
 
 class IndexPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      transparentAppBar: false,
+    };
+  }
   setAppBarVisibility = visible => {
-    console.log(visible);
-
-    this.setState({ appBarVisibility: visible });
+    this.setState({ transparentAppBar: visible });
   };
 
   render() {
     const { classes, data } = this.props;
 
+    // There are many way to improve the use of the Onscroll component
+    // - The top prop is hardcoded... maybe the landing section could also accept a height prop
     return (
       <OnScroll
         triggerBase="top"
         triggers={[
-          { top: 500, bottom: -50, callback: visible => { console.log(visible
-          
-          Z)} },
+          {
+            top: -(window.innerHeight - 300), // This is a bit weird but I am using it to calculate the size of the <LandingSection />
+            callback: this.setAppBarVisibility,
+          },
         ]}
       >
         <div>
-          <AppBar className={classes.appbar}>
+          <AppBar
+            className={classnames(classes.appbar, {
+              [`${classes.transparentAppBar}`]: this.state.transparentAppBar,
+            })}
+            color="secondary"
+          >
             <BasicAppBar title="Origen" logo={logo} />
           </AppBar>
           <LandingSection />
