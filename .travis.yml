@@ -1,0 +1,36 @@
+language: node_js
+node_js:
+  - "8"
+cache:
+  directories:
+  - node_modules
+deploy:
+  - provider: surge
+    skip-cleanup: true
+    project: ./public/
+    keep-history: true
+    domain: origen-staging.surge.sh
+    on:
+      branch: develop
+  - provider: surge
+    skip-cleanup: true
+    project: ./public/
+    keep-history: true
+    domain: origen.studio
+    on:
+      branch: master
+before_script:
+  - "npm i -g gatsby"
+  - "npm i"
+script:
+  - "npm run test"
+after_success:
+  - "npm run build"
+notifications:
+  slack:
+    rooms:
+      - origen-studio:pZY8AyN5fUuPPLw7lR6UN72v#web-origen-studio
+branches:
+  only:
+    - master
+    - develop

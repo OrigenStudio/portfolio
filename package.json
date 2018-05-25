@@ -4,6 +4,8 @@
   "version": "0.0.1",
   "author": "polguixe",
   "dependencies": {
+    "@material-ui/core": "^1.0.0",
+    "@material-ui/icons": "^1.0.0",
     "brcast": "^3.0.1",
     "classnames": "^2.2.5",
     "gatsby": "^1.8.12",
@@ -18,14 +20,14 @@
     "gatsby-transformer-remark": "^1.7.7",
     "gatsby-transformer-sharp": "^1.6.5",
     "lodash": "^4.17.4",
-    "material-ui": "1.0.0-beta.37",
-    "material-ui-icons": "^1.0.0-beta.5",
-    "material-ui-layout": "^0.0.14",
+    "material-ui-layout": "0.1.0-rc.1",
     "prop-types": "^15.5.10",
-    "react": "^15.6.1",
+    "react": "^16.4.0",
     "react-controllables": "^0.6.0",
+    "react-dom": "^16.4.0",
     "react-emojione": "^3.1.10",
     "react-helmet": "^5.2.0",
+    "react-on-scroll": "^0.2.2",
     "react-text-loop": "^1.1.0",
     "recompose": "^0.25.0",
     "three": "^0.92.0"
@@ -39,8 +41,9 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy-test": "gatsby build && surge ./public/ origen-test.surge.sh"
+    "test": "echo \"Error: no test specified\"",
+    "deploy-staging": "gatsby build && surge --project public --domain origen-staging.surge.sh",
+    "deploy": "gatsby build && surge --project public"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -51,7 +54,8 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.3.0",
-    "prettier": "^1.5.2"
+    "prettier": "^1.5.2",
+    "surge": "^0.20.1"
   },
   "repository": "https://github.com/Zetoff/portfolio.git",
   "private": false

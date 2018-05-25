@@ -1,4 +1,4 @@
-import {Widgets} from 'material-ui-icons';
+import {Widgets} from '@material-ui/icons';
 const hoverStyle = theme => ({
   background: 'transparent',
   color: theme.palette.common.white,
