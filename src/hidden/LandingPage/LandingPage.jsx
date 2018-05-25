@@ -1,7 +1,7 @@
 import { withStyles } from '@material-ui/core/styles';
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
-import { BasicAppBar } from 'material-ui-layout';
+import { LayoutActions, BasicAppBar } from 'material-ui-layout';
 import OnScroll from 'react-on-scroll';
 import classnames from 'classnames';
 
@@ -43,14 +43,25 @@ class IndexPage extends React.Component {
         ]}
       >
         <div>
-          <AppBar
-            className={classnames(classes.appbar, {
-              [`${classes.transparentAppBar}`]: this.state.transparentAppBar,
-            })}
-            color="secondary"
-          >
-            <BasicAppBar title="Origen" logo={logo} />
-          </AppBar>
+          <LayoutActions.Consumer>
+            {({ toggleLeftDrawer, toggleRightDrawer }) => (
+              <AppBar
+                className={classnames(classes.appbar, {
+                  [`${classes.transparentAppBar}`]: this.state
+                    .transparentAppBar,
+                })}
+                color="inherit"
+              >
+                {console.log(toggleLeftDrawer)}
+                <BasicAppBar
+                  title="Origen"
+                  logo={logo}
+                  toggleLeftDrawer={toggleLeftDrawer}
+                />
+              </AppBar>
+            )}
+          </LayoutActions.Consumer>
+
           <LandingSection />
           <IntroSection />
           <Services />
