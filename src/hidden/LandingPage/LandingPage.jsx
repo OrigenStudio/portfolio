@@ -52,7 +52,6 @@ class IndexPage extends React.Component {
                 })}
                 color="inherit"
               >
-                {console.log(toggleLeftDrawer)}
                 <BasicAppBar
                   title="Origen"
                   logo={logo}
