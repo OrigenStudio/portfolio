@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MuiThemeProvider } from 'material-ui/styles';
-import CssBaseline from 'material-ui/CssBaseline';
+import { MuiThemeProvider, withStyles } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import { navigateTo } from 'gatsby-link';
 import Helmet from 'react-helmet';
 import { emojify } from 'react-emojione';
@@ -16,6 +16,13 @@ import MinimalFooter from '../components/MinimalFooter';
 
 import socialLinks from '../data/socialLinks';
 import { logo } from '../images';
+
+// FIXME when calling withStyles we get the default theme
+// like if the theme that we have defined is yet not set by the MuiThemeProvider
+// Raise issue and investigate.
+
+import curryStyles from './styles';
+const styles = curryStyles(theme);
 
 // TODO move somewhere else
 const message = `Built with
@@ -43,7 +50,7 @@ class TemplateWrapper extends React.PureComponent {
   };
 
   render() {
-    const { children, data } = this.props;
+    const { children, data, classes } = this.props;
     return (
       <MuiThemeProvider theme={theme}>
         <div>
@@ -64,15 +71,6 @@ class TemplateWrapper extends React.PureComponent {
             }
           />
           <Layout
-            appBarPosition="fixed"
-            appBarContent={
-              <BasicAppBar
-                title={data.site.siteMetadata.title}
-                logo={logo}
-                links={links}
-              />
-            }
-            appBarProps={{ color: 'default' }}
             leftDrawerContent={<BasicDrawer links={links} />}
             footerContent={
               <MinimalFooter
@@ -81,6 +79,10 @@ class TemplateWrapper extends React.PureComponent {
                 socialLinks={socialLinks}
               />
             }
+            footerProps={{
+              color: "inherit",
+              className: classes.footer,
+            }}
             mainGrow={false}
             stickyFooter
           >
@@ -92,4 +94,4 @@ class TemplateWrapper extends React.PureComponent {
   }
 }
 
-export default TemplateWrapper;
+export default withStyles(styles)(TemplateWrapper);

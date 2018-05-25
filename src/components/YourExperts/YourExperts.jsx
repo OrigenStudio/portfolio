@@ -1,5 +1,5 @@
-import Typography from 'material-ui/Typography';
-import { withStyles } from 'material-ui/styles';
+import Typography from '@material-ui/core/Typography';
+import { withStyles } from '@material-ui/core/styles';
 import React from 'react';
 import TextLoop from 'react-text-loop';
 import styles from './styles';

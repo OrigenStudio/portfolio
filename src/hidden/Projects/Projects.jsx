@@ -1,8 +1,8 @@
 import _ from 'lodash';
 import React from 'react';
 import PropTypes from 'prop-types';
-import Grid from 'material-ui/Grid';
-import { withStyles } from 'material-ui/styles';
+import Grid from '@material-ui/core/Grid';
+import { withStyles } from '@material-ui/core/styles';
 import { navigateTo } from 'gatsby-link';
 
 import ProjectCard from '../../components/ProjectCard';
