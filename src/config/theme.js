@@ -13,9 +13,6 @@ const palette = {
   secondary: {
     main: '#E72476',
   },
-  background: {
-    appBar: '#3A3A3A',
-  },
   common: {
     black: '#0C1821',
   },
