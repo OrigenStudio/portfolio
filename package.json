@@ -24,6 +24,7 @@
     "prop-types": "^15.5.10",
     "react": "^16.4.0",
     "react-controllables": "^0.6.0",
+    "react-dom": "^16.4.0",
     "react-emojione": "^3.1.10",
     "react-helmet": "^5.2.0",
     "react-on-scroll": "^0.2.2",
