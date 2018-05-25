@@ -29,7 +29,7 @@ after_success:
 notifications:
   slack:
     rooms:
-      - origen-studio:pZY8AyN5fUuPPLw7lR6UN72v#web-origen-studio
+      - origen-studio:pZY8AyN5fUuPPLw7lR6UN72v#p-web-origen-studio
 branches:
   only:
     - master
