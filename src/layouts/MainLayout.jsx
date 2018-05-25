@@ -1,21 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MuiThemeProvider } from '@material-ui/core/styles';
+import { MuiThemeProvider, withStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { navigateTo } from 'gatsby-link';
 import Helmet from 'react-helmet';
 import { emojify } from 'react-emojione';
-import Layout, {
-  BasicFooter,
-  BasicAppBar,
-  BasicDrawer,
-} from 'material-ui-layout';
 
 import theme from '../config/theme';
-import MinimalFooter from '../components/MinimalFooter';
 
 import socialLinks from '../data/socialLinks';
 import { logo } from '../images';
+
+import LandingPageLayout from './LandingPageLayout';
 
 // TODO move somewhere else
 const message = `Built with
@@ -63,24 +59,19 @@ class TemplateWrapper extends React.PureComponent {
             ] // TODO improve SEO // TODO improve SEO
             }
           />
-          <Layout
-            leftDrawerContent={<BasicDrawer links={links} />}
-            footerContent={
-              <MinimalFooter
-                title={data.site.siteMetadata.title}
-                message={message}
-                socialLinks={socialLinks}
-              />
-            }
-            mainGrow={false}
-            stickyFooter
+          <LandingPageLayout
+            message={message}
+            data={data}
+            socialLinks={socialLinks}
+            links={links}
+            logo={logo}
           >
             {children()}
-          </Layout>
+          </LandingPageLayout>
         </div>
       </MuiThemeProvider>
     );
   }
 }
 
-export default TemplateWrapper;
+export default withStyles(styles)(TemplateWrapper);
