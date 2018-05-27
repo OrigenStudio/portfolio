@@ -1,4 +1,20 @@
-import { statementBackground } from './../../images';
+const makeResponsive = (theme, jssHandle, values) => {
+  return ({
+    [jssHandle]: values['xs'],
+    [theme.breakpoints.up('sm')]: {
+      [jssHandle]: values['sm'],
+    },
+    [theme.breakpoints.up('md')]: {
+      [jssHandle]: values['md'],
+    },
+    [theme.breakpoints.up('lg')]: {
+      [jssHandle]: values['lg'],
+    },
+    [theme.breakpoints.up('xl')]: {
+      [jssHandle]: values['xl'],
+    },
+  })
+}
 
 const styles = theme => ({
   wrapper: {
@@ -12,10 +28,10 @@ const styles = theme => ({
     alignItems: 'center',
   },
   textWrapper:{
-    width: '60%',
-    height: '60%',
     display: 'flex',
     alignItems: 'center',
+    ...makeResponsive(theme, 'width', {xs:'80%', sm:'80%', md:'70%', lg:'60%', xl:'50%'}),
+    ...makeResponsive(theme, 'height', {xs:'80%', sm:'80%', md:'70%', lg:'60%', xl:'50%'})
   }
 });
 

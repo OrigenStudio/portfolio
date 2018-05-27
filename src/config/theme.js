@@ -83,7 +83,7 @@ each(theme.typography, (variant, variantName) => {
   }
   theme.typography[variantName] = {
     ...variant,
-    fontSize: modifyRem(variant.fontSize, -coef * 5),
+    fontSize: modifyRem(variant.fontSize, -coef * 3),
     [theme.breakpoints.up('sm')]: {
       fontSize: modifyRem(variant.fontSize, -coef * 2.5),
     },
@@ -98,5 +98,23 @@ each(theme.typography, (variant, variantName) => {
     },
   };
 });
+
+const makeResponsive = (theme, jssHandle, values) => {
+  return ({
+    [jssHandle]: values['xs'],
+    [theme.breakpoints.up('sm')]: {
+      [jssHandle]: values['sm'],
+    },
+    [theme.breakpoints.up('md')]: {
+      [jssHandle]: values['md'],
+    },
+    [theme.breakpoints.up('lg')]: {
+      [jssHandle]: values['lg'],
+    },
+    [theme.breakpoints.up('xl')]: {
+      [jssHandle]: values['xl'],
+    },
+  })
+}
 
 export default theme;
