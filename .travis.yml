@@ -30,7 +30,6 @@ notifications:
   slack:
      template:
       - "Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) of %{repository_slug}@%{branch} by %{author} %{result} in %{duration}"
-      - "Develop goes to http://origen-staging.surge.sh / Master goes to http://origen.studio"
     rooms:
       - origen-studio:pZY8AyN5fUuPPLw7lR6UN72v#p-web-origen-studio
 branches:
