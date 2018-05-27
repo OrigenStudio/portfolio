@@ -20,7 +20,7 @@ class QualitySection extends React.PureComponent {
           <Grid container>
             <Grid item xs={12}>
               <Typography variant="display2" color="inherit">
-                Our objective is that performs well, improves user satisfaction and helps you achieve your business goals
+                To achieve excellent user satisfaction our products are secure, scalable, and future proof - we thrive for code quality
               </Typography>
             </Grid>
           </Grid>

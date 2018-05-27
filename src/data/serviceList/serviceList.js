@@ -50,7 +50,7 @@ const services = [
   {
     image: images.threeD,
     firstLine: '3D',
-    secondLine: 'implenentations',
+    secondLine: 'experiences',
   },
 ];
 
