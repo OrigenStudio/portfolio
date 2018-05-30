@@ -1,7 +1,8 @@
 import { withStyles } from '@material-ui/core/styles';
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
-import { LayoutActions, BasicAppBar } from 'material-ui-layout';
+import Toolbar from '@material-ui/core/Toolbar';
+import { LayoutActions } from 'material-ui-layout';
 import OnScroll from 'react-on-scroll';
 import classnames from 'classnames';
 
@@ -52,11 +53,11 @@ class IndexPage extends React.Component {
                 })}
                 color="inherit"
               >
-                <BasicAppBar
-                  title="Origen"
-                  logo={logo}
-                  toggleLeftDrawer={toggleLeftDrawer}
-                />
+                <Toolbar className={classes.toolbar}>
+                  <div className={classes.logo}>
+                    <img src={logo} className={classes.image} />
+                  </div>
+                </Toolbar>
               </AppBar>
             )}
           </LayoutActions.Consumer>

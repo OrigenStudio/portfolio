@@ -8,6 +8,20 @@ const styles = theme => ({
     background: 'transparent',
     boxShadow: 'none',
   },
+  toolbar: {
+    minHeight: '86px',
+  },
+  logo: {
+    flex: 1,
+    cursor: 'pointer',
+    height: '60px',
+    minWidth: '160px',
+  },
+  image: {
+    height: '100%',
+    margin: '0',
+    padding: '0',
+  },
 });
 
 export default styles;
