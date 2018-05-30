@@ -7,7 +7,7 @@ const services = [
     secondLine: 'product definition',
   },
   {
-    image: images.design,
+    image: images.data,
     firstLine: 'Data',
     secondLine: 'analysis',
   },
@@ -31,12 +31,6 @@ const services = [
     firstLine: 'Deployment',
     secondLine: 'and hosting',
   },
-
-  // {
-  //   image: images.support,
-  //   firstLine: 'Maintenance and support',
-  // secondLine: 'lorem',
-  // },
   {
     image: images.analytics,
     firstLine: 'Machine',

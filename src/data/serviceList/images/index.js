@@ -5,8 +5,8 @@ import marketing from './marketing.jpg';
 import mvp from './mvp.jpg';
 import native from './native.jpg';
 import uxui from './uxui.jpg';
-import design from './design.jpg';
 import deployment from './deployment.jpg';
+import data from './data.jpg';
 
 const images = {
   threeD,
@@ -16,8 +16,8 @@ const images = {
   mvp,
   native,
   uxui,
-  design,
-  deployment
+  deployment,
+  data
 };
 
 export default images;
