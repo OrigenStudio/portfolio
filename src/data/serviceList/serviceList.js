@@ -7,15 +7,11 @@ const services = [
     secondLine: 'product definition',
   },
   {
-    image: images.data,
-    firstLine: 'Data',
-    secondLine: 'analysis',
-  },
-  {
     image: images.uxui,
     firstLine: 'UX/UI',
     secondLine: 'design',
   },
+
   {
     image: images.development,
     firstLine: 'Full stack',
@@ -35,6 +31,11 @@ const services = [
     image: images.analytics,
     firstLine: 'Machine',
     secondLine: 'learning',
+  },
+  {
+    image: images.data,
+    firstLine: 'Data',
+    secondLine: 'analysis',
   },
   {
     image: images.marketing,
