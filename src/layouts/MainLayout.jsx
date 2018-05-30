@@ -53,6 +53,7 @@ class TemplateWrapper extends React.PureComponent {
     const { children, data, classes } = this.props;
     return (
       <MuiThemeProvider theme={theme}>
+        <CssBaseline />
         <div>
           <Helmet
             title={data.site.siteMetadata.title}
@@ -80,7 +81,7 @@ class TemplateWrapper extends React.PureComponent {
               />
             }
             footerProps={{
-              color: "inherit",
+              color: 'inherit',
               className: classes.footer,
             }}
             mainGrow={false}
