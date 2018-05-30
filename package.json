@@ -14,7 +14,6 @@
     "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-jss": "^1.5.6",
     "gatsby-plugin-react-helmet": "^1.0.3",
-    "gatsby-plugin-typography": "^1.7.7",
     "gatsby-remark-images": "^1.5.10",
     "gatsby-source-filesystem": "^1.4.12",
     "gatsby-transformer-remark": "^1.7.7",
