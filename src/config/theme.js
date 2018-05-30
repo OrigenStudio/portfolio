@@ -17,9 +17,9 @@ const palette = {
     black: '#0C1821',
   },
   other: {
-    darkBlue: '#333784',
+    darkBlue: '#11191E',
     lightGrey: '#F0F0F0',
-    darkGrey: '#18232B',
+    grayBlue: '#18232B',
     veryDarkGrey: '#0C1821',
   },
   gradients: {
