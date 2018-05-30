@@ -8,7 +8,7 @@
     "@material-ui/icons": "^1.0.0",
     "brcast": "^3.0.1",
     "classnames": "^2.2.5",
-    "gatsby": "^1.8.12",
+    "gatsby": "^1.9.262",
     "gatsby-link": "^1.6.8",
     "gatsby-plugin-drift": "^1.0.0",
     "gatsby-plugin-favicon": "^2.1.1",
