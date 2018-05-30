@@ -4,11 +4,11 @@ export default theme => () => ({
   footer: {
     backgroundColor: get(
       theme,
-      'palette.other.veryDarkGrey',
+      'palette.other.darkBlue',
       theme.palette.primary.main,
     ),
     color: theme.palette.getContrastText(
-      get(theme, 'palette.other.veryDarkGrey', theme.palette.primary.main),
+      get(theme, 'palette.other.darkBlue', theme.palette.primary.main),
     ),
   },
 });
