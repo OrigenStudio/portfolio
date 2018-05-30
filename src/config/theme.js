@@ -72,6 +72,7 @@ const theme = createMuiTheme({
   typography,
 });
 
+// Further customize the outcome of the theme
 const coef = 0.1;
 const modifyRem = (value, coef) => {
   return `${parseFloat(value) * (1 + coef)}rem`;
@@ -85,7 +86,7 @@ each(theme.typography, (variant, variantName) => {
     ...variant,
     fontSize: modifyRem(variant.fontSize, -coef * 3),
     [theme.breakpoints.up('sm')]: {
-      fontSize: modifyRem(variant.fontSize, -coef * 2.5),
+      fontSize: modifyRem(variant.fontSize, -coef * 2),
     },
     [theme.breakpoints.up('md')]: {
       fontSize: modifyRem(variant.fontSize, -coef * 1),
@@ -99,8 +100,17 @@ each(theme.typography, (variant, variantName) => {
   };
 });
 
+// Make change to display2 variant for xs screen size.
+theme.typography.display2 = {
+  ...theme.typography.display2,
+  fontSize: '1.5rem',
+}
+
+export default theme;
+
+// TODO move somewhere else as useful snippet
 const makeResponsive = (theme, jssHandle, values) => {
-  return ({
+  return {
     [jssHandle]: values['xs'],
     [theme.breakpoints.up('sm')]: {
       [jssHandle]: values['sm'],
@@ -114,7 +124,5 @@ const makeResponsive = (theme, jssHandle, values) => {
     [theme.breakpoints.up('xl')]: {
       [jssHandle]: values['xl'],
     },
-  })
-}
-
-export default theme;
+  };
+};

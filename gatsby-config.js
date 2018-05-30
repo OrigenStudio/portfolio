@@ -33,12 +33,6 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/config/typography.js',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-favicon',
       options: {
         logo: './src/images/favicon.png',
