@@ -59,7 +59,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+        trackingId: 'UA-120164020-1',
         // Puts tracking script in the head instead of the body
         head: false,
         // Setting this parameter is optional
@@ -68,6 +68,13 @@ module.exports = {
         respectDNT: true,
         // Avoids sending pageview hits from custom paths
         exclude: ["/preview/**", "/do-not-track/me/too/"],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        id: 900672,
+        sv: 6
       },
     },
   ],
