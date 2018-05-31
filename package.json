@@ -13,6 +13,7 @@
     "gatsby-plugin-drift": "^1.0.0",
     "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-jss": "^1.5.6",
+    "gatsby-plugin-manifest": "^1.0.23",
     "gatsby-plugin-react-helmet": "^1.0.3",
     "gatsby-remark-images": "^1.5.10",
     "gatsby-source-filesystem": "^1.4.12",

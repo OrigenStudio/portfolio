@@ -51,6 +51,18 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Origen Studio',
+        short_name: 'Origen',
+        start_url: '/',
+        background_color: '#F0F0F0',
+        theme_color: '#E72476',
+        display: 'minimal-ui',
+        icon: 'src/images/favicon.png',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-drift',
       options: {
         appId: '24wpazn5b9fg',
