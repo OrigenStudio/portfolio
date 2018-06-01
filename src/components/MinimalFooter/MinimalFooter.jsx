@@ -39,7 +39,7 @@ class MinimalFooter extends React.PureComponent {
         </Grid>
         <Grid item xs={12} sm={6} className={classes.socialButtons}>
           {_.map(socialLinks, link => (
-            <ButtonBase href={link.url} className={classes.socialButtonWrapper}>
+            <ButtonBase key={link.name} href={link.url} className={classes.socialButtonWrapper}>
               <img src={link.image} className={classes.image} />
             </ButtonBase>
           ))}
