@@ -15,11 +15,7 @@ class LandingSection extends React.PureComponent {
     const { classes, width } = this.props;
     return (
       <div className={classes.wrapper}>
-        {isWidthDown('sm', width) ? (
-          <ThreeDSectionSmallScreen />
-        ) : (
-          <ThreeDSectionBigScreen />
-        )}
+        <ThreeDSectionBigScreen />
         <div className={classes.textArea}>
           <Typography
             variant="display4"
