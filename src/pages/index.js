@@ -1,12 +1,42 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import LandingPage from '../hidden/LandingPage';
 
-const IndexPage = () =>
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
+const LandingPageContainer = props => <LandingPage {...props} />;
 
-export default IndexPage
+export default LandingPageContainer;
+
+export const query = graphql`
+  query HighlightedProjects {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___index], order: ASC }
+      filter: { frontmatter: { highlight: { eq: true } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            project
+            logo {
+              childImageSharp {
+                responsiveSizes(maxWidth: 400) {
+                  src
+                  srcSet
+                  sizes
+                }
+              }
+            }
+            screenshot {
+              childImageSharp {
+                responsiveSizes(maxWidth: 1900) {
+                  src
+                  srcSet
+                  sizes
+                }
+              }
+            }
+            description
+          }
+        }
+      }
+    }
+  }
+`;
