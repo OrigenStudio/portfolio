@@ -1,18 +1,25 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
+import withWidth, { isWidthDown } from '@material-ui/core/withWidth';
+import compose from 'recompose/compose';
 
-import ThreeDSection from '../ThreeDSectionTest2';
+import ThreeDSectionBigScreen from '../ThreeDSectionBigScreen';
+import ThreeDSectionSmallScreen from '../ThreeDSectionSmallScreen';
 import DownArrow from './DownArrow';
 
 import styles from './styles';
 
 class LandingSection extends React.PureComponent {
   render() {
-    const { classes } = this.props;
+    const { classes, width } = this.props;
     return (
       <div className={classes.wrapper}>
-        <ThreeDSection />
+        {isWidthDown('md', width) ? (
+          <ThreeDSectionSmallScreen />
+        ) : (
+          <ThreeDSectionBigScreen />
+        )}
         <div className={classes.textArea}>
           <Typography
             variant="display4"
@@ -30,4 +37,4 @@ class LandingSection extends React.PureComponent {
   }
 }
 
-export default withStyles(styles)(LandingSection);
+export default compose(withStyles(styles), withWidth())(LandingSection);
