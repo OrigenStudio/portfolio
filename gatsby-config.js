@@ -69,7 +69,7 @@ module.exports = {
         // Avoids sending pageview hits from custom paths
         exclude: ["/preview/**", "/do-not-track/me/too/"],
       },
-    }
+    },
     {
       resolve: `gatsby-plugin-hotjar`,
       options: {
