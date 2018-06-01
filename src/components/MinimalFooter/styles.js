@@ -18,12 +18,12 @@ export default theme => ({
   },
   [theme.breakpoints.down('md')]: {
     wrapper: {
-      padding: `0 ${theme.spacing.unit * 5}px`,
+      padding: `0 ${theme.spacing.unit * 10}px`,
     },
   },
   [theme.breakpoints.down('sm')]: {
     wrapper: {
-      padding: `0 ${theme.spacing.unit * 2}px`,
+      padding: `0 ${theme.spacing.unit * 8}px`,
     },
   },
   [theme.breakpoints.down('xs')]: {
