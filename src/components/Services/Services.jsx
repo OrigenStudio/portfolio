@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import React from 'react';
+import classNames from 'classnames';
 import Padding from '../../components/Padding';
 import YourExperts from '../../components/YourExperts';
 // Data
@@ -47,7 +48,7 @@ class Services extends React.PureComponent {
                 </div>
               </Grid>
             ))}
-            <Grid item xs={6} md={4} key={'experts'} className={[classes.item, classes.expertsSmallScreen]}>
+            <Grid item xs={6} md={4} key={'experts'} className={classNames(classes.item, classes.expertsSmallScreen)}>
               <YourExperts typographyVariant="display1"/>
             </Grid>
           </Grid>
