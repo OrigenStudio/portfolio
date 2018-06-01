@@ -1,7 +1,7 @@
 export default theme => ({
     wrapper: {
         backgroundSize: 'cover',
-        height: 'calc(100vh - 300px)',
+        height: 'calc(100vh)',
         padding: 0,
         width: '100%',
         margin: 0,
@@ -19,6 +19,15 @@ export default theme => ({
     },
     text:{
         color: theme.palette.common.white,
-        // textShadow:' 2px 2px 6px rgba(255,0,128,0.50)',
+    },
+    iconWrapper: {
+        width: '100%',
+        height: '100%',
+        position: 'relative',
+        top: '-200%',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'flex-end',
+        paddingBottom: theme.spacing.unit
     }
 })
