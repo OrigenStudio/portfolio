@@ -21,15 +21,24 @@ class ProjectsSection extends React.PureComponent {
   render() {
     const { classes } = this.props;
     return (
-      <Section headline="We are proud of..." className={classes.wrapper}>
+      <Section headline="Product experts in the digital age" className={classes.wrapper}>
         <Grid container>
           <Grid item xs={12}>
             <Typography variant="display2" color="inherit">
               We help you define, build and execute your projects
             </Typography>
           </Grid>
-          <Grid xs={12} sm={6} style={{backgroundColor: 'red'}} className={classes.project} >Project 1</Grid>
-          <Grid xs={12} sm={6} className={classes.project}>Project 2</Grid>
+          <Grid xs={12} sm={6} style={{ backgroundColor: 'red' }} className={classes.project}>
+            <Typography variant="display1">
+              Project name
+            </Typography>
+            <Typography component="display2">
+              Project type
+            </Typography>
+          </Grid>
+          <Grid xs={12} sm={6} style={{ backgroundColor: 'green' }} className={classes.project}>
+            Project 2
+          </Grid>
         </Grid>
       </Section>
     );
