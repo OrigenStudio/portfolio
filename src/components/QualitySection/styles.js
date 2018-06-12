@@ -1,7 +1,7 @@
 const styles = theme => ({
   wrapper: {
-    backgroundColor: theme.palette.common.white,
-    color: theme.palette.common.black,
+    backgroundColor: theme.palette.other.bluePurple,
+    color: theme.palette.common.white,
   },
 });
 

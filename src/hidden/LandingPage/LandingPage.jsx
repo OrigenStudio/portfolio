@@ -64,10 +64,10 @@ class IndexPage extends React.Component {
           </LayoutActions.Consumer>
 
           <LandingSection />
-          <IntroSection />
+          {/* <IntroSection /> */}
           <ProjectsSection />
-          <Services />
           <QualitySection />
+          <Services />
           <ContactUsSection />
         </div>
       </OnScroll>

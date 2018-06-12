@@ -18,6 +18,7 @@ const palette = {
   },
   other: {
     darkBlue: '#11191E',
+    bluePurple: '#474AB2',
     lightGrey: '#F0F0F0',
     grayBlue: '#18232B',
     veryDarkGrey: '#0C1821',
