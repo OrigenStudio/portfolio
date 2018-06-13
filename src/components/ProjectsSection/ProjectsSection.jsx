@@ -9,6 +9,7 @@ import Button from '@material-ui/core/Button';
 
 import Section from '../Section';
 import ImgTest from '../../images/deployment02.jpg';
+import RightArrow from './RightArrow';
 
 import styles from './styles';
 
@@ -17,6 +18,10 @@ class ProjectsSection extends React.PureComponent {
     classes: PropTypes.shape({}),
     projects: PropTypes.arrayOf(PropTypes.shape({})),
   };
+
+  handleNavigation = () => {
+    console.log('hey, I am navigating');
+  }
 
   render() {
     const { classes } = this.props;
@@ -28,7 +33,7 @@ class ProjectsSection extends React.PureComponent {
               We help you define, build and execute your projects
             </Typography>
           </Grid>
-          <Grid xs={12} sm={6} className={classes.project}>
+          <Grid item xs={12} sm={6} className={classes.project}>
             <Paper elevation={4}>
               <img src={ImgTest} className={classes.image}/>
             </Paper>
@@ -39,7 +44,7 @@ class ProjectsSection extends React.PureComponent {
               Project name
             </Typography>
           </Grid>
-          <Grid xs={12} sm={6} className={classes.project}>
+          <Grid item xs={12} sm={6} className={classes.project}>
             <Paper elevation={4}>
               <img src={ImgTest} className={classes.image}/>
             </Paper>
@@ -51,16 +56,18 @@ class ProjectsSection extends React.PureComponent {
             </Typography>
           </Grid>
         </Grid>
-        <Grid xs={12} className={classes.align}>
-          <Button variant="outlined" href="#outlined-buttons" className={classes.button}>
+        <Grid item xs={12} className={classes.align}>
+          <Button variant="contained" color="default" className={classes.button} onClick={this.handleNavigation}>
             <Typography variant="body1" color="inherit">
               Discover more
             </Typography>
+            <RightArrow style={{ marginLeft:15 }}/>
           </Button>
         </Grid>
       </Section>
     );
   }
 }
+
 
 export default withStyles(styles)(ProjectsSection);

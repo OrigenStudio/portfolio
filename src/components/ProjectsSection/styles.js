@@ -16,7 +16,11 @@ const styles = theme => ({
   align:{
     textAlign: 'center',
     marginTop: theme.spacing.unit * 5,
-  }
+  },
+
+  button:{
+    border: '1px solid black',
+  },
 
 });
 
