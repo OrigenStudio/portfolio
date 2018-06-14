@@ -1,8 +1,8 @@
-const styles = theme => ({
+const styles = theme => ({ 
     container: {
         display: 'flex',
         flexWrap: 'wrap',
-        backgroundColor: theme.palette.primary.main,
+        backgroundColor: theme.palette.other.lightGrey,
     },
 
     textField: {
@@ -12,7 +12,7 @@ const styles = theme => ({
     },
 
     button: {
-        backgroundColor: theme.palette.secondary.main,
+        backgroundColor: theme.palette.primary.main, 
         margin: theme.spacing.unit * 2,
     }
   });

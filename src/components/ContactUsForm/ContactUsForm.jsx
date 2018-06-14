@@ -1,8 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
-import Section from '../Section';
-import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
@@ -28,13 +26,11 @@ render() {
                 id="multiline-static"
                 label="How can we help?"
                 multiline
-                rows="4"
-                // placeholder='hola'
-                // defaultValue="Default Value"
+                rows="6"
                 className={classes.textField}
                 margin="normal"
             />
-            <Button variant="contained" className={classes.button}>
+            <Button size="large" variant="contained" className={classes.button}>
                 Submit
             </Button>
         </form>
