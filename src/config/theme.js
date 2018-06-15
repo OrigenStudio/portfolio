@@ -41,6 +41,7 @@ const typography = {
   display2: {
     fontFamily: titlesFontFamily,
     fontWeight: 700,
+    fontSize: '3rem',
   },
   display1: {
     fontFamily: titlesFontFamily,

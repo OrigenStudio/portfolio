@@ -26,13 +26,8 @@ class ProjectsSection extends React.PureComponent {
   render() {
     const { classes } = this.props;
     return (
-      <Section headline="Product experts in the digital age" className={classes.wrapper}>
+      <Section className={classes.wrapper}>
         <Grid container>
-          <Grid item xs={12}>
-            <Typography variant="display2" color="inherit">
-              We help you define, build and execute your projects
-            </Typography>
-          </Grid>
           <Grid item xs={12} sm={6} className={classes.project}>
             <Paper elevation={4}>
               <img src={ImgTest} className={classes.image}/>

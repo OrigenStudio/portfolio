@@ -8,59 +8,39 @@ import Paper from '@material-ui/core/Paper';
 import styles from './styles';
 
 class ContactUsForm extends React.PureComponent {
-    static propTypes = {
-      classes: PropTypes.shape({}),
-    };  
+  static propTypes = {
+    classes: PropTypes.shape({}),
+  };
 
-render() {
+  render() {
     const { classes } = this.props;
     return (
-        <div>
-            <Paper elevation={3}>
-                <form className={classes.container}>
-                    <TextField
-                        id="with-placeholder"
-                        label="Email"
-                        placeholder="adam@gmail.com"
-                        className={classes.textField}
-                        margin="normal"
-                    />
-                    <TextField
-                        id="multiline-static"
-                        label="How can we help?"
-                        multiline
-                        rows="6"
-                        className={classes.textField}
-                        margin="normal"
-                    />
-                    <Button size="large" variant="contained" className={classes.button}>
-                        Submit
-                    </Button>
-                </form>
-            </Paper>
-        </div>
-        // <form className={classes.container}>
-        //     <TextField
-        //         id="with-placeholder"
-        //         label="Email"
-        //         placeholder="adam@gmail.com"
-        //         className={classes.textField}
-        //         margin="normal"
-        //     />
-        //     <TextField
-        //         id="multiline-static"
-        //         label="How can we help?"
-        //         multiline
-        //         rows="6"
-        //         className={classes.textField}
-        //         margin="normal"
-        //     />
-        //     <Button size="large" variant="contained" className={classes.button}>
-        //         Submit
-        //     </Button>
-        // </form>
-        );
-    }
+      <div>
+        <Paper elevation={3}>
+          <form className={classes.container}>
+            <TextField
+              id="with-placeholder"
+              label="Email"
+              placeholder="adam@gmail.com"
+              className={classes.textField}
+              margin="normal"
+            />
+            <TextField
+              id="multiline-static"
+              label="How can we help?"
+              multiline
+              rows="6"
+              className={classes.textField}
+              margin="normal"
+            />
+            <Button size="large" variant="contained" className={classes.button}>
+              Submit
+            </Button>
+          </form>
+        </Paper>
+      </div>
+    );
+  }
 }
 
 export default withStyles(styles)(ContactUsForm);

@@ -64,7 +64,7 @@ class IndexPage extends React.Component {
           </LayoutActions.Consumer>
 
           <LandingSection />
-          {/* <IntroSection /> */}
+          <IntroSection />
           <ProjectsSection />
           <QualitySection />
           <Services />
