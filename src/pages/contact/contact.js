@@ -10,9 +10,9 @@ import styles from './styles';
 
 const ContactPage = ({ classes }) => (
   <div className={classes.wrapper}>
-    <Padding>
-      <Grid container>
-        <Grid item xs={12} sm={6}>
+    <Padding grow>
+      <Grid container alignItems="center" className={classes.gridContainer}>
+        <Grid item xs={12} sm={6} className={classes.text}>
           <div className={classes.headline}>
             <Typography variant="title" color="inherit">
               We'd love to talk

@@ -3,6 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import Paper from '@material-ui/core/Paper';
 
 import styles from './styles';
 
@@ -14,26 +15,50 @@ class ContactUsForm extends React.PureComponent {
 render() {
     const { classes } = this.props;
     return (
-        <form className={classes.container}>
-            <TextField
-                id="with-placeholder"
-                label="Email"
-                placeholder="adam@gmail.com"
-                className={classes.textField}
-                margin="normal"
-            />
-            <TextField
-                id="multiline-static"
-                label="How can we help?"
-                multiline
-                rows="6"
-                className={classes.textField}
-                margin="normal"
-            />
-            <Button size="large" variant="contained" className={classes.button}>
-                Submit
-            </Button>
-        </form>
+        <div>
+            <Paper elevation={3}>
+                <form className={classes.container}>
+                    <TextField
+                        id="with-placeholder"
+                        label="Email"
+                        placeholder="adam@gmail.com"
+                        className={classes.textField}
+                        margin="normal"
+                    />
+                    <TextField
+                        id="multiline-static"
+                        label="How can we help?"
+                        multiline
+                        rows="6"
+                        className={classes.textField}
+                        margin="normal"
+                    />
+                    <Button size="large" variant="contained" className={classes.button}>
+                        Submit
+                    </Button>
+                </form>
+            </Paper>
+        </div>
+        // <form className={classes.container}>
+        //     <TextField
+        //         id="with-placeholder"
+        //         label="Email"
+        //         placeholder="adam@gmail.com"
+        //         className={classes.textField}
+        //         margin="normal"
+        //     />
+        //     <TextField
+        //         id="multiline-static"
+        //         label="How can we help?"
+        //         multiline
+        //         rows="6"
+        //         className={classes.textField}
+        //         margin="normal"
+        //     />
+        //     <Button size="large" variant="contained" className={classes.button}>
+        //         Submit
+        //     </Button>
+        // </form>
         );
     }
 }

@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import styles from './styles';
 
 const ComponentWithPadding = ({ classes, children, ...props }) => (
-  <div className={classNames(classes.wrapper)}>
+  <div className={classNames(classes.wrapper, {[classes.grow]: props.grow})}>
     {children}
   </div>
 );
