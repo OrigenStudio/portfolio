@@ -37,6 +37,7 @@ const typography = {
   display3: {
     fontFamily: titlesFontFamily,
     fontWeight: 700,
+    fontSize: '4.3rem',
   },
   display2: {
     fontFamily: titlesFontFamily,
@@ -46,7 +47,7 @@ const typography = {
   display1: {
     fontFamily: titlesFontFamily,
     fontWeight: 700,
-    fontSize: 1.7,
+    fontSize: '1.3rem',
   },
   headline: {
     fontFamily,
@@ -106,7 +107,7 @@ each(theme.typography, (variant, variantName) => {
 // Make change to display2 variant for xs screen size.
 theme.typography.display2 = {
   ...theme.typography.display2,
-  fontSize: '1.5rem',
+  fontSize: '0.8rem',
 }
 
 export default theme;

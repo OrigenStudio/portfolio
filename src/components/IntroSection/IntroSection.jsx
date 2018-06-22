@@ -19,7 +19,7 @@ class ContactUsSection extends React.PureComponent {
         <Section headline="Product experts in the digital age" className={classes.wrapper}>
           <Grid container>
             <Grid item xs={12}>
-              <Typography variant="display2" color="inherit">We help you define, build and execute your projects</Typography>
+              <Typography variant="display3" color="inherit">We help you define, build and execute your projects</Typography>
             </Grid>
           </Grid>
         </Section>

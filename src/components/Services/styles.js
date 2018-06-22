@@ -12,7 +12,7 @@ export default theme => ({
   },
   title: {
     textAlign: 'center',
-    marginBottom: theme.spacing.unit * 3,
+    marginBottom: theme.spacing.unit * 5,
   },
   item: {
     height: '200px',

@@ -19,8 +19,8 @@ class QualitySection extends React.PureComponent {
         <Section headline="Create quality software" className={classes.wrapper}>
           <Grid container>
             <Grid item xs={12}>
-              <Typography variant="display2" color="inherit">
-                To achieve excellent user satisfaction our products are secure, scalable, and future proof - we thrive for code quality
+              <Typography variant="display3" color="inherit">
+                To achieve excellent user satisfaction our products are secure, scalable, and future proof
               </Typography>
             </Grid>
           </Grid>

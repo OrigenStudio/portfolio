@@ -33,7 +33,7 @@ class MinimalFooter extends React.PureComponent {
           <Typography variant="body1" color="inherit">
             {message}
           </Typography>
-          <Typography variant="caption" color="inherit">
+          <Typography variant="body1" color="inherit">
             {title} © {new Date().getFullYear()}
           </Typography>
         </Grid>

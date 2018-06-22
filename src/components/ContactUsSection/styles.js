@@ -4,11 +4,11 @@ const styles = theme => ({
     color: theme.palette.getContrastText(theme.palette.other.grayBlue)
   },
   button: {
-    color: theme.palette.primary.main,
+    color: theme.palette.secondary.main,
     cursor: 'pointer',
     '&:hover': {
       background: 'none',
-      color: theme.palette.secondary.main,
+      color: theme.palette.gradients.primary,
     },
   }, 
 });

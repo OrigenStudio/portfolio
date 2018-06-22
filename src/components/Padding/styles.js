@@ -9,12 +9,12 @@ const styles = theme => ({
   },
   [theme.breakpoints.up('md')]: {
     wrapper: {
-      padding: `${theme.spacing.unit * 15}px ${theme.spacing.unit * 25}px`,
+      padding: `${theme.spacing.unit * 15}px ${theme.spacing.unit * 20}px`,
     },
   },
   [theme.breakpoints.up('lg')]: {
     wrapper: {
-      padding: `${theme.spacing.unit * 25}px ${theme.spacing.unit * 35}px`,
+      padding: `${theme.spacing.unit * 20}px ${theme.spacing.unit * 25}px`,
     },
   },
   grow:{

@@ -35,7 +35,7 @@ class ProjectsSection extends React.PureComponent {
             <Typography variant="title" color="inherit" style={{ paddingTop: 15 }}>
               Project type
             </Typography>
-            <Typography variant="display1" color="inherit">
+            <Typography variant="display2" color="inherit">
               Project name
             </Typography>
           </Grid>
@@ -46,14 +46,14 @@ class ProjectsSection extends React.PureComponent {
             <Typography variant="title" color="inherit" style={{ paddingTop: 15 }}>
               Project type
             </Typography>
-            <Typography variant="display1" color="inherit">
+            <Typography variant="display2" color="inherit">
               Project name
             </Typography>
           </Grid>
         </Grid>
         <Grid item xs={12} className={classes.align}>
           <Button variant="contained" color="default" className={classes.button} onClick={this.handleNavigation}>
-            <Typography variant="body1" color="inherit">
+            <Typography variant="body" color="inherit">
               Discover more
             </Typography>
             <RightArrow style={{ marginLeft:15 }}/>
