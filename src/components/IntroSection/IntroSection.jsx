@@ -15,7 +15,7 @@ class ContactUsSection extends React.PureComponent {
   render() {
     const { classes } = this.props;
     return (
-      <div id="intro">
+      <div id="intro" className={classes.container}>
         <Section headline="Product experts in the digital age" className={classes.wrapper}>
           <Grid container>
             <Grid item xs={12}>

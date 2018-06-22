@@ -7,6 +7,9 @@ export default theme => ({
         margin: 0,
         background: 'rgb(11, 16, 21)',
         background: 'radial-gradient(circle, rgba(45,167,205,1) 2%, rgba(13,49,73,1) 30%, rgba(11,16,21,1) 100%)',
+        position: 'fixed',
+        top: 0,
+        zIndex: -1,
     },
     textArea:{
         width: '100%',
