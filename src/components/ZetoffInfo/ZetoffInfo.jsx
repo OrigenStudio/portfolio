@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
-import ButtonBase from '@material-ui/core/ButtonBase';
+import Button from '@material-ui/core/Button';
+import RightArrow from '@material-ui/icons/KeyboardArrowRight';
 
 import Section from '../Section';
 
@@ -23,21 +23,30 @@ class ZetoffInfo extends React.PureComponent {
           <Grid container>
             <Grid item xs={12} className={classes.project}>
               <div className={classes.text}>
-              <Typography variant="title" color="inherit">
-                The future is customizable
-              </Typography>
-              <Typography variant="display2" color="inherit">
-                DO YOU WANT TO SELL <span className={classes.gradient1}>PERSONALIZABLE</span> OBJECTS? <span className={classes.gradient2}>ZETOFF</span> IS YOUR ANSWER 
-              </Typography>
+                <Typography variant="title" color="inherit">
+                  The future is customizable
+                </Typography>
+                <Typography variant="display2" color="inherit">
+                  WE'RE THE CREATORS OF{' '}
+                  <span className={classes.gradient2}>ZETOFF</span>, A PLATFORM
+                  THAT ALLOW US TO{' '}
+                  <span className={classes.gradient1}>PERSONALIZE</span> YOUR
+                  PRODUCTS
+                </Typography>
+                <Button
+                  variant="outlined"
+                  color="default"
+                  className={classes.button}
+                  href=""
+                  onClick={this.handleNavigation}
+                >
+                  <Typography variant="button" color="inherit">
+                    Discover more
+                  </Typography>
+                  <RightArrow style={{ marginLeft: 15 }} />
+                </Button>
               </div>
             </Grid>
-            {/* <Grid item xs={12} md={8} className={classes.project}>
-              <div className={classes.link}>
-              <Button>
-
-              </Button>
-              </div>
-            </Grid> */}
           </Grid>
         </Section>
       </div>
