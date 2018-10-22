@@ -1,24 +1,18 @@
 const styles = theme => ({
   wrapper: {
-    backgroundColor: theme.palette.primary.main,
-    color: theme.palette.primary.contrastText,
+    backgroundColor: theme.palette.common.white,
+    color: theme.palette.common.black,
   },
-//   project: {
-//     position: 'relative',
-//   },
-//   text: {
-//     position: 'absolute',
-//     top: '50px',
-//   },
-//   image: {
-//       marginLeft: '115px',
-//   },
-  img: {
-    margin: 'auto',
-    display: 'block',
-    maxWidth: '100%',
-    maxHeight: '100%',
+  gradient1: {
+    color: 'transparent',
+    WebkitBackgroundClip: 'text',
+    backgroundImage: 'linear-gradient(45deg,#EC414B,#FEDF60)',
   },
+  gradient2: {
+    color: 'transparent',
+    WebkitBackgroundClip: 'text',
+    backgroundImage: 'linear-gradient(45deg,#34ADE1,#8EC86E)',
+  }
 });
 
 export default styles;

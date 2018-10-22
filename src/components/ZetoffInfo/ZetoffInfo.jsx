@@ -21,26 +21,23 @@ class ZetoffInfo extends React.PureComponent {
       <div id="intro">
         <Section className={classes.wrapper}>
           <Grid container>
-            <Grid item xs={12} md={8} className={classes.project}>
+            <Grid item xs={12} className={classes.project}>
               <div className={classes.text}>
               <Typography variant="title" color="inherit">
-                OWN PROJECT
+                The future is customizable
               </Typography>
               <Typography variant="display2" color="inherit">
-                ZETOFF
-              </Typography>
-              <Typography variant="body2" color="inherit">
-                Project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                DO YOU WANT TO SELL <span className={classes.gradient1}>PERSONALIZABLE</span> OBJECTS? <span className={classes.gradient2}>ZETOFF</span> IS YOUR ANSWER 
               </Typography>
               </div>
-              <Paper className={classes.image} elevation={2}>
-                <img
-                  className={classes.img}
-                  alt="zetoff"
-                  src="http://imprimalia3d.com/sites/default/files/blog/admin/zetoff.jpg"
-                />
-              </Paper>
             </Grid>
+            {/* <Grid item xs={12} md={8} className={classes.project}>
+              <div className={classes.link}>
+              <Button>
+
+              </Button>
+              </div>
+            </Grid> */}
           </Grid>
         </Section>
       </div>
