@@ -28,13 +28,12 @@ class LandingSection extends React.PureComponent {
           >
             HELLO
           </Typography>
-          <br />
           <Typography
             variant="display1"
             color="inherit"
             className={classes.text}
           >
-            We're Origen Studio, <br/> your product experts in the digital age
+            We're Origen Studio, <br/> your experts in the digital age
           </Typography>
         </div>
         <div className={classes.iconWrapper}>
