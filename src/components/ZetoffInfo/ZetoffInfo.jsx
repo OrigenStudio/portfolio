@@ -33,11 +33,13 @@ class ZetoffInfo extends React.PureComponent {
                   <span className={classes.gradient1}>PERSONALIZE</span> YOUR
                   PRODUCTS
                 </Typography>
+                </div>
+                <div className={classes.center}>
                 <Button
                   variant="outlined"
                   color="default"
                   className={classes.button}
-                  href=""
+                  href="https://zetoff.com/"
                   onClick={this.handleNavigation}
                 >
                   <Typography variant="button" color="inherit">
@@ -45,7 +47,7 @@ class ZetoffInfo extends React.PureComponent {
                   </Typography>
                   <RightArrow style={{ marginLeft: 15 }} />
                 </Button>
-              </div>
+                </div>
             </Grid>
           </Grid>
         </Section>
