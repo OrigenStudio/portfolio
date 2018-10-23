@@ -9,7 +9,7 @@ const styles = theme => ({
     boxShadow: 'none',
   },
   toolbar: {
-    minHeight: '86px',
+    minHeight: '100px',
   },
   logo: {
     flex: 1,
