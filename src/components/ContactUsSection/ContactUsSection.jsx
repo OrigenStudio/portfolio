@@ -23,9 +23,9 @@ class ContactUsSection extends React.PureComponent {
       <div id="contact">
         <Section headline="Let’s make it happen" className={classes.wrapper}>
           <Typography variant="display2" color="inherit">
-            We are open and fun to work with{' '}
+            WE ARE OPEN AND FUN TO WORK WITH YOU {' '}
             <a className={classes.button} onClick={this.handleClick}>
-              hello@origen.studio
+              HELLO@ORIGEN.STUDIO
             </a>
           </Typography>
         </Section>
