@@ -18,7 +18,7 @@ class ZetoffInfo extends React.PureComponent {
   render() {
     const { classes } = this.props;
     return (
-      <div id="intro">
+      <div id="intro" className={classes.container}>
         <Section className={classes.wrapper}>
           <Grid container>
             <Grid item xs={12} className={classes.project}>
