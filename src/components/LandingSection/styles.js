@@ -24,6 +24,7 @@ export default theme => ({
     text:{
         color: theme.palette.common.white,
         textAlign: 'center',
+        textShadow: '5px 5px 10px rgba(0,0,0,.2)',
     },
     iconWrapper: {
         width: '100%',
