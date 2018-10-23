@@ -14,8 +14,10 @@ const styles = theme => ({
     backgroundImage: 'linear-gradient(45deg,#34ADE1,#8EC86E)',
   },
   button: {
-    marginTop: theme.spacing.unit * 5 ,
+    // marginTop: theme.spacing.unit * 8 ,
     border: '1px solid black',
+    display: 'flex',
+    margin: 'auto',
   }
 });
 
