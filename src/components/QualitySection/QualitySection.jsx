@@ -20,7 +20,7 @@ class QualitySection extends React.PureComponent {
           <Grid container>
             <Grid item xs={12}>
               <Typography variant="display2" color="inherit">
-                To achieve excellent user satisfaction our products are secure, scalable, and future proof - we thrive for code quality
+                TO ACHIEVE EXCELLENT <span className={classes.gradient1}>USER SATISFACTION</span> OUT PRODUCTS ARE SECURE, SCALABLE AND FUTURE PROOF - WE THRIVE FOR <span className={classes.gradient2}>CODE QUALITY</span>
               </Typography>
             </Grid>
           </Grid>
