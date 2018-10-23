@@ -18,28 +18,28 @@ const palette = {
   },
   other: {
     darkBlue: '#11191E',
-    lightGrey: '#F0F0F0',
+    lightGrey: '#e8e8e8',
     grayBlue: '#18232B',
     veryDarkGrey: '#0C1821',
   },
   gradients: {
-    primary:  'linear-gradient(to right, #340e4f 0%, #f91275 100%)',
+    primary:  'linear-gradient(45deg, #340e4f 0%, #f91275 100%)',
   },
 };
 
 const typography = {
   display4: {
     fontFamily: titlesFontFamily,
-    fontWeight: 700,
+    fontWeight: 900,
     fontSize: '9rem',
   },
   display3: {
     fontFamily: titlesFontFamily,
-    fontWeight: 700,
+    fontWeight: 900,
   },
   display2: {
     fontFamily: titlesFontFamily,
-    fontWeight: 700,
+    fontWeight: 900,
   },
   display1: {
     fontFamily: titlesFontFamily,

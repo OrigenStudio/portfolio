@@ -4,6 +4,8 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import React from 'react';
 import classNames from 'classnames';
+import Divider from '@material-ui/core/Divider';
+
 import Padding from '../../components/Padding';
 import YourExperts from '../../components/YourExperts';
 // Data
@@ -16,9 +18,10 @@ class Services extends React.PureComponent {
     const { classes } = this.props;
     return <div className={classes.wrapper}>
         <Padding>
-          <Typography variant="display2" className={classes.title}>
+          <Typography variant="display3" className={classes.title}>
             Our services
           </Typography>
+          {/* <Divider className={classes.decoration} /> */}
           <Grid container spacing={16}>
             {_.map(serviceList, (service, index) => (
               <Grid

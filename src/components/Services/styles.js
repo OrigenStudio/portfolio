@@ -12,8 +12,17 @@ export default theme => ({
   },
   title: {
     textAlign: 'center',
-    marginBottom: theme.spacing.unit * 3,
+    marginBottom: theme.spacing.unit * 10,
+    color: '#0C1821',
   },
+  // decoration: {
+  //   width: '10%',
+  //   height: '10px',
+  //   margin: 'auto',
+  //   marginTop: theme.spacing.unit * 5,
+  //   marginBottom: theme.spacing.unit * 5,
+  //   background: 'linear-gradient(45deg, #3E0351 , #FF0080)',
+  // },
   item: {
     height: '200px',
   },
