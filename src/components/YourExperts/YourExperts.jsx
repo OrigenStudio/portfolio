@@ -15,7 +15,7 @@ class YourExperts extends React.PureComponent {
             color="inherit"
             className={classes.title}
           >
-            <span>We are your <br/> experts in </span>
+            <span>WE ARE YOUR <br/> EXPERTS IN </span>
             <TextLoop speed={1500}>
               <span>React</span>
               <span>React-Native</span>

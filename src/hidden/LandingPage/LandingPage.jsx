@@ -12,6 +12,7 @@ import IntroSection from '../../components/IntroSection';
 import QualitySection from '../../components/QualitySection';
 import Services from '../../components/Services';
 import TechnologiesSection from '../../components/TechnologiesSection';
+import ZetoffInfo from '../../components/ZetoffInfo'
 
 import { logo } from '../../images';
 
@@ -63,7 +64,8 @@ class IndexPage extends React.Component {
           </LayoutActions.Consumer>
 
           <LandingSection />
-          <IntroSection />
+          {/* <IntroSection /> */}
+          <ZetoffInfo />
           <Services />
           <QualitySection />
           <ContactUsSection />
