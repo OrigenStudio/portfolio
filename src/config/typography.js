@@ -12,7 +12,7 @@ const typography = new Typography({
     },
     {
       name: 'Montserrat',
-      styles: ['700'],
+      styles: ['700 , 900'],
     },
     {
       name: 'Material Icons',

@@ -30,16 +30,16 @@ const palette = {
 const typography = {
   display4: {
     fontFamily: titlesFontFamily,
-    fontWeight: 700,
+    fontWeight: 900,
     fontSize: '9rem',
   },
   display3: {
     fontFamily: titlesFontFamily,
-    fontWeight: 700,
+    fontWeight: 900,
   },
   display2: {
     fontFamily: titlesFontFamily,
-    fontWeight: 700,
+    fontWeight: 900,
   },
   display1: {
     fontFamily: titlesFontFamily,
