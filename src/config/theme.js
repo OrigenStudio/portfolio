@@ -23,7 +23,7 @@ const palette = {
     veryDarkGrey: '#0C1821',
   },
   gradients: {
-    primary:  'linear-gradient(to right, #340e4f 0%, #f91275 100%)',
+    primary:  'linear-gradient(45deg, #340e4f 0%, #f91275 100%)',
   },
 };
 
