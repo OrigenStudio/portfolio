@@ -14,19 +14,15 @@ export const query = graphql`
         description
         logo {
           childImageSharp {
-            responsiveSizes(maxWidth: 400) {
-              src
-              srcSet
-              sizes
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
         screenshot {
           childImageSharp {
-            responsiveSizes(maxWidth: 1900) {
-              src
-              srcSet
-              sizes
+            fluid(maxWidth: 1900) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
