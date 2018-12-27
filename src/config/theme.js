@@ -17,10 +17,11 @@ const palette = {
     black: '#0C1821',
   },
   other: {
-    darkBlue: '#11191E',
+    darkBlue: '#0a121a',
     lightGrey: '#e8e8e8',
     grayBlue: '#18232B',
     veryDarkGrey: '#0C1821',
+    middleBlue: '#384168',
   },
   gradients: {
     primary:  'linear-gradient(45deg, #340e4f 0%, #f91275 100%)',
