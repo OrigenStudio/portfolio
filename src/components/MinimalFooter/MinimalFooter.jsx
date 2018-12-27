@@ -31,15 +31,19 @@ class MinimalFooter extends React.PureComponent {
       >
         <Grid item xs={12} sm={6} className={classes.text}>
           <Typography variant="body1" color="inherit">
-            {message}
+            {title} © {new Date().getFullYear()} {message}
           </Typography>
-          <Typography variant="caption" color="inherit">
+          {/* <Typography variant="caption" color="inherit">
             {title} © {new Date().getFullYear()}
-          </Typography>
+          </Typography> */}
         </Grid>
         <Grid item xs={12} sm={6} className={classes.socialButtons}>
           {_.map(socialLinks, link => (
-            <ButtonBase key={link.name} href={link.url} className={classes.socialButtonWrapper}>
+            <ButtonBase
+              key={link.name}
+              href={link.url}
+              className={classes.socialButtonWrapper}
+            >
               <img src={link.image} className={classes.image} />
             </ButtonBase>
           ))}
