@@ -11,6 +11,6 @@ export default theme => () => ({
     //   get(theme, 'palette.other.darkBlue', theme.palette.primary.main),
     // ),
     color: theme.palette.other.middleBlue,
-    borderTop: '1px solid #384168',
+    borderTop: '1px solid #1e2338',
   },
 });
