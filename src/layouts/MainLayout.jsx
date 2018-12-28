@@ -42,7 +42,7 @@ const links = [
     },
   },
 ];
-
+console.log("aaaaa")
 class TemplateWrapper extends React.PureComponent {
   static propTypes = {
     children: PropTypes.func,
@@ -50,6 +50,7 @@ class TemplateWrapper extends React.PureComponent {
   };
 
   render() {
+    console.log("bbbbb")
     const { children, data, classes } = this.props;
     return (
       <MuiThemeProvider theme={theme}>
@@ -57,6 +58,7 @@ class TemplateWrapper extends React.PureComponent {
         <div>
           <Helmet
             title={data.site.siteMetadata.title}
+            description="Origen Studio is your software development agency. We help developing your projects from inception to production"
             meta={[
               {
                 name: 'description',
