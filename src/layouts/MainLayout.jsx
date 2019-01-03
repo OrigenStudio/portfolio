@@ -14,6 +14,7 @@ import Layout, {
 import theme from '../config/theme';
 import MinimalFooter from '../components/MinimalFooter';
 import AppHelmet from '../components/AppHelmet';
+import AppMinimalFooter from '../components/AppMinimalFooter';
 
 import socialLinks from '../data/socialLinks';
 import { logo } from '../images';
@@ -62,8 +63,7 @@ class TemplateWrapper extends React.PureComponent {
           <Layout
             leftDrawerContent={<BasicDrawer links={links} />}
             footerContent={
-              <MinimalFooter
-                title={data.site.siteMetadata.title}
+              <AppMinimalFooter
                 message={message}
                 socialLinks={socialLinks}
               />
