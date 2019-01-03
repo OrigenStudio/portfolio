@@ -13,6 +13,7 @@ import Layout, {
 
 import theme from '../config/theme';
 import MinimalFooter from '../components/MinimalFooter';
+import AppHelmet from '../components/AppHelmet';
 
 import socialLinks from '../data/socialLinks';
 import { logo } from '../images';
@@ -42,7 +43,6 @@ const links = [
     },
   },
 ];
-console.log("aaaaa")
 class TemplateWrapper extends React.PureComponent {
   static propTypes = {
     children: PropTypes.func,
@@ -50,28 +50,14 @@ class TemplateWrapper extends React.PureComponent {
   };
 
   render() {
-    console.log("bbbbb")
     const { children, data, classes } = this.props;
     return (
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
         <div>
-          <Helmet
-            title={data.site.siteMetadata.title}
+          <AppHelmet
             description="Origen Studio is your software development agency. We help developing your projects from inception to production"
-            meta={[
-              {
-                name: 'description',
-                content:
-                  'Origen Studio is your software development agency. We help developing your projects from inception to production',
-              },
-              {
-                name: 'keywords',
-                content:
-                  'software, development, software development, react, react-native, native, graphql, nodejs, apollo',
-              },
-            ] // TODO improve SEO // TODO improve SEO
-            }
+            keywords="software, development, software development, react, react-native, native, graphql, nodejs, apollo"
           />
           <Layout
             leftDrawerContent={<BasicDrawer links={links} />}
