@@ -75,7 +75,7 @@ class TemplateWrapper extends React.PureComponent {
             mainGrow={false}
             stickyFooter
           >
-            {children()}
+            {children}
           </Layout>
         </div>
       </MuiThemeProvider>
