@@ -1,9 +1,11 @@
 import React from 'react';
+import { IntlProvider } from 'react-intl';
 import PropTypes from 'prop-types';
 import { MuiThemeProvider, withStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { navigateTo } from 'gatsby-link';
 import Helmet from 'react-helmet';
+
 import { emojify } from 'react-emojione';
 import Layout, {
   BasicFooter,
@@ -24,6 +26,7 @@ import { logo } from '../images';
 // Raise issue and investigate.
 
 import curryStyles from './styles';
+
 const styles = curryStyles(theme);
 
 // TODO move somewhere else
@@ -50,35 +53,38 @@ class TemplateWrapper extends React.PureComponent {
     data: PropTypes.shape({}),
   };
 
+
   render() {
-    const { children, data, classes } = this.props;
+    const { children, data, classes, locale, messages } = this.props;
     return (
-      <MuiThemeProvider theme={theme}>
-        <CssBaseline />
-        <div>
-          <AppHelmet
-            description="Origen Studio is your software development agency. We help developing your projects from inception to production"
-            keywords="software, development, software development, react, react-native, native, graphql, nodejs, apollo"
-          />
-          <Layout
-            leftDrawerContent={<BasicDrawer links={links} />}
-            footerContent={
-              <AppMinimalFooter
-                message={message}
-                socialLinks={socialLinks}
-              />
-            }
-            footerProps={{
-              color: 'inherit',
-              className: classes.footer,
-            }}
-            mainGrow={false}
-            stickyFooter
-          >
-            {children}
-          </Layout>
-        </div>
-      </MuiThemeProvider>
+      <IntlProvider locale={locale} messages={messages}>
+        <MuiThemeProvider theme={theme}>
+          <CssBaseline />
+          <div>
+            <AppHelmet
+              description="Origen Studio is your software development agency. We help developing your projects from inception to production"
+              keywords="software, development, software development, react, react-native, native, graphql, nodejs, apollo"
+            />
+            <Layout
+              leftDrawerContent={<BasicDrawer links={links} />}
+              footerContent={
+                <AppMinimalFooter
+                  message={message}
+                  socialLinks={socialLinks}
+                />
+              }
+              footerProps={{
+                color: 'inherit',
+                className: classes.footer,
+              }}
+              mainGrow={false}
+              stickyFooter
+            >
+              {children}
+            </Layout>
+          </div>
+        </MuiThemeProvider>
+      </IntlProvider>
     );
   }
 }
