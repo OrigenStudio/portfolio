@@ -15,7 +15,7 @@ export default theme => ({
         width: '100%',
         height: '100%',
         position: 'relative',
-        top: '-97%',
+        top: '-100%',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
