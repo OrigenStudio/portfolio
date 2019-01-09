@@ -2,10 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Icon from '@material-ui/core/Icon';
-import IconButton from '@material-ui/core/IconButton';
 
 import Section from '../Section';
 
@@ -20,10 +17,21 @@ class ContactUsSection extends React.PureComponent {
     const { classes } = this.props;
     return (
       <div id="intro">
-        <Section headline="Product experts in the digital age" className={classes.wrapper}>
+        <Section
+          headline="Product experts in the digital age"
+          className={classes.wrapper}
+        >
           <Grid container>
             <Grid item xs={12}>
-              <Typography variant="display2" color="inherit">We help you define, build and execute your projects</Typography>
+              <Typography
+                variant="display3"
+                color="inherit"
+                style={{ marginBottom: '40px' }}
+              >
+                WE HELP YOU <span className={classes.gradient1}>DEFINE</span>,{' '}
+                <span className={classes.gradient2}>BUILD</span> AND{' '}
+                <span className={classes.gradient3}>EXECUTE</span> YOUR PROJECTS
+              </Typography>
             </Grid>
           </Grid>
         </Section>
