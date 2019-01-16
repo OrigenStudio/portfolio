@@ -1,9 +1,4 @@
-import {Widgets} from '@material-ui/icons';
-const hoverStyle = theme => ({
-  background: 'transparent',
-  color: theme.palette.common.white,
-  textShadow: '0 2px 4px #056A88',
-});
+import { Widgets } from '@material-ui/icons';
 
 export default theme => ({
   wrapper: {
@@ -12,19 +7,19 @@ export default theme => ({
   },
   title: {
     textAlign: 'center',
-    marginBottom: theme.spacing.unit * 10,
-    color: '#0C1821',
+    marginBottom: theme.spacing.unit * 2,
+    color: theme.palette.common.black,
   },
-  // decoration: {
-  //   width: '10%',
-  //   height: '10px',
-  //   margin: 'auto',
-  //   marginTop: theme.spacing.unit * 5,
-  //   marginBottom: theme.spacing.unit * 5,
-  //   background: 'linear-gradient(45deg, #3E0351 , #FF0080)',
-  // },
+  decoration: {
+    width: '15%',
+    height: '3px',
+    margin: 'auto',
+    marginTop: theme.spacing.unit,
+    marginBottom: theme.spacing.unit * 10,
+    background: theme.palette.secondary.main,
+  },
   item: {
-    height: '200px',
+    height: '475px',
   },
   itemImage: {
     backgroundSize: 'cover',
@@ -38,27 +33,45 @@ export default theme => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: theme.palette.common.white,
     height: '100%',
     width: '100%',
-    transition: 'all 0.3s ease',
+    color: theme.palette.common.white,
+    transition: 'all 0.2s ease',
     '&:hover': {
-      ...hoverStyle(theme),
+      background: theme.palette.common.black,
     },
-    [theme.breakpoints.down('sm')]: {
-      ...hoverStyle(theme),
+    '&:hover $primaryText': {
+      display: 'none',
     },
+    '&:not(:hover) $secondaryText': {
+      display: 'none',
+    },
+  },
+  primaryText: {},
+  secondaryText: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    textAlign: 'left',
+    height: '100%',
+    width: '100%',
+    padding: theme.spacing.unit * 4,
   },
   expertsLargeScreen:{
     height: '300px',
     marginTop: theme.spacing.unit * 5,
     [theme.breakpoints.down('sm')]:{
-      display:'none',
-    }
   },
-  expertsSmallScreen:{
-    [theme.breakpoints.up('md')]:{
-      display:'none',
-    }
-  }
+  // expertsLargeScreen: {
+  //   height: '300px',
+  //   marginTop: theme.spacing.unit * 5,
+  //   [theme.breakpoints.down('sm')]: {
+  //     display: 'none',
+  //   },
+  // },
+  // expertsSmallScreen: {
+  //   [theme.breakpoints.up('md')]: {
+  //     display: 'none',
+  //   },
+  // },
 });
