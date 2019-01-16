@@ -25,9 +25,9 @@ import curryStyles from './styles';
 const styles = curryStyles(theme);
 
 // TODO move somewhere else
-const message = `Built with
-  ${emojify(':heart_eyes:', { output: 'unicode' })}
-    in house`;
+const message = `${emojify(':purple_heart:', {
+  output: 'unicode',
+})} For company information and other legal bits, see our legal page. We’re using cookies, hope that’s cool. Here’s our Privacy Policy.`;
 
 // TODO get from data
 //
