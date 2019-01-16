@@ -2,50 +2,29 @@ import images from './images';
 
 const services = [
   {
-    image: images.mvp,
-    firstLine: 'MVP and',
-    secondLine: 'product definition',
+    image: images.back01,
+    firstLine: 'Commercial',
+    secondLine: 'WEB',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi iaculis neque vestibulum tincidunt ut ac orci. Nam dolor libero, ullamcorper sed blandit ut, efficitur a odio. Praesent consequat leo urna, mollis rhoncus augue dignissim eu.',
+    href: '/commercial-web',
   },
   {
-    image: images.uxui,
-    firstLine: 'UX/UI',
-    secondLine: 'design',
+    image: images.back02,
+    firstLine: 'Great',
+    secondLine: 'APPS',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi iaculis neque vestibulum tincidunt ut ac orci. Nam dolor libero, ullamcorper sed blandit ut, efficitur a odio. Praesent consequat leo urna, mollis rhoncus augue dignissim eu.',
+    href: '/apps',
   },
 
   {
-    image: images.development,
-    firstLine: 'Full stack',
-    secondLine: 'web',
-  },
-  {
-    image: images.native,
-    firstLine: 'Native',
-    secondLine: 'development',
-  },
-  {
-    image: images.deployment,
-    firstLine: 'Deployment',
-    secondLine: 'and hosting',
-  },
-  {
-    image: images.analytics,
-    firstLine: 'Machine',
-    secondLine: 'learning',
-  },
-  {
-    image: images.data,
-    firstLine: 'Data',
-    secondLine: 'analysis',
-  },
-  {
-    image: images.marketing,
-    firstLine: 'Digital',
-    secondLine: 'marketing',
-  },
-  {
-    image: images.threeD,
-    firstLine: '3D',
-    secondLine: 'experiences',
+    image: images.back03,
+    firstLine: 'Awesome',
+    secondLine: 'ZETOFF',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi iaculis neque vestibulum tincidunt ut ac orci. Nam dolor libero, ullamcorper sed blandit ut, efficitur a odio. Praesent consequat leo urna, mollis rhoncus augue dignissim eu.',
+    href: 'https://zetoff.com/',
   },
 ];
 
