@@ -52,6 +52,16 @@ class Services extends React.PureComponent {
                       <Typography variant="body1" color="inherit">
                         {service.description}
                       </Typography>
+                      <Typography variant="button" color="inherit">
+                        <a
+                          className={classes.button}
+                          // target='_blank'
+                          href={service.href}
+                          onClick={this.handleClick}
+                        >
+                          Read more
+                        </a>
+                      </Typography>
                     </div>
                   </div>
                 </div>

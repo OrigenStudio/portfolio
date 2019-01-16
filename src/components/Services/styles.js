@@ -57,10 +57,10 @@ export default theme => ({
     width: '100%',
     padding: theme.spacing.unit * 4,
   },
-  expertsLargeScreen:{
-    height: '300px',
-    marginTop: theme.spacing.unit * 5,
-    [theme.breakpoints.down('sm')]:{
+  button: {
+    textDecoration: 'none',
+    color: theme.palette.common.white,
+    borderBottom: '1px solid #E72476',
   },
   // expertsLargeScreen: {
   //   height: '300px',
