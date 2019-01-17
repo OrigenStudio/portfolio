@@ -11,16 +11,22 @@ export default theme => ({
     color: theme.palette.common.black,
   },
   decoration: {
-    width: '15%',
+    width: '5%',
     height: '3px',
     margin: 'auto',
     marginTop: theme.spacing.unit,
     marginBottom: theme.spacing.unit * 10,
     background: theme.palette.secondary.main,
+    [theme.breakpoints.down('sm')]: {
+      width: '15%',
+    },
   },
   item: {
+    width: '100%',
     height: '475px',
-  },
+    [theme.breakpoints.down('sm')]: {
+      height: '235px',
+    },
   },
   link: {
     textDecoration: 'none',
@@ -46,6 +52,9 @@ export default theme => ({
     width: '100%',
     color: theme.palette.common.white,
     transition: 'all 0.2s ease',
+    [theme.breakpoints.down('sm')]: {
+      padding: theme.spacing.unit * 4,
+    },
     '&:hover': {
       background: theme.palette.common.black,
     },
@@ -66,21 +75,9 @@ export default theme => ({
     width: '100%',
     padding: theme.spacing.unit * 4,
   },
-  button: {
-    textDecoration: 'none',
+  knowMore: {
+    width: 'fit-content',
     color: theme.palette.common.white,
     borderBottom: '1px solid #E72476',
   },
-  // expertsLargeScreen: {
-  //   height: '300px',
-  //   marginTop: theme.spacing.unit * 5,
-  //   [theme.breakpoints.down('sm')]: {
-  //     display: 'none',
-  //   },
-  // },
-  // expertsSmallScreen: {
-  //   [theme.breakpoints.up('md')]: {
-  //     display: 'none',
-  //   },
-  // },
 });

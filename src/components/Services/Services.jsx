@@ -53,49 +53,35 @@ class Services extends React.PureComponent {
                   href={service.href}
                   classes={{ link: classes.link, button: classes.button }}
                 >
-                <div
-                  className={classes.itemImage}
-                  style={{
-                    backgroundImage: `url('${service.image}')`,
-                  }}
-                >
-                  <div className={classes.itemText}>
-                    <Typography
-                      variant="display2"
-                      color="inherit"
-                      className={classes.primaryText}
-                    >
-                      {service.firstLine}
-                      <br />
-                      {service.secondLine ? service.secondLine : null}
-                    </Typography>
-                    <div className={classes.secondaryText}>
-                      <Typography variant="body1" color="inherit">
-                        {service.description}
+                  <div
+                    className={classes.itemImage}
+                    style={{
+                      backgroundImage: `url('${service.image}')`,
+                    }}
+                  >
+                    <div className={classes.itemText}>
+                      <Typography
+                        variant="display2"
+                        color="inherit"
+                        className={classes.primaryText}
+                      >
+                        {service.firstLine}
+                        <br />
+                        {service.secondLine ? service.secondLine : null}
                       </Typography>
-                      <Typography variant="button" color="inherit">
-                        <a
-                          className={classes.button}
-                          // target='_blank'
-                          href={service.href}
-                          onClick={this.handleClick}
-                        >
+                      <div className={classes.secondaryText}>
+                        <Typography variant="body1" color="inherit">
+                          {service.description}
+                        </Typography>
+                        <Typography variant="button" color="inherit" className={classes.knowMore}>
                           Read more
-                        </a>
-                      </Typography>
+                        </Typography>
+                      </div>
                     </div>
                   </div>
-                </div>
                 </LinkButton>
               </Grid>
             ))}
-            {/* <Grid item xs={6} md={4} key={'experts'} className={classNames(classes.item, classes.expertsSmallScreen)}>
-              <YourExperts typographyVariant="display1"/>
-            </Grid>
-          </Grid>
-          <div className={classes.expertsLargeScreen}>
-            <YourExperts />
-          </div> */}
           </Grid>
         </Padding>
       </div>
