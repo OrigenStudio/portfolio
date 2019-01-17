@@ -21,6 +21,15 @@ export default theme => ({
   item: {
     height: '475px',
   },
+  },
+  link: {
+    textDecoration: 'none',
+  },
+  button: {
+    width: '100%',
+    height: '100%',
+    display: 'block',
+  },
   itemImage: {
     backgroundSize: 'cover',
     height: '100%',

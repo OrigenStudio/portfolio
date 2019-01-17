@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import Link from 'gatsby-link';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
@@ -6,12 +7,28 @@ import React from 'react';
 import classNames from 'classnames';
 import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
+import ButtonBase from '@material-ui/core/ButtonBase';
 
 import Padding from '../../components/Padding';
 // Data
 // TODO move this somewhere else??
 import serviceList from '../../data/serviceList';
 import styles from './styles';
+
+const LinkButton = ({ href, classes, children }) => {
+  if (href.startsWith('/')) {
+    return (
+      <Link href={href} className={classes.link}>
+        <ButtonBase className={classes.button}>{children}</ButtonBase>
+      </Link>
+    );
+  }
+  return (
+    <ButtonBase href={href} className={classes.button}>
+      {children}
+    </ButtonBase>
+  );
+};
 
 class Services extends React.PureComponent {
   render() {
@@ -32,6 +49,10 @@ class Services extends React.PureComponent {
                 key={`service${index}`}
                 className={classes.item}
               >
+                <LinkButton
+                  href={service.href}
+                  classes={{ link: classes.link, button: classes.button }}
+                >
                 <div
                   className={classes.itemImage}
                   style={{
@@ -65,6 +86,7 @@ class Services extends React.PureComponent {
                     </div>
                   </div>
                 </div>
+                </LinkButton>
               </Grid>
             ))}
             {/* <Grid item xs={6} md={4} key={'experts'} className={classNames(classes.item, classes.expertsSmallScreen)}>
