@@ -6,13 +6,11 @@ import { LayoutActions } from 'material-ui-layout';
 import OnScroll from 'react-on-scroll';
 import classnames from 'classnames';
 
-import ContactUsSection from '../../components/ContactUsSection';
 import LandingSection from '../../components/LandingSection';
 import IntroSection from '../../components/IntroSection';
-import QualitySection from '../../components/QualitySection';
 import Services from '../../components/Services';
-import TechnologiesSection from '../../components/TechnologiesSection';
-import ZetoffInfo from '../../components/ZetoffInfo'
+import YourExperts from '../../components/YourExperts';
+import ContactUsSection from '../../components/ContactUsSection';
 
 import { logo } from '../../images';
 
@@ -64,10 +62,9 @@ class IndexPage extends React.Component {
           </LayoutActions.Consumer>
 
           <LandingSection />
-          {/* <IntroSection /> */}
-          <ZetoffInfo />
+          <IntroSection />
           <Services />
-          <QualitySection />
+          <YourExperts />
           <ContactUsSection />
         </div>
       </OnScroll>

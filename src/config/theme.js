@@ -11,7 +11,7 @@ const palette = {
     contrastText: '#FFFFFF',
   },
   secondary: {
-    main: '#E72476',
+    main: '#f91275',
   },
   common: {
     black: '#0C1821',
@@ -24,7 +24,7 @@ const palette = {
     middleBlue: '#3f4b7b',
   },
   gradients: {
-    primary:  'linear-gradient(45deg, #340e4f 0%, #f91275 100%)',
+    primary:  'linear-gradient(45deg, #372151 0%, #f91275 100%)',
   },
 };
 
