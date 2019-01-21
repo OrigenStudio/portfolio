@@ -9,6 +9,7 @@ import classnames from 'classnames';
 import LandingSection from '../../components/LandingSection';
 import IntroSection from '../../components/IntroSection';
 import Services from '../../components/Services';
+import YourExperts from '../../components/YourExperts';
 import ContactUsSection from '../../components/ContactUsSection';
 
 import { logo } from '../../images';
@@ -63,6 +64,7 @@ class IndexPage extends React.Component {
           <LandingSection />
           <IntroSection />
           <Services />
+          <YourExperts />
           <ContactUsSection />
         </div>
       </OnScroll>

@@ -18,21 +18,18 @@ const makeResponsive = (theme, jssHandle, values) => {
 
 const styles = theme => ({
   wrapper: {
-    width: '100%',
-    height: '100%',
-    margin: '0',
     backgroundImage: theme.palette.gradients.primary,
-    color: theme.palette.other.lightGrey,
-    display:'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    color: theme.palette.common.white,
   },
   textWrapper:{
     display: 'flex',
     alignItems: 'center',
-    ...makeResponsive(theme, 'width', {xs:'80%', sm:'80%', md:'70%', lg:'60%', xl:'50%'}),
-    ...makeResponsive(theme, 'height', {xs:'80%', sm:'80%', md:'70%', lg:'60%', xl:'50%'})
-  }
+    ...makeResponsive(theme, 'width', {xs:'80%', sm:'100%'}),
+    ...makeResponsive(theme, 'height', {xs:'80%', sm:'100%'})
+  },
+  textLoop: {
+    opacity: 0.6,
+  },
 });
 
 export default styles;
