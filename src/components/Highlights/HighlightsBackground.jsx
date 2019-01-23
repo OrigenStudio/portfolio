@@ -9,9 +9,9 @@ class HighlightsBackground extends React.PureComponent {
     const { classes, children } = this.props;
     return (
       <div className={classes.container}>
-        <Section>
+        <div className={classes.wrapper}>
           {children}
-        </Section>
+        </div>
       </div>
     );
   }

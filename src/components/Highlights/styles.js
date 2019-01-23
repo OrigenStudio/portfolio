@@ -1,9 +1,19 @@
 export default theme => ({
   container: {
-    backgroundColor: 'blue',
+    backgroundColor: theme.palette.other.darkBlue,
   },
   wrapper: {
     color: theme.palette.common.white,
+    padding: `0px ${theme.spacing.unit * 3}px`,
+    [theme.breakpoints.up('sm')]: {
+      padding: `0px ${theme.spacing.unit * 8}px`,
+    },
+    [theme.breakpoints.up('md')]: {
+      padding: `0px ${theme.spacing.unit * 12}px`,
+    },
+    [theme.breakpoints.up('lg')]: {
+      padding: `0px ${theme.spacing.unit * 14}px`
+    },
   },
   gridContainer: {
     color: theme.palette.common.white,
@@ -19,7 +29,7 @@ export default theme => ({
   },
   imageWrapper: {
     width: '100%',
-    maxWidth: '70%',
+    maxWidth: '90%',
   },
   image: {
     width: 'inherit',
