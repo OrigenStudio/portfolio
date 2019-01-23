@@ -19,15 +19,32 @@ export const commercialWebList1= [
 
 export const commercialWebList2= [
   {
-    image: images.design,
+    image: images.fast,
     title: 'Fast title',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi iaculis neque vestibulum tincidunt ut ac orci. Nam dolor libero, ullamcorper sed blandit ut, efficitur a odio. Praesent consequat leo urna, mollis rhoncus augue dignissim eu.',
     reverseOrder: false,
   },
   {
-    image: images.responsive,
+    image: images.scalable,
     title: 'Scalable title',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi iaculis neque vestibulum tincidunt ut ac orci. Nam dolor libero, ullamcorper sed blandit ut, efficitur a odio. Praesent consequat leo urna, mollis rhoncus augue dignissim eu.',
+    reverseOrder: true,
+  },
+];
+
+export const commercialWebList3= [
+  {
+    image: images.safety,
+    title: 'Safety title',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi iaculis neque vestibulum tincidunt ut ac orci. Nam dolor libero, ullamcorper sed blandit ut, efficitur a odio. Praesent consequat leo urna, mollis rhoncus augue dignissim eu.',
+    reverseOrder: false,
+  },
+  {
+    image: images.friendly,
+    title: 'Data friendly title',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi iaculis neque vestibulum tincidunt ut ac orci. Nam dolor libero, ullamcorper sed blandit ut, efficitur a odio. Praesent consequat leo urna, mollis rhoncus augue dignissim eu.',
     reverseOrder: true,

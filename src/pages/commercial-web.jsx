@@ -4,7 +4,8 @@ import map from 'lodash/map';
 import PageTitleIterator from '../components/PageTitleIterator';
 import HighlightsBackground from '../components/Highlights/HighlightsBackground';
 import HighlightsBase from '../components/Highlights/HighlightsBase';
-import {commercialWebList1, commercialWebList2} from '../data/commercialWebList';
+import {commercialWebList1, commercialWebList2, commercialWebList3} from '../data/commercialWebList';
+import images from '../data/commercialWebList/images';
 
 const CommercialWebTitleInfo = {
   headline: 'Commercial Web',
@@ -24,6 +25,9 @@ class CommercialWebPage extends React.PureComponent {
         </HighlightsBackground>
         <HighlightsBackground>
           {map(commercialWebList2, item => <HighlightsBase {...item} />)}
+        </HighlightsBackground>
+        <HighlightsBackground>
+          {map(commercialWebList3, item => <HighlightsBase {...item} />)}
         </HighlightsBackground>
       </div>
     );
