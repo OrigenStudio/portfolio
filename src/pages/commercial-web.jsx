@@ -1,6 +1,7 @@
 import React from 'react';
 
 import PageTitleIterator from '../components/PageTitleIterator';
+import ListInfoSection from '../components/ListInfoSection';
 
 const CommercialWeb = {
   headline: 'Commercial Web',
@@ -15,6 +16,7 @@ class CommercialWebPage extends React.PureComponent {
     return (
       <div style={{ width: '100%'}}>
         <PageTitleIterator {...CommercialWeb} />
+        <ListInfoSection />
       </div>
     );
   }
