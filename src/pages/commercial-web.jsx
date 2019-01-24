@@ -1,6 +1,7 @@
 import React from 'react';
 
 import PageTitleIterator from '../components/PageTitleIterator';
+import MethodologySection from '../components/MethodologySection';
 
 const CommercialWeb = {
   headline: 'Commercial Web',
@@ -15,6 +16,7 @@ class CommercialWebPage extends React.PureComponent {
     return (
       <div style={{ width: '100%'}}>
         <PageTitleIterator {...CommercialWeb} />
+        <MethodologySection />
       </div>
     );
   }
