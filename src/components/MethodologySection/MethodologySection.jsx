@@ -35,11 +35,12 @@ class MethodologySection extends React.PureComponent {
               along with your team to deliver a great product.
             </Typography>
           </div>
-          <Grid container spacing={16}>
+          <Grid container>
             {_.map(methodology, (methods, index) => (
               <Grid
                 item
                 xs={12}
+                sm={6}
                 lg={3}
                 key={`methods${index}`}
                 className={classes.item}
