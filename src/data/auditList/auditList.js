@@ -1,7 +1,7 @@
 export default {
-  title: 'Frases Audit',
+  title: 'LOREM IPSUM',
   buttonHref: 'mailto:hello@origenstudio.com',
-  buttonText: 'Send Mail',
+  buttonText: 'SAY HELLO',
   items: [
     {
       description:

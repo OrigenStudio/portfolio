@@ -1,35 +1,29 @@
-import { left } from "glamor";
+const styles = theme => ({
+  root: {
+    width: '100%',
+    overflow: 'auto',
+  },
+  wrapper: {
+    display: 'flex',
+    flexFlow: 'column',
+    alignItems: 'center',
+  },
+  listSection: {
+    maxWidth: '60%',
+    textAlign: 'center',
+    paddingBottom: theme.spacing.unit * 4,
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: '100%',
+    },
+  },
+  listText: {
+    textAlign: 'center',
+  },
+  button: {
+    margin: theme.spacing.unit,
+    color: theme.palette.common.white,
+    backgroundImage: 'linear-gradient(45deg,#372151,#f21d75)',
+  },
+});
 
-export default theme => ({
-    root: {
-      width: '100%',
-      //maxWidth: 360,
-      backgroundColor: 'inherit',
-      position: 'relative',
-      overflow: 'auto',
-      //maxHeight: 300,
-    },
-    listSection: {
-      backgroundColor: 'inherit',
-      margin: 'auto',
-      width: '70%',
-      padding: 10,
-    },
-    ul: {
-      backgroundColor: 'inherit',
-      padding: 0,
-    },
-    button: {
-        backgroundColor: 'white',
-        border: '1px solid black',
-        display: 'flex',
-        justifyContent: 'center',
-        margin: 'auto',
-        width: '15%',
-        cursor: 'pointer',
-    },
-    center: {
-        textAlign: 'center',
-        margin: 'auto',
-    },
-  });
+export default styles;
