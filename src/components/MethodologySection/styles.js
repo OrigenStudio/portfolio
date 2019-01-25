@@ -24,16 +24,40 @@ const styles = theme => ({
     },
   },
   item: {
-    width: '100%',
-    height: 'auto',
+    width: '35%',
+    paddingBottom: '35%',
+    position: 'relative',
+    display: 'inherit',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    textAlign: 'center',
     color: theme.palette.common.white,
     [theme.breakpoints.down('sm')]: {
-      height: '235px',
+      width: '60%',
+      paddingBottom: '60%',
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '100%',
+      paddingBottom: '100%',
     },
   },
   itemBackground: {
-    width: '100%',
-    height: '100%',
+    width: '95%',
+    height: '70%',
+    position: 'absolute',
+    display: 'inherit',
+    flexFlow: 'column',
+    justifyContent: 'center',
+    padding: theme.spacing.unit * 2,
+    [theme.breakpoints.down('sm')]: {
+      height: '85%',
+    },
+    [theme.breakpoints.down('xs')]: {
+      height: '95%',
+    },
+  },
+  itemText: {
+    paddingTop: theme.spacing.unit,
   },
 });
 
