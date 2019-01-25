@@ -25,7 +25,7 @@ class ListInfoSection extends React.PureComponent {
           </Typography>  
           <List className = {classes.listSection}>
             {_.map(items, (item, index) => (
-              <ListItem>
+              <ListItem key={index}>
                 <ListItemText>
                   <Typography>
                   {item.description}
