@@ -1,6 +1,8 @@
 import React from 'react';
 
 import PageTitleIterator from '../components/PageTitleIterator';
+import ProjectsOngoing from '../components/ProjectsOngoing';
+import projectsList from '../data/projectsList';
 
 const CommercialWeb = {
   headline: 'Commercial Web',
@@ -15,6 +17,7 @@ class CommercialWebPage extends React.PureComponent {
     return (
       <div style={{ width: '100%'}}>
         <PageTitleIterator {...CommercialWeb} />
+        <ProjectsOngoing {...projectsList} />
       </div>
     );
   }
