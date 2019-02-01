@@ -5,7 +5,6 @@ import PageTitleIterator from '../components/PageTitleIterator';
 import HighlightsBackground from '../components/Highlights/HighlightsBackground';
 import HighlightsBase from '../components/Highlights/HighlightsBase';
 import {commercialWebList1, commercialWebList2, commercialWebList3} from '../data/commercialWebList';
-import images from '../data/commercialWebList/images';
 
 const CommercialWebTitleInfo = {
   headline: 'Commercial Web',
@@ -20,14 +19,14 @@ class CommercialWebPage extends React.PureComponent {
     return (
       <div style={{ width: '100%' }}>
         <PageTitleIterator {...CommercialWebTitleInfo} />
-        <HighlightsBackground>
-          {map(commercialWebList1, item => <HighlightsBase {...item} />)}
+        <HighlightsBackground background={commercialWebList1.background} backgroundStyle={commercialWebList1.backgroundStyle}>
+          {map(commercialWebList1.items, item => <HighlightsBase {...item} />)}
         </HighlightsBackground>
-        <HighlightsBackground>
-          {map(commercialWebList2, item => <HighlightsBase {...item} />)}
+        <HighlightsBackground background={commercialWebList2.background} backgroundStyle={commercialWebList2.backgroundStyle}>
+          {map(commercialWebList2.items, item => <HighlightsBase {...item} />)}
         </HighlightsBackground>
-        <HighlightsBackground>
-          {map(commercialWebList3, item => <HighlightsBase {...item} />)}
+        <HighlightsBackground background={commercialWebList3.background} backgroundStyle={commercialWebList3.backgroundStyle}>
+          {map(commercialWebList3.items, item => <HighlightsBase {...item} />)}
         </HighlightsBackground>
       </div>
     );
