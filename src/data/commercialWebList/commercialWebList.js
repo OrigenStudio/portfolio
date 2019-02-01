@@ -1,6 +1,12 @@
 import images from './images';
+import backgrounds from './backgrounds';
 
-export const commercialWebList1= [
+export const commercialWebList1= {
+  background: backgrounds.back01,
+  backgroundStyle: {
+    backgroundPositionY: 'top',
+  },
+  items: [
   {
     image: images.design,
     title: 'Design title',
@@ -15,9 +21,14 @@ export const commercialWebList1= [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi iaculis neque vestibulum tincidunt ut ac orci. Nam dolor libero, ullamcorper sed blandit ut, efficitur a odio. Praesent consequat leo urna, mollis rhoncus augue dignissim eu.',
     reverseOrder: true,
   },
-];
+]};
 
-export const commercialWebList2= [
+export const commercialWebList2= {
+  background: backgrounds.back02,
+  backgroundStyle: {
+    // backgroundPositionY: '-50%',
+  },
+  items: [
   {
     image: images.fast,
     title: 'Fast title',
@@ -32,9 +43,14 @@ export const commercialWebList2= [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi iaculis neque vestibulum tincidunt ut ac orci. Nam dolor libero, ullamcorper sed blandit ut, efficitur a odio. Praesent consequat leo urna, mollis rhoncus augue dignissim eu.',
     reverseOrder: true,
   },
-];
+]};
 
-export const commercialWebList3= [
+export const commercialWebList3= {
+  background: backgrounds.back03,
+  backgroundStyle: {
+    backgroundPositionY: 'bottom',
+  },
+  items: [
   {
     image: images.safety,
     title: 'Safety title',
@@ -49,5 +65,5 @@ export const commercialWebList3= [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi iaculis neque vestibulum tincidunt ut ac orci. Nam dolor libero, ullamcorper sed blandit ut, efficitur a odio. Praesent consequat leo urna, mollis rhoncus augue dignissim eu.',
     reverseOrder: true,
   },
-];
+]};
 
