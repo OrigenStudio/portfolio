@@ -1,6 +1,12 @@
 export default theme => ({
   container: {
     backgroundColor: theme.palette.other.darkBlue,
+    backgroundSize: '100% auto',
+    backgroundPosition: '50% 50%',
+    backgroundRepeat: 'no-repeat',
+    [theme.breakpoints.down('xs')]: {
+      backgroundSize: 'auto 60%', 
+    },
   },
   wrapper: {
     color: theme.palette.common.white,
