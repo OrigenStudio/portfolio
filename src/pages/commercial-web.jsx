@@ -2,16 +2,15 @@ import React from 'react';
 import map from 'lodash/map';
 
 import PageTitleIterator from '../components/PageTitleIterator';
-import ListInfoSection from '../components/ListInfoSection';
-import auditList from '../data/auditList';
 import HighlightsBackground from '../components/Highlights/HighlightsBackground';
 import HighlightsBase from '../components/Highlights/HighlightsBase';
-import {commercialWebList1, commercialWebList2, commercialWebList3} from '../data/commercialWebList';
+import {commercialHighlightsList1, commercialHighlightsList2, commercialHighlightsList3} from '../data/commercialHighlightsList';
+import ListInfoSection from '../components/ListInfoSection';
+import auditList from '../data/auditList';
 import ProjectsOngoing from '../components/ProjectsOngoing';
 import projectsList from '../data/projectsList';
-import MethodologySection from '../components/MethodologySection';
 
-const CommercialWebTitleInfo = {
+const CommercialWebPageTitleInfo = {
   headline: 'Commercial Web',
   text1: 'YOUR NEXT ',
   text2: 'WEBSITE WILL BE RESPONSIVE, FAST, SCALABLE AND SAFE',
@@ -24,18 +23,17 @@ class CommercialWebPage extends React.PureComponent {
     
     return (
       <div style={{ width: '100%' }}>
-        <PageTitleIterator {...CommercialWebTitleInfo} />
-        <HighlightsBackground background={commercialWebList1.background} backgroundStyle={commercialWebList1.backgroundStyle}>
-          {map(commercialWebList1.items, item => <HighlightsBase {...item} />)}
+        <PageTitleIterator {...CommercialWebPageTitleInfo} />
+        <HighlightsBackground background={commercialHighlightsList1.background} backgroundStyle={commercialHighlightsList1.backgroundStyle}>
+          {map(commercialHighlightsList1.items, item => <HighlightsBase {...item} />)}
         </HighlightsBackground>
-        <HighlightsBackground background={commercialWebList2.background} backgroundStyle={commercialWebList2.backgroundStyle}>
-          {map(commercialWebList2.items, item => <HighlightsBase {...item} />)}
+        <HighlightsBackground background={commercialHighlightsList2.background} backgroundStyle={commercialHighlightsList2.backgroundStyle}>
+          {map(commercialHighlightsList2.items, item => <HighlightsBase {...item} />)}
         </HighlightsBackground>
-        <HighlightsBackground background={commercialWebList3.background} backgroundStyle={commercialWebList3.backgroundStyle}>
-          {map(commercialWebList3.items, item => <HighlightsBase {...item} />)}
+        <HighlightsBackground background={commercialHighlightsList3.background} backgroundStyle={commercialHighlightsList3.backgroundStyle}>
+          {map(commercialHighlightsList3.items, item => <HighlightsBase {...item} />)}
         </HighlightsBackground>
         <ProjectsOngoing {...projectsList} />
-        <MethodologySection />
         <ListInfoSection {...auditList}/>
       </div>
     );
