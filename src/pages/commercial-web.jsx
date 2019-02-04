@@ -5,6 +5,8 @@ import PageTitleIterator from '../components/PageTitleIterator';
 import HighlightsBackground from '../components/Highlights/HighlightsBackground';
 import HighlightsBase from '../components/Highlights/HighlightsBase';
 import {commercialWebList1, commercialWebList2, commercialWebList3} from '../data/commercialWebList';
+import ProjectsOngoing from '../components/ProjectsOngoing';
+import projectsList from '../data/projectsList';
 
 const CommercialWebTitleInfo = {
   headline: 'Commercial Web',
@@ -28,6 +30,7 @@ class CommercialWebPage extends React.PureComponent {
         <HighlightsBackground background={commercialWebList3.background} backgroundStyle={commercialWebList3.backgroundStyle}>
           {map(commercialWebList3.items, item => <HighlightsBase {...item} />)}
         </HighlightsBackground>
+        <ProjectsOngoing {...projectsList} />
       </div>
     );
   }
