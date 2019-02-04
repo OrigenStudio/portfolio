@@ -9,6 +9,7 @@ import HighlightsBase from '../components/Highlights/HighlightsBase';
 import {commercialWebList1, commercialWebList2, commercialWebList3} from '../data/commercialWebList';
 import ProjectsOngoing from '../components/ProjectsOngoing';
 import projectsList from '../data/projectsList';
+import MethodologySection from '../components/MethodologySection';
 
 const CommercialWebTitleInfo = {
   headline: 'Commercial Web',
@@ -34,6 +35,7 @@ class CommercialWebPage extends React.PureComponent {
           {map(commercialWebList3.items, item => <HighlightsBase {...item} />)}
         </HighlightsBackground>
         <ProjectsOngoing {...projectsList} />
+        <MethodologySection />
         <ListInfoSection {...auditList}/>
       </div>
     );
