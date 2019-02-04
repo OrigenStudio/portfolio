@@ -1,7 +1,7 @@
 import images from './images';
 import backgrounds from './backgrounds';
 
-export const commercialWebList1= {
+export const commercialHighlightsList1= {
   background: backgrounds.back01,
   backgroundStyle: {
     backgroundPositionY: 'top',
@@ -23,7 +23,7 @@ export const commercialWebList1= {
   },
 ]};
 
-export const commercialWebList2= {
+export const commercialHighlightsList2= {
   background: backgrounds.back02,
   backgroundStyle: {
     // backgroundPositionY: '-50%',
@@ -45,7 +45,7 @@ export const commercialWebList2= {
   },
 ]};
 
-export const commercialWebList3= {
+export const commercialHighlightsList3= {
   background: backgrounds.back03,
   backgroundStyle: {
     backgroundPositionY: 'bottom',
