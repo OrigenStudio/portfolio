@@ -2,6 +2,8 @@ import React from 'react';
 import map from 'lodash/map';
 
 import PageTitleIterator from '../components/PageTitleIterator';
+import ListInfoSection from '../components/ListInfoSection';
+import auditList from '../data/auditList';
 import HighlightsBackground from '../components/Highlights/HighlightsBackground';
 import HighlightsBase from '../components/Highlights/HighlightsBase';
 import {commercialWebList1, commercialWebList2, commercialWebList3} from '../data/commercialWebList';
@@ -19,6 +21,7 @@ const CommercialWebTitleInfo = {
 class CommercialWebPage extends React.PureComponent {
   render() {
     const { data } = this.props;
+    
     return (
       <div style={{ width: '100%' }}>
         <PageTitleIterator {...CommercialWebTitleInfo} />
@@ -33,6 +36,7 @@ class CommercialWebPage extends React.PureComponent {
         </HighlightsBackground>
         <ProjectsOngoing {...projectsList} />
         <MethodologySection />
+        <ListInfoSection {...auditList}/>
       </div>
     );
   }
