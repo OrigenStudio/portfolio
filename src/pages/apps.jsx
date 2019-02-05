@@ -6,6 +6,8 @@ import MethodologySection from '../components/MethodologySection';
 import HighlightsBackground from '../components/Highlights/HighlightsBackground';
 import HighlightsBase from '../components/Highlights/HighlightsBase';
 import {appsHighlightsList1, appsHighlightsList2} from '../data/appsHighlightsList';
+import ListInfoSection from '../components/ListInfoSection';
+import consultingServices from '../data/consultingServices';
 
 const AppsPageTitleInfo = {
   headline: 'App Development',
@@ -27,6 +29,7 @@ class AppsPage extends React.PureComponent {
         <HighlightsBackground background={appsHighlightsList2.background} backgroundStyle={appsHighlightsList2.backgroundStyle}>
           {map(appsHighlightsList2.items, item => <HighlightsBase {...item} />)}
         </HighlightsBackground>
+        <ListInfoSection {...consultingServices}/>
       </div>
     );
   }
