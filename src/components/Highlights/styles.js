@@ -35,9 +35,12 @@ export default theme => ({
   },
   imageWrapper: {
     width: '100%',
-    maxWidth: '90%',
+    maxWidth: '80%',
   },
   image: {
     width: 'inherit',
   },
+  description: {
+    textTransform: 'uppercase',
+  }
 });
