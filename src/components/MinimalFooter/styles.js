@@ -1,6 +1,8 @@
 export default theme => ({
   wrapper: {
     padding: `0 ${theme.spacing.unit * 10}px`,
+    color: theme.palette.other.middleBlue,
+    borderTop: '1px solid #1e2338',
   },
   socialButtons: {
     display: 'flex',

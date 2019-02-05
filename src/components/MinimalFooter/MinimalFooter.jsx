@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import styles from './styles';
+import ContactUsSection from '../ContactUsSection';
 
 class MinimalFooter extends React.PureComponent {
   static propTypes = {
@@ -22,6 +23,8 @@ class MinimalFooter extends React.PureComponent {
   render() {
     const { classes, title, message, socialLinks } = this.props;
     return (
+      <div>
+        <ContactUsSection />
       <Grid
         container
         alignItems="center"
@@ -33,9 +36,6 @@ class MinimalFooter extends React.PureComponent {
           <Typography variant="body1" color="inherit">
             {title} © {new Date().getFullYear()} {message}
           </Typography>
-          {/* <Typography variant="caption" color="inherit">
-            {title} © {new Date().getFullYear()}
-          </Typography> */}
         </Grid>
         <Grid item xs={12} sm={6} className={classes.socialButtons}>
           {_.map(socialLinks, link => (
@@ -49,6 +49,7 @@ class MinimalFooter extends React.PureComponent {
           ))}
         </Grid>
       </Grid>
+      </div>
     );
   }
 }
