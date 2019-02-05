@@ -6,7 +6,7 @@ import HighlightsBackground from '../components/Highlights/HighlightsBackground'
 import HighlightsBase from '../components/Highlights/HighlightsBase';
 import {commercialHighlightsList1, commercialHighlightsList2, commercialHighlightsList3} from '../data/commercialHighlightsList';
 import ListInfoSection from '../components/ListInfoSection';
-import auditList from '../data/auditList';
+import auditServices from '../data/auditServices';
 import ProjectsOngoing from '../components/ProjectsOngoing';
 import projectsList from '../data/projectsList';
 
@@ -33,8 +33,8 @@ class CommercialWebPage extends React.PureComponent {
         <HighlightsBackground background={commercialHighlightsList3.background} backgroundStyle={commercialHighlightsList3.backgroundStyle}>
           {map(commercialHighlightsList3.items, item => <HighlightsBase {...item} />)}
         </HighlightsBackground>
-        <ProjectsOngoing {...projectsList} />
-        <ListInfoSection {...auditList}/>
+        <ListInfoSection {...auditServices}/>
+        <ProjectsOngoing {...projectsList}/>
       </div>
     );
   }
