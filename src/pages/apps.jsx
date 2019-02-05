@@ -21,10 +21,10 @@ class AppsPage extends React.PureComponent {
       <div style={{ width: '100%'}}>
         <PageTitleIterator {...AppsPageTitleInfo} />
         <MethodologySection />
-        <HighlightsBackground >
+        <HighlightsBackground background={appsHighlightsList1.background} backgroundStyle={appsHighlightsList1.backgroundStyle}>
           {map(appsHighlightsList1.items, item => <HighlightsBase {...item} />)}
         </HighlightsBackground>
-        <HighlightsBackground >
+        <HighlightsBackground background={appsHighlightsList2.background} backgroundStyle={appsHighlightsList2.backgroundStyle}>
           {map(appsHighlightsList2.items, item => <HighlightsBase {...item} />)}
         </HighlightsBackground>
       </div>

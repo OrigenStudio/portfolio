@@ -1,10 +1,10 @@
 import images from './images';
-// import backgrounds from './backgrounds';
+import backgrounds from './backgrounds';
 
 export const appsHighlightsList1= {
-  // background: backgrounds.back01,
+  background: backgrounds.back01,
   backgroundStyle: {
-    backgroundPositionY: 'top',
+    // backgroundPositionY: '20%',
   },
   items: [
   {
@@ -24,9 +24,9 @@ export const appsHighlightsList1= {
 ]};
 
 export const appsHighlightsList2= {
-  // background: backgrounds.back02,
+  background: backgrounds.back02,
   backgroundStyle: {
-    // backgroundPositionY: '-50%',
+    backgroundPositionY: 'bottom',
   },
   items: [
   {
