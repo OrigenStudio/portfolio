@@ -65,7 +65,6 @@ class IndexPage extends React.Component {
           <IntroSection />
           <Services />
           <YourExperts />
-          <ContactUsSection />
         </div>
       </OnScroll>
     );
