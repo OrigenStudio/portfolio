@@ -21,7 +21,7 @@ const palette = {
     lightGrey: '#e8e8e8',
     grayBlue: '#18232B',
     veryDarkGrey: '#0C1821',
-    middleBlue: '#3f4b7b',
+    middleBlue: '#5f6da5',
   },
   gradients: {
     primary:  'linear-gradient(45deg, #372151 0%, #f91275 100%)',
