@@ -11,14 +11,14 @@ export const commercialHighlightsList1= {
     image: images.design,
     title: 'Design title',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi iaculis neque vestibulum tincidunt ut ac orci. Nam dolor libero, ullamcorper sed blandit ut, efficitur a odio. Praesent consequat leo urna, mollis rhoncus augue dignissim eu.',
+      'It all starts with a good design. We work along with you and your brand to grasp your essence. We’ll create a design that will resonate with your brand and audience.',
     reverseOrder: false,
   },
   {
     image: images.responsive,
     title: 'Responsive title',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi iaculis neque vestibulum tincidunt ut ac orci. Nam dolor libero, ullamcorper sed blandit ut, efficitur a odio. Praesent consequat leo urna, mollis rhoncus augue dignissim eu.',
+      'Your website will truly work on any device. Your website, in fact, will be a compliant Progressive Web App. Google will also like it and it will treat your with better rankings.',
     reverseOrder: true,
   },
 ]};
@@ -33,14 +33,14 @@ export const commercialHighlightsList2= {
     image: images.fast,
     title: 'Fast title',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi iaculis neque vestibulum tincidunt ut ac orci. Nam dolor libero, ullamcorper sed blandit ut, efficitur a odio. Praesent consequat leo urna, mollis rhoncus augue dignissim eu.',
+      'It will load in no time. This will increase your user engagement and satisfaction as well as increasing your search engine - aka. Google - position.',
     reverseOrder: false,
   },
   {
     image: images.scalable,
     title: 'Scalable title',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi iaculis neque vestibulum tincidunt ut ac orci. Nam dolor libero, ullamcorper sed blandit ut, efficitur a odio. Praesent consequat leo urna, mollis rhoncus augue dignissim eu.',
+      'Thanks to our technologies your website will scale instantly for traffic spikes while maintaining your server cost low.',
     reverseOrder: true,
   },
 ]};
@@ -55,14 +55,14 @@ export const commercialHighlightsList3= {
     image: images.safety,
     title: 'Safety title',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi iaculis neque vestibulum tincidunt ut ac orci. Nam dolor libero, ullamcorper sed blandit ut, efficitur a odio. Praesent consequat leo urna, mollis rhoncus augue dignissim eu.',
+      'You’ll be shielded from traditional CMS vulnerabilities and flaws. No need to worry about your information and services being hacked.',
     reverseOrder: false,
   },
   {
     image: images.friendly,
     title: 'Data friendly title',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi iaculis neque vestibulum tincidunt ut ac orci. Nam dolor libero, ullamcorper sed blandit ut, efficitur a odio. Praesent consequat leo urna, mollis rhoncus augue dignissim eu.',
+      'We can build this your blazing fast new website using the data sources you currently have. Wordpress, Drupal, Prestashop, Shopify, you name it.',
     reverseOrder: true,
   },
 ]};
