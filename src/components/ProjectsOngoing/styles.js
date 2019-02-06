@@ -1,5 +1,7 @@
 const styles = theme => ({
-  container: {},
+  container: {
+    backgroundColor: '#efefef',
+  },
   wrapper: {},
   title: {
     textTransform: 'uppercase',
