@@ -18,7 +18,7 @@ import styles from './styles';
 const LinkButton = ({ href, classes, children }) => {
   if (href.startsWith('/')) {
     return (
-      <Link href={href} className={classes.link}>
+      <Link to={href} className={classes.link}>
         <ButtonBase className={classes.button}>{children}</ButtonBase>
       </Link>
     );
