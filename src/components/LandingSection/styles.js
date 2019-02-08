@@ -30,7 +30,7 @@ export default theme => ({
         width: '100%',
         height: '100%',
         position: 'relative',
-        top: '-200%',
+        top: '-205%',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'flex-end',
